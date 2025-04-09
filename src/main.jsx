@@ -5,7 +5,10 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 
 //pages
-import Cadastro from './Pages/cadastro.jsx'
+import Cadastro from './pages/Cadastro.jsx'
+import CoverPage from './pages/CoverPage.jsx'
+import Home from './pages/Home.jsx'
+import Login from './pages/Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,12 +16,20 @@ const router = createBrowserRouter([
     element: <p>oi!</p>
   },
   {
-    path: '/registro',
+    path: '/cadastro',
     element: <Cadastro />
   },
   {
     path: '/login',
-    element: <p>logar aqui!</p>
+    element: <Login />
+  },
+  {
+    path: '/cover-page',
+    element: <CoverPage/>
+  },
+  {
+    path: '/home',
+    element: <Home/>
   }
 ])
 
