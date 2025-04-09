@@ -3,9 +3,9 @@ function Login(){
 
     return (
         // retorna no 'html' pela main aqui
-        <section className="zinc-200 flex">
-            <div className="neutral-100 flex">
-                <div className="">
+        <section className="bg-zinc-100 flex h-screen w-screen justify-center items-center">
+            <div className="bg-neutral-200 flex">
+                <div className="p-10 flex flex-col justify-center items-center text-center">
                     <div>
                         <p>Preencha seus dados, por gentileza</p>
                     </div>
@@ -15,9 +15,11 @@ function Login(){
                     </div>
                     <div>
                         <button>Entre agora mesmo!</button>
+                        <p>Ainda não tem conta</p>
+                        <a href="">Registre-se aqui!</a>
                     </div>
                 </div>
-                <div className="bg-purple-700">
+                <div className="bg-purple-700 p-10 flex flex-col justify-center items-center text-center">
                     <div className="text-white">
                         <h1>Bem-vindo de volta</h1>
                     </div>
