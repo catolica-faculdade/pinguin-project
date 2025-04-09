@@ -4,7 +4,7 @@ function Menu(){
 
     return(
         <div>
-            <div className='sm:flex'>
+            <div className='flex flex-col sm:flex-row'>
                 <img className='w-40 sm:w-50'
                 src='src/assets/images/logo-pinguIn-roxo.png'></img>
                 <div className='flex font-inter'>
