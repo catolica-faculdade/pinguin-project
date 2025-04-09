@@ -16,10 +16,10 @@ function Login(){
                     <div>
                         <button>Entre agora mesmo!</button>
                         <p>Ainda não tem conta</p>
-                        <a href="">Registre-se aqui!</a>
+                        <a href="" className="purple-pinguin">Registre-se aqui!</a>
                     </div>
                 </div>
-                <div className="bg-purple-700 p-10 flex flex-col justify-center items-center text-center">
+                <div className="bg-purple-pinguin p-10 flex flex-col justify-center items-center text-center">
                     <div className="text-white">
                         <h1>Bem-vindo de volta</h1>
                     </div>
