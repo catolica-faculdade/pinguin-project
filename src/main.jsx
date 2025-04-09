@@ -9,11 +9,12 @@ import Cadastro from './pages/Cadastro.jsx'
 import CoverPage from './pages/CoverPage.jsx'
 import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
+import Menu from './pages/Menu.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <p>oi!</p>
+    element: <Menu/>
   },
   {
     path: '/cadastro',
