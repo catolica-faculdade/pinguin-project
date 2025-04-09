@@ -4,6 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 
+//pages
+import Cadastro from './Pages/cadastro.jsx'
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -11,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/registro',
-    element: <p>registrar aqui!</p>
+    element: <Cadastro />
   },
   {
     path: '/login',
