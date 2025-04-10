@@ -14,4 +14,8 @@
     color: #854DA6;
 }
 
+.bg-menu-pinguin{
+    background-color: #F1F1F1;
+}
+
 @import 'tailwindcss';
