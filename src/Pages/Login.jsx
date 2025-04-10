@@ -1,17 +1,20 @@
 import Button from "../components/Button.jsx"
+import Input from "../components/Input.jsx"
+
+
 
 function Login(){
 
     return (
         <section className="bg-zinc-100 flex h-screen w-screen justify-center items-center font-inter">
-            <div className="bg-neutral-200 flex">
+            <div className="bg-neutral-200 flex h-118 w-182 rounded-md">
                 <div className="p-10 flex flex-col justify-center items-center text-center">
                     <div>
                         <h2 className="text-3xl">Preencha seus dados, por gentileza</h2>
                     </div>
                     <div className="flex flex-col">
-                        <input type="text" value='Email ou nome de usuário'/>
-                        <input type="text" value='Insira sua senha'/>
+                        <Input text='E-mail' type='text'/>
+                        <Input placeholder='Senha' type='password'/>
                     </div>
                     <div>
                         <Button text='Entre agora mesmo!' bgColor='bg-purple-pinguin'
