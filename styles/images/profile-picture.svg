@@ -1,0 +1,8 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="profile-picture">
+<circle id="Ellipse 2" cx="30" cy="30" r="29.5" fill="#C795E3" stroke="black"/>
+<g id="User">
+<path id="icon" d="M47.7402 51.9565C47.7402 43.9641 39.7891 37.5 30 37.5C20.2108 37.5 12.2598 43.9641 12.2598 51.9565M40.3261 20.9782C40.3261 26.6812 35.7029 31.3043 30 31.3043C24.297 31.3043 19.6739 26.6812 19.6739 20.9782C19.6739 15.2753 24.297 10.6522 30 10.6522C35.7029 10.6522 40.3261 15.2753 40.3261 20.9782Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

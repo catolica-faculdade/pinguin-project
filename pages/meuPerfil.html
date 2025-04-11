@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil | PinguIn</title>
+    <link rel="shortcut icon" type="image/png" href="../styles/images/logo-pinguim.png" />
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/userProfile.css">
+</head>
+
+<body>
+    <section class="nav-bar-background">
+        <nav class="nav-bar">
+            <div class="logo-nav-bar">
+                <img src="../styles/images/logo-pinguin-branco-fundo-cinza.svg" alt="Logo do PinguIn">
+            </div>
+            <div class="source-bar">
+                <input type="text" name="barra-de-pesquisa" id="barra-de-pesquisa" placeholder="Pesquisar...">
+            </div>
+            <div class="nav-bar-buttons">
+                <a href="./homepage.html" id="home-button">
+                    <img src="../styles/images/home-icon.svg" alt="Ir para página inicial">
+                    <p>Início</p>
+                </a>
+                <a href="#" id="notifications-button">
+                    <img src="../styles/images/notifications-icon.svg" alt="Ir para notificações">
+                    <p>Notificações</p>
+                </a>
+                <button id="user-options-button">
+                    <img class="user-picture" src="../styles/images/profile-picture.svg" alt="Opções do usuário" />
+                    <img id="arrow-bottom" src="../styles/images/seta-para-baixo.svg" alt="Opções do usuário" />
+                </button>
+            </div>
+        </nav>
+    </section>
+    <section id="principal-general-container">
+        <div class="sidebar-features left-features">
+            <div class="first-sidebar-division">
+                <a class="following-followers" href="#">
+                    <div>
+                        <img src="../styles/images/followers-icon.svg" alt="Seguindo">
+                        <p>Seguindo</p>
+                    </div>
+                    <p class="number-followers-following">100</p>
+                </a>
+                <a class="following-followers" href="#">
+                    <div>
+                        <img src="../styles/images/followers-icon.svg" alt="Seguidores">
+                        <p>Seguidores</p>
+                    </div>
+                    <p class="number-followers-following">200</p>
+                </a>
+            </div>
+            <div class="second-sidebar-division">
+                <div class="this-user-datas">
+                    <img class="user-picture" src="../styles/images/profile-picture.svg" alt="Foto de perfil" />
+                    <div>
+                        <p>@gfloriano</p>
+                        <p>Gustavo Floriano</p>
+                    </div>
+                </div>
+                <div id="div-create-post-show-profile">
+                    <button>
+                        Criar Publicação
+                    </button>
+                    <a href="./meuPerfil.html">Ver Perfil</a>
+                </div>
+            </div>
+        </div>
+        <main id="home-main">
+            <section class="user-profile-introdution">
+                <div class="this-user-datas">
+                    <img class="user-picture" src="../styles/images/profile-picture.svg" alt="Foto de perfil" />
+                    <div class="user-name-my-profile">
+                        <div>
+                            <p>@gfloriano</p>
+                            <button class="streak-days-div openStreakPopup">
+                                <img src="../styles/images/streak-0-days.svg" alt="Streak">
+                                <p>0</p>
+                            </button>
+                        </div>
+                        <p>Gustavo Floriano</p>
+                    </div>
+                </div>
+                <div class="this-profile-options">
+                    <button class="edit-profile">
+                        Editar perfil
+                    </button>
+                    <a href="#">
+                        <img src="../styles/images/configs-icon.svg" alt="Configurações e opções de perfil">
+                    </a>
+                </div>
+            </section>
+            <div class="user-numbers-posts-followers-following">
+                <p><strong>10</strong> posts</p>
+                <button><strong>10</strong> seguidores</button>
+                <button><strong>10</strong> seguindo</button>
+            </div>
+            <div id="bio">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. 😎😴🤠👋
+                </p>
+            </div>
+            <div class="post-card">
+                <div class="post-header">
+                    <div class="this-user-datas">
+                        <img class="user-picture" src="../styles/images/profile-picture.svg" alt="Foto de perfil" />
+                        <div>
+                            <p>@gfloriano</p>
+                            <p>Gustavo Floriano</p>
+                        </div>
+                    </div>
+                    <button>
+                        <img src="../styles/images/post-options-icon.svg" alt="Opções da postagem" />
+                    </button>
+                </div>
+                <p>Fui na casa do meu amigo...</p>
+                <button>Ver mais...</button>
+                <br>
+                <div class="div-post-image">
+                    <img src="../styles/images/20170901casas-bonitas-62.jpg" alt="Imagem publicada" />
+                </div>
+                <div class="post-reactions">
+                    <div class="div-post-likes">
+                        <button>
+                            <img src="../styles/images/like-heart-white.svg" alt="Curtir publicação">
+                        </button>
+                        <button>
+                            +10M
+                        </button>
+                    </div>
+                    <div class="div-post-comments">
+                        <button>
+                            <img src="../styles/images/post-comment-icon.svg" alt="Curtir publicação">
+                        </button>
+                        <button>
+                            +100K
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="sidebar-features right-features">
+            <div class="streak-card">
+                <button class="streak-days-div openStreakPopup">
+                    <img src="../styles/images/streak-0-days.svg" alt="Streak">
+                    <p>0</p>
+                </button>
+                <div class="streak-description-today">
+                    <p>Seu Streak é de
+                    <p class="streak-number">0</p> dias. Crie três posts e inicie o Streak!</p><button>Criar
+                        Publicação</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="streakPopup">
+        <div class="popup-content">
+            <span class="closeStreakPopup">&times;</span>
+            <h2>Olá!</h2>
+            <p>Esse é um pop-up com classes.</p>
+        </div>
+    </div>
+
+    <script src="../scripts/general.js"></script>
+</body>
+
+</html>
