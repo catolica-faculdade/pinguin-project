@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 
+import "./index.css"
 //pages
 import Cadastro from './pages/Cadastro.jsx'
 import CoverPage from './pages/CoverPage.jsx'

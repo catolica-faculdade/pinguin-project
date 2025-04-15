@@ -5,21 +5,23 @@ function CoverPage(){
 
     return (
         // retorna no 'html' pela main aqui
-        <div>
-            <nav id="nav_bar">
-                <div>
-                    <a href="">Menu</a>
-                </div>
-                <div>
-                    <input id="input_cover_page" placeholder="Pesquisar..." type="text" />
-                </div>
-                <div>
-                    <a class="afastamento_texto">Inicio</a>
-                    <a class="afastamento_texto">Notificação</a>
-                    <a class="afastamento_texto">Login</a>
-                </div>
-            </nav>
-        </div>
+
+            <div>
+                <nav className="flex justify-evenly bg-navbar p-3 items-center">
+                    <div>
+                        <div className="pl-[20px bg-cube-gray-navbar]"></div>
+                    </div>
+                    <div>
+                        <input className="bg-input-navbar rounded-[4px] pl-[10px] text-black placeholder-black placeholder:font-sans " 
+                         placeholder="Pesquisar..." type="text" />
+                    </div>
+                    <div>
+                        <a className="pl-[10px]">Inicio</a>
+                        <a className="pl-[10px]">Notificação</a>
+                        <a className="pl-[10px]">Login</a>
+                    </div>
+                </nav>
+            </div>
     );
 }
 
