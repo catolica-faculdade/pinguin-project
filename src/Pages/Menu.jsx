@@ -23,7 +23,7 @@ function Menu(){
                     <div className='flex sm:hidden flex-col justify-center items-center w-60 text-lg font-inter'>
                         <p>Crie.</p>
                         <p>Compartilhe.</p>
-                        <p>Conecte-se</p>
+                        <p>Conecte-se.</p>
                     </div>
                 </div>
             </div>
