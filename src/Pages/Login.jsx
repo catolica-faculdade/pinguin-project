@@ -23,7 +23,7 @@ function Login(){
                     <div className="h-35 flex flex-col gap-6">
                         <Button text='Entre agora mesmo!' bgColor='bg-purple-pinguin'
                         color='text-white'/>
-                        <p>Ainda não tem conta <br/> <a href="" className="purple-pinguin underline">Registre-se aqui!</a></p>
+                        <p>Ainda não tem conta <br/> <a href="/cadastro" className="purple-pinguin underline">Registre-se aqui!</a></p>
                     </div>
                 </div>
                 <div className="bg-purple-pinguin p-10 flex flex-col justify-center items-center text-center rounded-tr-md rounded-br-md gap-12 w-2/5">
