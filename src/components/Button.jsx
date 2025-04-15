@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 
-function Button(){
+function Button({color, bgColor, text}){
 
     return(
-        <Link className="text-red-500">
-            <p>botao</p>
+        <Link className={`flex ${bgColor} ${color} pt-2 pr-4 pb-2 pl-4 rounded-lg `}>
+            <p>{text}</p>
         </Link>
     );
 }

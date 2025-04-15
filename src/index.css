@@ -1,14 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
 @theme{
     --font-inter: 'Inter'; 
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+.bg-purple-pinguin{
+    background-color: #854DA6;
 }
 
+.purple-pinguin{
+    color: #854DA6;
+}
+
+.bg-menu-pinguin{
+    background-color: #F1F1F1;
+}
+
+.bg-login-pinguin{
+    background-color: #EBE8EC
+}
+
+.bg-form-login{
+    background-color: #F2F2F2;
+}
+
+.stroke-color-pinguin{
+    border-color: #6e6e6e;
+}
 
 @import 'tailwindcss';
