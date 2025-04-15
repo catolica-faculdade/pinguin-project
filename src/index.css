@@ -18,4 +18,16 @@
     background-color: #F1F1F1;
 }
 
+.bg-login-pinguin{
+    background-color: #EBE8EC
+}
+
+.bg-form-login{
+    background-color: #F2F2F2;
+}
+
+.stroke-color-pinguin{
+    border-color: #6e6e6e;
+}
+
 @import 'tailwindcss';
