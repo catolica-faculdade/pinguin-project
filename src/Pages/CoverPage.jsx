@@ -7,18 +7,33 @@ function CoverPage(){
         // retorna no 'html' pela main aqui
 
             <div>
-                <nav className="flex justify-evenly bg-navbar p-3 items-center">
-                    <div>
-                        <div className="pl-[20px bg-cube-gray-navbar]"></div>
+                <nav className="flex justify-between bg-navbar p-1 items-center">
+                    <div className="pl-[10px]">
+                        <div className="w-[35px] h-[35px] bg-cube-gray-navbar rounded-[4px]">
+                            <img src='src/assets/images/logo-pinguIn-branca.png'/>
+                        </div>
                     </div>
                     <div>
-                        <input className="bg-input-navbar rounded-[4px] pl-[10px] text-black placeholder-black placeholder:font-sans " 
+                        <input className="bg-input-navbar rounded-[4px] pl-[10px] w-[400px] text-black placeholder-black placeholder:font-sans " 
                          placeholder="Pesquisar..." type="text" />
                     </div>
-                    <div>
-                        <a className="pl-[10px]">Inicio</a>
-                        <a className="pl-[10px]">Notificação</a>
-                        <a className="pl-[10px]">Login</a>
+                    <div className="flex pr-[30px] items-center">
+                        <div className="flex flex-col items-center">
+                            <img className="w-[25px] pt-[4px]" src='src/assets/images/house-icon.png'/>
+                            <a className="text-[15px]">Inicio</a>
+                        </div>
+                        <div className="flex flex-col items-center pl-[30px]">
+                            <img className="w-[25px]" src='src/assets/images/notifications-icon.png'/>
+                            <a className="text-[15px]">Notificação</a>
+                        </div>
+                        <div className="flex items-center pl-[20px]">
+                            <div className="rounded-[50%] bg-icon-user p-[2px] items-center">
+                                <img className="w-[35px]" src='src/assets/images/user-icon-black.png'/>
+                            </div>
+                            <div>
+                                <img className="pl-[10px]" src='src/assets/images/down-arrow-icon.png'/>
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>
