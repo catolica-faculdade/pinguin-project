@@ -14,19 +14,16 @@ function Cadastro(){
                     </div>
                     <div className="h-100 w-4/5 flex flex-col justify-between">
                         <Input image="src\assets\images\mail-icon.png" placeholder='E-mail' type='text'/>
-                        <Input placeholder='Usuário' type='text'/>
-                        <Input placeholder='Nome completo' type='text'/>
-                        <Input placeholder='Senha' type='password'/>
-                        <Input placeholder='Confirme sua senha' type='password'/>
+                        <Input image="src\assets\images\arroba-icon.png" placeholder='Usuário' type='text'/>
+                        <Input image="src\assets\images\person-white-icon.png" placeholder='Nome completo' type='text'/>
+                        <Input image="src\assets\images\lock-icon.png" placeholder='Senha' type='password'/>
+                        <Input image="src\assets\images\lock-icon.png" placeholder='Confirme sua senha' type='password'/>
                     </div>
                     <div className="h-20 flex flex-col gap-3">
                         <div className="flex justify-center">
-                            <Button text='Entre agora mesmo!' bgColor='bg-purple-pinguin' color='text-white'/>
+                            <Button text='Cadastre-se agora!' bgColor='bg-purple-pinguin' color='text-white'/>
                         </div>
-
-
-                        <p>Ainda não tem conta <a href="/cadastro" className="purple-pinguin underline">Entre aqui!</a></p>
-
+                        <p>Ainda não tem conta <a href="/login" className="purple-pinguin underline">Entre aqui!</a></p>
                     </div>
                 </div>
                 <div className="bg-purple-pinguin p-10 flex flex-col justify-center items-center text-center rounded-tr-md rounded-br-md gap-12 w-2/5">
