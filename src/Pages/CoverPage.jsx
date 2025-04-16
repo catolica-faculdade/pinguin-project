@@ -36,6 +36,9 @@ function CoverPage(){
                         </div>
                     </div>
                 </nav>
+                <div className="bg-[url('/src/assets/images/')] bg-cover bg-center h-64 w-full">
+
+                </div>
             </div>
     );
 }
