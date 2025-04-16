@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 
 import './index.css';
+import './home.css';
 
 //pages
 import Cadastro from './pages/Cadastro.jsx'
