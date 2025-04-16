@@ -1,33 +1,13 @@
+import React from 'react';
+import NavBar from '../components/NavBar';
+
 function Home() {
     // conversa com a api aqui
 
     return (
         // retorna no 'html' pela main aqui
         <section>
-            <section className="nav-bar-background">
-                <nav className="nav-bar">
-                    <div className="logo-nav-bar">
-                        <img src="src/assets/images/logo-pinguin-branco-fundo-cinza.svg" alt="Logo do PinguIn"/>
-                    </div>
-                    <div className="source-bar">
-                        <input type="text" name="barra-de-pesquisa" id="barra-de-pesquisa" placeholder="Pesquisar..."/>
-                    </div>
-                    <div className="nav-bar-buttons">
-                        <a href="./homepage.html" id="home-button">
-                            <img src="src/assets/images/home-icon.svg" alt="Ir para página inicial"/>
-                                <p>Início</p>
-                        </a>
-                        <a href="#" id="notifications-button">
-                            <img src="src/assets/images/notifications-icon.svg" alt="Ir para notificações"/>
-                                <p>Notificações</p>
-                        </a>
-                        <button id="user-options-button">
-                            <img className="user-picture" src="src/assets/images/profile-picture.svg" alt="Opções do usuário" />
-                            <img id="arrow-bottom" src="src/assets/images/seta-para-baixo.svg" alt="Opções do usuário" />
-                        </button>
-                    </div>
-                </nav>
-            </section>
+            <NavBar />
             <section id="principal-general-container">
                 <div className="sidebar-features left-features">
                     <div className="first-sidebar-division">
