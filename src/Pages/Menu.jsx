@@ -30,7 +30,7 @@ function Menu(){
                         </div>
                     </div>
                     <div className='flex flex-col sm:flex-row sm:justify-around justify-center items-center gap-2 sm:gap-30 max-w-180'>
-                        <div className='w-45'>
+                        <div className='w-46'>
                             <Button
                             border='border-solid gray-border border-1'
                             bold='font-semibold'
