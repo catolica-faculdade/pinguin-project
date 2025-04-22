@@ -37,4 +37,19 @@
     border-color: #adadad;
 }
 
+.bg-navbar{
+    background-color: #d9d9d9;
+}
+
+.bg-input-navbar{
+    background-color: #BFBFBF;
+}
+ 
+.bg-cube-gray-navbar{
+    background-color: #5F5F5F;
+}
+ 
+.bg-icon-user{
+    background-color: #C795E3;
+}
 @import 'tailwindcss';

@@ -3,29 +3,34 @@ import '../home.css';
 
 export default function NavBar() {
   return (
-    <section className="nav-bar-background">
-      <nav className="nav-bar">
-        <div className="logo-nav-bar">
-          <img src="src/assets/images/logo-pinguin-branco-fundo-cinza.svg" alt="Logo do PinguIn" />
-        </div>
-        <div className="source-bar">
-          <input type="text" id="barra-de-pesquisa" placeholder="Pesquisar..." />
-        </div>
-        <div className="nav-bar-buttons">
-          <a href="/homepage" id="home-button">
-            <img src="src/assets/images/home-icon.svg" alt="Início" />
-            <p>Início</p>
-          </a>
-          <a href="#" id="notifications-button">
-            <img src="src/assets/images/notifications-icon.svg" alt="Notificações" />
-            <p>Notificações</p>
-          </a>
-          <button id="user-options-button">
-            <img className="user-picture" src="src/assets/images/profile-picture.svg" alt="Usuário" />
-            <img id="arrow-bottom" src="src/assets/images/seta-para-baixo.svg" alt="Seta para baixo" />
-          </button>
-        </div>
-      </nav>
-    </section>
+    <nav className="flex justify-between bg-navbar p-1 items-center fixed w-full">
+      <div className="pl-[10px]">
+          <div className="w-[35px] h-[35px] bg-cube-gray-navbar rounded-[4px]">
+              <img src='src/assets/images/logo-pinguIn-branca.png'/>
+          </div>
+      </div>
+      <div className="pl-[15vh]">
+          <input className="bg-input-navbar rounded-[4px] pl-[10px] w-[40vh] text-black placeholder-black placeholder:font-sans "
+          placeholder="Pesquisar..." type="text" />
+      </div>
+      <div className="flex pr-[30px] items-center">
+          <div className="flex flex-col items-center">
+              <img className="w-[25px] pt-[4px]" src='src/assets/images/house-icon.png'/>
+              <a className="text-[15px]">Inicio</a>
+          </div>
+          <div className="flex flex-col items-center pl-[30px]">
+              <img className="w-[25px]" src='src/assets/images/notifications-icon.png'/>
+              <a className="text-[15px]">Notificação</a>
+          </div>
+          <div className="flex items-center pl-[20px]">
+              <div className="rounded-[50%] bg-icon-user p-[2px] items-center">
+                  <img className="w-[35px] min-w-[35px]" src='src/assets/images/user-icon-black.png'/>
+              </div>
+              <div>
+                  <img className="pl-[10px]" src='src/assets/images/down-arrow-icon.png'/>
+              </div>
+          </div>
+      </div>
+  </nav>
   );
 }
