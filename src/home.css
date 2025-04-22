@@ -166,7 +166,7 @@ button {
 .sidebar-features {
     min-width: min-content;
     width: 20%;
-    height: 90vh;
+    height: 92vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,14 +313,14 @@ button {
 .left-features {
     position: fixed;
     left: 0;
-    top: 10vh;
+    top: 58px;
     border-right: 1.5px solid #000000;
 }
 
 .right-features {
     position: fixed;
     right: 0;
-    top: 10vh;
+    top: 58px;
     border-left: 1.5px solid #000000;
 }
 
