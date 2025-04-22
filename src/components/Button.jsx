@@ -7,7 +7,7 @@ function Button({color, bgColor, text, border, bold, path}){
         <Link
         to={path} 
         className={`flex justify-center ${bgColor} ${color} ${border}
-        pt-2 pr-4 pb-2 pl-4 rounded-lg `}>
+        pt-3 pr-4 pb-3 pl-4 rounded-lg `}>
             <p className={`${bold}`}>{text}</p>
         </Link>
     );
