@@ -4,13 +4,16 @@ import Input from "../components/Input.jsx"
 
 
 function Cadastro(){
-
     return (
-        <section className="bg-login-pinguin flex h-screen w-screen justify-center items-center font-inter">
-            <div className="bg-form-login flex h-160 w-182 rounded-md border-1 stroke-color-pinguin">
-                <div className="p-10 flex flex-col items-center text-center w-3/5 gap-6">
+        <section className="bg-login-pinguin flex flex-col h-screen w-screen md:justify-center items-center font-inter">
+            <div className="md:hidden flex justify-center items-center h-60 w-full bg-purple-pinguin">
+                <img src="src\assets\images\logo-pinguIn-branca.png" className="h-30"/>
+            </div>
+            <div className="bg-form-login md:flex fixed h-160 md:w-182 top-1/6 rounded-md border-1 stroke-color-pinguin">
+                <div className="p-10 flex flex-col items-center text-center md:w-3/5 gap-6">
                     <div className="h-30 w-full flex items-center justify-center">
-                        <h2 className="text-3xl">Insira os dados da sua conta, por favor</h2>
+                        <h2 className="text-3xl hidden md:block">Insira os dados da sua conta, por favor</h2>
+                        <h2 className="text-3xl block md:hidden">Seja bem-vindo ao PinguIn</h2>
                     </div>
                     <div className="h-100 w-4/5 flex flex-col justify-between">
                         <Input image="src\assets\images\mail-icon.png" placeholder='E-mail' type='text'/>
@@ -26,8 +29,8 @@ function Cadastro(){
                         <p>Ainda não tem conta <a href="/login" className="purple-pinguin underline">Entre aqui!</a></p>
                     </div>
                 </div>
-                <div className="bg-purple-pinguin p-10 flex flex-col justify-center items-center text-center rounded-tr-md rounded-br-md gap-12 w-2/5">
-                    <div className="color-login-pinguin text-3xl">
+                <div className="bg-purple-pinguin md:p-10 md:flex flex-col justify-center items-center text-center rounded-tr-md rounded-br-md gap-12 w-2/5 hidden">
+                    <div className="color-login-pinguin text-3xl hidden md:block">
                         <h1>Cadastre-se e junte-se a nós hoje mesmo!</h1>
                     </div>
                     <div className="w-4/5">
