@@ -3,7 +3,7 @@ import '../home.css';
 
 export default function NavBar() {
   return (
-    <nav className="flex justify-between bg-navbar p-1 items-center fixed w-full border-b">
+    <nav className="flex justify-between bg-navbar p-1 items-center fixed w-full h-[8vh] border-b">
       <div className="pl-[10px]">
           <div className="w-[42px] h-[42px] bg-cube-gray-navbar rounded-[100px] p-[4px]">
               <img src='src/assets/images/logo-pinguIn-branca.png'/>
