@@ -10,7 +10,7 @@ export default function NavBar() {
           </div>
       </div>
       <div className="pl-[15vh]">
-          <input className="bg-input-navbar rounded-[4px] pl-[10px] w-[40vh] h-[28px] text-black placeholder-black"
+          <input className="bg-input-navbar rounded-[4px] pl-[10px] w-[40vh] h-[28px] color-text-search-bar outline-0"
           placeholder="Pesquisar..." type="text" />
       </div>
       <div className="flex pr-[30px] items-center">

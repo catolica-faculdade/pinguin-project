@@ -52,4 +52,9 @@
 .bg-icon-user{
     background-color: #C795E3;
 }
+
+.color-text-search-bar {
+    color: #414141;
+}
+
 @import 'tailwindcss';
