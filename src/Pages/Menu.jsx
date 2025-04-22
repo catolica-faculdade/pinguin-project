@@ -46,7 +46,8 @@ function Menu(){
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-32 bg-[url('/src/assets/images/mountains.png')] bg-no-repeat bg-top bg-cover"></div>
+                <div className="w-full h-32 bg-[url('/src/assets/images/mountains.png')] bg-no-repeat bg-top bg-cover lg:hidden"></div>
+                <div className="w-full h-32 bg-[url('/src/assets/images/mountains.png')] bg-no-repeat bg-top bg-[length:100%_240px] hidden lg:block"></div>
             </div>
         </div>
     );
