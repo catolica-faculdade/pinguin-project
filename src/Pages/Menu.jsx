@@ -38,7 +38,7 @@ function Menu(){
                             color='text-black'
                             text='Registre-se aqui!'/>
                         </div>
-                        <div className='w-45 z-20'>
+                        <div className='w-46 z-20'>
                             <Button
                             bgColor='bg-purple-pinguin'
                             color='text-white'
