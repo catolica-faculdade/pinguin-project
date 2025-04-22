@@ -11,6 +11,7 @@ import CoverPage from './pages/CoverPage.jsx'
 import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import Menu from './pages/Menu.jsx'
+import Profile from './pages/Profile.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,11 @@ const router = createBrowserRouter([
   {
     path: '/home',
     element: <Home/>
-  }
+  },
+  {
+    path: '/profile',
+    element: <Profile/>
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
