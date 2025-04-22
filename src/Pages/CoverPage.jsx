@@ -13,7 +13,7 @@ function CoverPage(){
                             <img src='src/assets/images/logo-pinguIn-branca.png'/>
                         </div>
                     </div>
-                    <div>
+                    <div className="pl-[200px]">
                         <input className="bg-input-navbar rounded-[4px] pl-[10px] w-[400px] text-black placeholder-black placeholder:font-sans " 
                          placeholder="Pesquisar..." type="text" />
                     </div>
@@ -36,8 +36,9 @@ function CoverPage(){
                         </div>
                     </div>
                 </nav>
-                <div className="bg-[url('/src/assets/images/')] bg-cover bg-center h-64 w-full">
-
+                <div className="bg-[url('/src/assets/images/background.png')] bg-cover h-[380px] w-[200px] bg-center h-64 w-full w "></div>
+                <div>
+                    
                 </div>
             </div>
     );
