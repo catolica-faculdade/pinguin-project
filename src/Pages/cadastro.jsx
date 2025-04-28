@@ -40,9 +40,9 @@ function Cadastro(){
                         <img src="src\assets\images\logo-pinguIn-branca.png" alt="logo da empresa"/>
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-center h-25 md:hidden">
-                    <p>Já tem conta?</p>
-                    <Link to="login" className="link-purple-pinguin underline font-bold">Entre aqui!</Link>
+                <div className="flex md:flex-col items-center justify-center h-25 md:hidden">
+                    <p className="block md:hidden">Já tem conta?</p>
+                    <Link to="/login" className="link-purple-pinguin underline font-bold mblock md:hidden">Entre aqui!</Link>
                 </div>
             </div>
         </section>
