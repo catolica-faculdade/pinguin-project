@@ -61,5 +61,9 @@
     color: #400960;
 }
 
+.bg-tab{
+    background-color: #BDBDBD;
+}
+
 
 @import 'tailwindcss';
