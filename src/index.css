@@ -65,5 +65,9 @@
     background-color: #BDBDBD;
 }
 
+.bg-purple-create-post{
+    background-color: #9770E2;
+}
+
 
 @import 'tailwindcss';
