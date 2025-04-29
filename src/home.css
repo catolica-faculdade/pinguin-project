@@ -16,7 +16,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #925ff0;
+    background-color: #400960;
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
@@ -132,35 +132,35 @@ button {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
 
-    .following-followers {
+.following-followers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    background-color: #BDBDBD;
+    border-radius: 20px;
+    padding: 2px 6px;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 0.8rem;
+
+    div {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 85%;
-        background-color: #BDBDBD;
-        border-radius: 20px;
-        padding: 2px 6px;
-        text-decoration: none;
-        color: #000000;
-        margin-top: 0.8rem;
-
-        div {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-
-            img {
-                width: 2.6rem;
-                margin-block: 3px;
-            }
-        }
-
-        .number-followers-following {
-            justify-self: end;
-            margin-right: 5px;
-        }
+        gap: 7px;
     }
+
+    .number-followers-following {
+        justify-self: end;
+        margin-right: 5px;
+    }
+}
+
+.img-icon-following-followers {
+    width: 2.6rem;
+    margin-block: 3px;
 }
 
 .sidebar-features {
@@ -197,6 +197,31 @@ button {
     }
 }
 
+@media (max-width: 1074px) {
+    .first-sidebar-division, .second-sidebar-division {
+        font-size: 0.8rem;
+        text-wrap: nowrap;
+        width: 90%;
+        margin-inline: 0;
+    }
+
+    .second-sidebar-division {
+        padding-right: 5px;
+    }
+
+    .img-icon-following-followers {
+        width: 2rem;
+    }
+
+    .following-followers {
+        width: 100%;
+    }
+
+    .streak-description-today {
+        font-size: 0.8rem;
+    }
+}
+
 .this-user-datas {
     display: flex;
     align-items: center;
@@ -223,6 +248,12 @@ button {
         width: 9rem;
         margin-top: 0.4rem;
         text-wrap: nowrap;
+        padding-inline: 0.4rem;
+
+        @media (max-width: 1074px) {
+            font-size: 0.8rem;
+            padding-inline: 0.5rem;
+        }
     }
 
     a {
@@ -296,7 +327,8 @@ button {
     gap: 1rem;
 }
 
-.div-post-likes, .div-post-comments {
+.div-post-likes,
+.div-post-comments {
     display: flex;
     align-items: center;
     gap: 0.1rem;
@@ -337,24 +369,30 @@ button {
 
 .streak-days-div {
     display: flex;
-    align-items: center;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     background-color: transparent;
     border: none;
     font-family: "Inter", sans-serif;
     padding: 0;
 
+    img {
+        width: 4rem;
+    }
+
     p {
         font-weight: 700;
         font-size: 1.6rem;
+
+        @media (max-width: 1074px) {
+            font-size: 1.3rem;
+        }
     }
 }
 
 .streak-description-today {
-    display: ruby;
-    text-wrap: wrap;
 
     button {
+        display: inline;
         background-color: transparent;
         border: none;
         font-family: "Inter", sans-serif;
@@ -365,10 +403,15 @@ button {
         padding: 0;
         margin-left: 0.2rem;
         text-wrap: nowrap;
+
+        @media (max-width: 1074px) {
+            font-size: 0.8rem;
+        }
     }
 }
 
 .streak-number {
+    display: inline;
     font-weight: 700;
     margin-left: 0.3rem;
 }
@@ -376,28 +419,29 @@ button {
 /*----------STREAK POP-UP-----------*/
 
 .streakPopup {
-    display: none; /* Escondido ao carregar a página */
+    display: none;
+    /* Escondido ao carregar a página */
     position: fixed;
     z-index: 999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-  }
-  
-  .popup-content {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
     background-color: #fff;
     margin: 15% auto;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-  
-  .closeStreakPopup {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.closeStreakPopup {
     float: right;
     font-size: 24px;
     cursor: pointer;
-  }
+}
