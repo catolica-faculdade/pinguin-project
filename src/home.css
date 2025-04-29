@@ -313,14 +313,14 @@ button {
 .left-features {
     position: fixed;
     left: 0;
-    top: 58px;
+    top: 8vh;
     border-right: 1.5px solid #000000;
 }
 
 .right-features {
     position: fixed;
     right: 0;
-    top: 58px;
+    top: 8vh;
     border-left: 1.5px solid #000000;
 }
 
