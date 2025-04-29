@@ -3,7 +3,7 @@ function Tab({text, number}){
         <div className="flex items-center pl-2 h-14 gap-2 bg-tab rounded-[18px] min-w-60">
             <div>
                 <img
-                className="w-12"
+                className="w-15"
                 src="/src/assets/images/followers-icon.svg"></img>
             </div>
             <div className="flex justify-between w-full pr-4">
