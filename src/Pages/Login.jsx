@@ -9,7 +9,7 @@ function Login(){
             <div className="md:hidden flex justify-center pt-5 h-60 w-full bg-purple-pinguin">
                 <img src="src\assets\images\logo-pinguIn-branca.png" className="h-30"/>
             </div>
-            <div className="bg-form-login md:flex md:relative fixed md:h-160 h-[50vh] md:w-182 w-90 md:max-w-[80vw] top-1/6 md:top-0 md:rounded-md rounded-xl border-1 stroke-color-pinguin">
+            <div className="bg-form-login md:flex md:relative fixed md:h-160 h-[50vh] md:w-182 w-90 md:max-w-[80vw] top-1/6 md:top-0 md:rounded-md rounded-xl border-1 stroke-color-pinguin shadow-2xl">
                 <div className="md:p-10 p-5 flex flex-col items-center text-center md:w-3/5 gap-6">
                     <div className="md:h-30 w-full flex items-center justify-center md:items-end">
                         <h2 className="text-3xl hidden md:block">Preencha seus dados, por gentileza</h2>
