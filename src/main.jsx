@@ -12,6 +12,7 @@ import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import Menu from './pages/Menu.jsx'
 import Profile from './pages/Profile.jsx'
+import Notificacoes from './pages/Notificacoes.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: '/profile',
     element: <Profile/>
+  },
+  {
+    path: '/notificacoes',
+    element: <Notificacoes/>
   },
 ])
 
