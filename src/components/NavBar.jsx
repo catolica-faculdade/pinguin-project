@@ -16,7 +16,7 @@ export default function NavBar() {
       <div className="flex pr-[30px] items-center">
           <div className="flex flex-col items-center">
               <img className="w-[25px] pt-[4px]" src='src/assets/images/house-icon.png'/>
-              <a className="text-[15px]">Inicio</a>
+              <a className="text-[15px]">Início</a>
           </div>
           <div className="flex flex-col items-center pl-[30px]">
               <img className="w-[25px]" src='src/assets/images/notifications-icon.png'/>

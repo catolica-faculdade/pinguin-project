@@ -13,14 +13,14 @@ function Home() {
                     <div className="first-sidebar-division">
                         <a className="following-followers" href="#">
                             <div>
-                                <img src="src/assets/images/followers-icon.svg" alt="Seguindo"/>
+                                <img className="img-icon-following-followers" src="src/assets/images/followers-icon.svg" alt="Seguindo"/>
                                     <p>Seguindo</p>
                             </div>
                             <p className="number-followers-following">100</p>
                         </a>
                         <a className="following-followers" href="#">
                             <div>
-                                <img src="src/assets/images/followers-icon.svg" alt="Seguidores"/>
+                                <img className="img-icon-following-followers" src="src/assets/images/followers-icon.svg" alt="Seguidores"/>
                                     <p>Seguidores</p>
                             </div>
                             <p className="number-followers-following">200</p>
