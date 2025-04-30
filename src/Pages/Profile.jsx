@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Tab from '../components/Tab';
 import MyUser from '../components/MyUser';
+import Streak from '../components/Streak';
 
 function Profile() {
     // conversa com a api aqui
@@ -32,8 +33,10 @@ function Profile() {
                 <div>
                     
                 </div>
-                <div>
-
+                <div className='flex flex-col gap-3 justify-between items-center pt-4 p-2 border-black border-l'>
+                    <div>
+                        <Streak/>
+                    </div>
                 </div>
             </section>
         </section>
