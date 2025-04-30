@@ -23,11 +23,11 @@ function Cadastro(){
                         </div>
                     </div>
                     <div className="h-100 w-4/5 flex flex-col justify-between items-center">
-                        <Input image="src\assets\images\mail-icon.png" placeholder='E-mail' type='text' size={50}/>
-                        <Input image="src\assets\images\arroba-icon.png" placeholder='Usuário' type='text' size={70}/>
-                        <Input image="src\assets\images\person-white-icon.png" placeholder='Nome completo' type='text' size={80}/>
-                        <Input image="src\assets\images\lock-icon.png" placeholder='Senha' type='password' size={60}/>
-                        <Input image="src\assets\images\lock-icon.png" placeholder='Confirme sua senha' type='password' size={60}/>
+                        <Input image="src\assets\images\mail-icon.png" placeholder='E-mail' type='text' Imgsize={50}/>
+                        <Input image="src\assets\images\arroba-icon.png" placeholder='Usuário' type='text' Imgsize={70}/>
+                        <Input image="src\assets\images\person-white-icon.png" placeholder='Nome completo' type='text' Imgsize={80}/>
+                        <Input image="src\assets\images\lock-icon.png" placeholder='Senha' type='password' Imgsize={60}/>
+                        <Input image="src\assets\images\lock-icon.png" placeholder='Confirme sua senha' type='password' Imgsize={60}/>
                     </div>
                     <div className="h-20 md:flex flex-col gap-3 hidden">
                         <div className="flex justify-center">
