@@ -15,15 +15,16 @@ function Profile() {
         // retorna no 'html' pela main aqui
         <section>
             <NavBar />
-            <section className='flex bg-user-icon pt-[10vh]'>
-                <div className='flex flex-col gap-3'> 
-                    <Tab 
-                    text="Following"
-                    number={following}/>
-                    <Tab 
-                    text="Followers"
-                    number={followers}/>
-
+            <section className='flex bg-user-icon pt-[8vh] h-dvh'>
+                <div className='flex flex-col gap-3 justify-between items-center pt-4 p-2 border-black border-r'> 
+                    <div className='flex flex-col gap-3'>
+                        <Tab 
+                        text="Following"
+                        number={following}/>
+                        <Tab 
+                        text="Followers"
+                        number={followers}/>
+                    </div>
                     <MyUser
                     username={username}
                     userFullname={userFullname}/>
