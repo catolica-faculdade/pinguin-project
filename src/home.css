@@ -36,96 +36,9 @@ button {
     cursor: pointer;
 }
 
-.nav-bar-background {
-    background-color: #D9D9D9;
-    border-bottom: 1px solid #000000;
-    min-height: 10%;
-    align-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px;
-}
-
-.logo-nav-bar {
-    position: fixed;
-    left: 20px;
-
-    img {
-        height: 3rem;
-        width: auto;
-    }
-}
-
-.nav-bar-buttons {
-    display: flex;
-    align-items: center;
-    font-size: 0.88rem;
-}
-
-#user-options-button {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-}
-
-.source-bar {
-    position: fixed;
-    left: 40%;
-    transform: translateX(-40%);
-    width: 30vw;
-}
-
-#barra-de-pesquisa {
-    width: 100%;
-    border: 0;
-    border-radius: 5px;
-    color: #414141;
-    background-color: #BFBFBF;
-    padding: 5px 8px;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    outline: none;
-}
-
-.nav-bar-buttons {
-    position: fixed;
-    left: 90%;
-    transform: translateX(-90%);
-    gap: 8%;
-}
-
-#home-button,
-#notifications-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #000000;
-}
-
-#notifications-button {
-    img {
-        height: 1.8rem;
-        margin-bottom: 3px;
-        margin-top: 0.76px;
-    }
-}
-
-#user-options-button {
-    gap: 8px;
-
-    .user-picture {
-        width: 3rem;
-    }
+.user-picture {
+    width: 3rem;
+    margin-block: 5px;
 }
 
 #principal-general-container {
@@ -198,15 +111,13 @@ button {
 }
 
 @media (max-width: 1074px) {
-    .first-sidebar-division, .second-sidebar-division {
+
+    .first-sidebar-division,
+    .second-sidebar-division {
         font-size: 0.8rem;
         text-wrap: nowrap;
         width: 90%;
         margin-inline: 0;
-    }
-
-    .second-sidebar-division {
-        padding-right: 5px;
     }
 
     .img-icon-following-followers {
@@ -217,8 +128,8 @@ button {
         width: 100%;
     }
 
-    .streak-description-today {
-        font-size: 0.8rem;
+    .user-picture {
+        width: 2rem;
     }
 }
 
@@ -227,14 +138,14 @@ button {
     align-items: center;
     gap: 8px;
 
-    img {
-        width: 3rem;
-        margin-block: 5px;
+    div {
+        margin-right: 0.2rem;
     }
 }
 
 #div-create-post-show-profile {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
@@ -262,6 +173,21 @@ button {
         margin-inline: 5px;
         margin-top: 0.4rem;
         text-wrap: nowrap;
+    }
+}
+
+@media (max-width: 900px) {
+    #div-create-post-show-profile {
+        flex-direction: column;
+    }
+
+    .user-picture {
+        width: 2rem;
+    }
+
+    .second-sidebar-division {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -356,6 +282,8 @@ button {
     border-left: 1.5px solid #000000;
 }
 
+/*----------- STREAK CARD -------------*/
+
 .streak-card {
     background-color: #D9D9D9;
     border-radius: 20px;
@@ -390,6 +318,13 @@ button {
 }
 
 .streak-description-today {
+    @media (min-width: 955px) and (max-width: 1074px) {
+        font-size: 0.8rem;
+    }
+
+    @media (max-width: 955px) {
+        font-size: 0.7rem;
+    }
 
     button {
         display: inline;
@@ -404,8 +339,12 @@ button {
         margin-left: 0.2rem;
         text-wrap: nowrap;
 
-        @media (max-width: 1074px) {
+        @media (min-width: 955px) and (max-width: 1074px) {
             font-size: 0.8rem;
+        }
+
+        @media (max-width: 955px) {
+            font-size: 0.7rem;
         }
     }
 }
