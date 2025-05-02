@@ -3,7 +3,7 @@ function Streak(){
     const streak = 0;
 
     return(
-        <div className="flex justify-center items-center bg-navbar rounded-[18px] max-w-72 p-2 gap-2
+        <div className="flex justify-center items-center bg-navbar rounded-[18px] max-w-75 p-2 gap-2
         border-1 border-gray-700 shadow-2xl">
             <div className="flex items-center pt-2 pointer-events-none select-none">
                 <img className="w-25" src="/src/assets/images/streak-0-days.svg"></img>
