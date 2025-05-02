@@ -12,7 +12,7 @@ function Profile() {
             <NavBar />
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
             <LeftMenu/>
-                <div>
+                <div className='w-2/3'>
                     
                 </div>
             <RightMenu/>
