@@ -24,7 +24,7 @@ function Profile() {
                                     <img className='w-full' src='/src/assets/images/profile-picture.svg'></img>
                                 </div>
                                 <div className='flex flex-col justify-start'>
-                                    <div className='flex items-center'>
+                                    <div className='flex items-center pr-8'>
                                         <p>{username}</p>
                                         <img className='w-8' src='/src/assets/images/streak-0-days.svg'></img>
                                         <p className='font-bold'>{streak}</p>
@@ -32,11 +32,14 @@ function Profile() {
                                     <p>{userFullname}</p>
                                 </div>
                             </div>
-                            <div className='flex gap-x-4 m-1 items-start'>
+                            <div className='flex gap-x-4 items-start'>
                                 <div>
-                                    <a className='bg-navbar flex p-1 pl-6 pr-6 border-2 border-gray-600 rounded-xl hover:cursor-pointer'><p>Editar perfil</p></a>
+                                    <a className='bg-navbar flex w-36 justify-center p-1 border-2 border-gray-600 rounded-xl
+                                    hover:cursor-pointer'>
+                                        <p>Editar perfil</p>
+                                    </a>
                                 </div>
-                                <div>
+                                <div className='w-8'>
                                     <img src='src/assets/images/configs-icon.svg'></img>
                                 </div>
                             </div>
