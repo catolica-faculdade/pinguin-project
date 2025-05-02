@@ -34,7 +34,7 @@ function Profile() {
                             </div>
                             <div className='flex gap-x-4 m-1 items-start'>
                                 <div>
-                                    <a className='bg-navbar flex p-1 pl-6 pr-6 border-2 border-gray-600 rounded-xl'><p>Editar perfil</p></a>
+                                    <a className='bg-navbar flex p-1 pl-6 pr-6 border-2 border-gray-600 rounded-xl hover:cursor-pointer'><p>Editar perfil</p></a>
                                 </div>
                                 <div>
                                     <img src='src/assets/images/configs-icon.svg'></img>
