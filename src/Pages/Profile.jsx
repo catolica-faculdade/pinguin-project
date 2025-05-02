@@ -4,7 +4,11 @@ import LeftMenu from '../components/LeftMenu';
 import RightMenu from '../components/RightMenu';
 
 function Profile() {
-    // conversa com a api aqui
+
+    const username = '@gfloriano';
+    const userFullname = 'Gustavo Floriano';
+    const streak = 0;
+
 
     return (
         // retorna no 'html' pela main aqui
@@ -12,8 +16,35 @@ function Profile() {
             <NavBar />
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
             <LeftMenu/>
-                <div className='w-2/3'>
-                    
+                <div className='w-2/3 p-7'>
+                    <div className='user-header'>
+                        <div className='flex justify-between'>
+                            <div className='flex items-center gap-3'>
+                                <div className='pointer-events-none select-none w-18'>
+                                    <img className='w-full' src='/src/assets/images/profile-picture.svg'></img>
+                                </div>
+                                <div className='flex flex-col justify-start'>
+                                    <div className='flex items-center'>
+                                        <p>{username}</p>
+                                        <img className='w-8' src='/src/assets/images/streak-0-days.svg'></img>
+                                        <p className='font-bold'>{streak}</p>
+                                    </div>
+                                    <p>{userFullname}</p>
+                                </div>
+                            </div>
+                            <div className='flex gap-x-4 m-1 items-start'>
+                                <div>
+                                    <a className='bg-navbar flex p-1 pl-6 pr-6 border-2 border-gray-600 rounded-xl'><p>Editar perfil</p></a>
+                                </div>
+                                <div>
+                                    <img src='src/assets/images/configs-icon.svg'></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='posts'>
+
+                    </div>
                 </div>
             <RightMenu/>
             </section>
