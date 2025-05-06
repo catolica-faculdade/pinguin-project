@@ -111,10 +111,16 @@ button {
 }
 
 @media (max-width: 1074px) {
+    #principal-general-container {
+        font-size: 0.8rem;
+    }
+
+    #home-main {
+        margin-left: 30%;
+    }
 
     .first-sidebar-division,
     .second-sidebar-division {
-        font-size: 0.8rem;
         text-wrap: nowrap;
         width: 90%;
         margin-inline: 0;
@@ -192,7 +198,7 @@ button {
 }
 
 #home-main {
-    width: 50%;
+    width: 55%;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -260,7 +266,11 @@ button {
     gap: 0.1rem;
 
     img {
-        width: 1.8rem;
+        width: 1.7rem;
+        
+        @media (min-width: 955px) and (max-width: 1074px) {
+            width: 1.5rem;
+        }
     }
 
     button {
