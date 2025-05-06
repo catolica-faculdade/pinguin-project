@@ -6,13 +6,13 @@ import './index.css';
 import './home.css';
 
 //pages
-import Cadastro from './pages/Cadastro.jsx'
+import Register from './pages/Register.jsx'
 import CoverPage from './pages/CoverPage.jsx'
 import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import Menu from './pages/Menu.jsx'
 import Profile from './pages/Profile.jsx'
-import Notificacoes from './pages/Notificacoes.jsx';
+import Notifications from './pages/Notifications.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
     element: <Menu/>
   },
   {
-    path: '/cadastro',
-    element: <Cadastro />
+    path: '/register',
+    element: <Register />
   },
   {
     path: '/login',
@@ -44,8 +44,8 @@ const router = createBrowserRouter([
     element: <Profile/>
   },
   {
-    path: '/notificacoes',
-    element: <Notificacoes/>
+    path: '/notifications',
+    element: <Notifications/>
   },
 ])
 

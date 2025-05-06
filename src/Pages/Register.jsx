@@ -3,7 +3,7 @@ import Input from "../components/Input.jsx"
 import { Link } from "react-router-dom";
 
 
-function Cadastro(){
+function Register(){
     return (
         <section className="bg-login-pinguin flex flex-col md:flex-row gap-5 h-dvh w-screen md:justify-center items-center font-inter">
             <div className="md:overflow-hidden md:hidden flex justify-center pt-5 h-60 w-full bg-purple-pinguin">
@@ -56,4 +56,4 @@ function Cadastro(){
     );
 }
 
-export default Cadastro;
+export default Register;
