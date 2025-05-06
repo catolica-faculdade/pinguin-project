@@ -19,7 +19,7 @@ function MyUser({username, userFullname}){
             </div>
             <div className="flex gap-3">
                 <div className="bg-purple-create-post pl-2 pr-2 rounded-2xl">
-                    <p>Criar Publicação</p>
+                    <button>Criar publicação</button>
                 </div>
                 <div>
                     <p>Ver Perfil</p>
