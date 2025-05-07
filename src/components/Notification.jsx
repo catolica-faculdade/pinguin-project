@@ -12,12 +12,12 @@ function Notification({userImage, nome, tipo, post, data, hora}){
     return(
         <div className="flex justify-center items-center pt-2">
             <div className="flex bg-navbar border border-black w-[90%] rounded-[10px] h-22 items-center p-2 pl-5 relative">
-                <div className="w-[5%]">
-                    <img src={userImage} alt="user icon" />
+                <div className="min-w-[5%]">
+                    <img src={userImage} alt="user icon" className="min-w-13"/>
                 </div>
                 {(
-                    <div className="absolute top-12 left-12">
-                        <img src={src} alt={src} className="h-4"/>
+                    <div className="absolute top-13 left-15">
+                        <img src={src} alt={src} className="h-5 w-5"/>
                     </div>
                 )}
                 <div className="flex flex-col justify-center pl-5 w-[85%]">
