@@ -104,6 +104,7 @@ function Home() {
                     <p>Esse é um pop-up com classNamees.</p>
                 </div>
             </div>
+            <NavBarMobile />
 
             <script src="../scripts/general.js"></script>
         </section>

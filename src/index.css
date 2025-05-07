@@ -66,7 +66,11 @@
 }
 
 .bg-purple-create-post{
-    background-color: #9770E2;
+    background-color: #C795E3;
+}
+
+.top-shadow-nav-bar-mobile {
+    box-shadow: 8px rgb(39, 39, 39); 
 }
 
 
