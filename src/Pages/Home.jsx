@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
+import NavBarMobile from '../components/NavBarMobile';
 
 function Home() {
     // conversa com a api aqui
