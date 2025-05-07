@@ -2,7 +2,8 @@
 
 
 @theme{
-    --font-inter: 'Inter'; 
+    --font-inter: 'Inter';
+    --breakpoint-xmd: 50rem;
 }
 
 .bg-purple-pinguin{
@@ -66,7 +67,11 @@
 }
 
 .bg-purple-create-post{
-    background-color: #9770E2;
+    background-color: #C795E3;
+}
+
+.top-shadow-nav-bar-mobile {
+    box-shadow: 8px rgb(39, 39, 39); 
 }
 
 .border-filter{
