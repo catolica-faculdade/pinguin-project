@@ -1,6 +1,6 @@
 function Tab({text, number}){
     return(
-        <div className="flex items-center pl-2 h-14 gap-2 bg-tab rounded-[18px] min-w-60">
+        <div className="relative flex items-center pl-2 h-14 gap-2 bg-tab rounded-[18px] w-full max-w-60">
             <div>
                 <img
                 className="w-15"
@@ -10,7 +10,10 @@ function Tab({text, number}){
                 <div className="flex items-center">
                     <p>{text}</p>
                 </div>
-                <div>
+                <div className="hidden xmd:block">
+                    <p>{number}</p>
+                </div>
+                <div className="block absolute text-sm text-center xmd:hidden -top-2 -right-1 bg-purple-400 p-0.5 rounded-2xl min-w-6">
                     <p>{number}</p>
                 </div>
             </div>
