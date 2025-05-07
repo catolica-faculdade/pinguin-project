@@ -10,7 +10,7 @@ function LeftMenu(){
 
 
     return(
-        <div className='w-1/3 flex flex-col gap-3 justify-between items-center pt-4 p-2 border-black border-r'> 
+        <div className='w-[20%] flex flex-col gap-3 justify-between items-center pt-4 p-2 border-black border-r'> 
             <div className='flex flex-col items-center gap-3 w-full'>
                 <Tab 
                 text="Following"
