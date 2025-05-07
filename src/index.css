@@ -69,5 +69,9 @@
     background-color: #9770E2;
 }
 
+.border-filter{
+    border-width: 1px;
+    border-color: #9D9D9D9D;
+}
 
 @import 'tailwindcss';
