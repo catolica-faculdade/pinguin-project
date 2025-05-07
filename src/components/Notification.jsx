@@ -16,7 +16,7 @@ function Notification({userImage, nome, tipo, post, data, hora}){
                     <img src={userImage} alt="user icon" />
                 </div>
                 {(
-                    <div className="absolute top-14 left-15">
+                    <div className="absolute top-12 left-12">
                         <img src={src} alt={src} className="h-4"/>
                     </div>
                 )}
