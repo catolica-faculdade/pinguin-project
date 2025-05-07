@@ -7,9 +7,9 @@ function CoverPage(){
         // retorna no 'html' pela main aqui
 
             <div>
-                <nav className="flex justify-between bg-navbar p-1 items-center">
+                <nav className="md:flex justify-between bg-navbar p-1 items-center hidden">
                     <div className="pl-[10px]">
-                        <div className="w-[35px] h-[35px] bg-cube-gray-navbar rounded-[4px]">
+                        <div className="w-[35px] h-[35px] bg-cube-gray-navbar rounded-[4px] md:">
                             <img src='src/assets/images/logo-pinguIn-branca.png'/>
                         </div>
                     </div>
@@ -36,20 +36,20 @@ function CoverPage(){
                         </div>
                     </div>
                 </nav>
-                <div className="bg-[url('/src/assets/images/background.png')] bg-cover h-[380px] w-[200px] bg-center h-64 w-full w "></div>
-                <div className="m-[40px] flex items-center">
-                    <img className="w-auto h-[150px]" src="/src/assets/images/logo-pinguIn-roxo.png"/>
-                    <p className="pl-[20px] text-[40px]">Saiba mais sobre o</p>
-                    <div className="flex text-[40px]">
-                        <p className="pl-[13px]">Pingu</p>
+                <div className="bg-[url('/src/assets/images/background.png')] bg-cover h-[150px] w-[auto] md:bg-cover md:h-[380px] md:w-[auto] bg-center h-64 w-full w "></div>
+                <div className="md:m-[40px] mt-[20px] flex items-center">
+                    <img className="ml-[20px] w-auto h-[70px] md:w-auto md:h-[150px]" src="/src/assets/images/logo-pinguIn-roxo.png"/>
+                    <p className="pl-[20px] text-[22px] md:text-[40px]">Saiba mais sobre o</p>
+                    <div className="flex text-[22px] md:text-[40px]">
+                        <p className="pl-[7px]">Pingu</p>
                         <p className="text-[#854DA6] font-bold">In</p>
                     </div>
                 </div>
-                <div className="m-[50px]">
+                <div className="m-[30px] md:m-[50px]">
                     <div>
-                        <p className="text-[30px] font-bold">Sobre o projeto</p>
+                        <p className="text-[20px] font-bold md:text-[30px] md:font-bold">Sobre o projeto</p>
                         <br/>
-                        <div className="ml-[25px] text-[20px]">
+                        <div className="ml-[10px] md:text-[20px] text-[17px]">
                             <a>Este projeto foi desenvolvido por um grupo de estudantes universitários 
                                 como parte das atividades da disciplina ministrada pelo professor
                                  Claudinei Dias. A proposta consistiu na criação de uma interface 
@@ -71,30 +71,46 @@ function CoverPage(){
                 <div>
                     <br />
                     <br />
-                    <p className="text-[30px] font-bold">Nosso time de desenvolvedores</p>
+                    <p className="text-[20px] md:text-[30px] font-bold">Nosso time de desenvolvedores</p>
                     <br />
                     <br />
                     <div className="flex justify-evenly">
                         <div className="flex flex-col justify-center items-center">
-                            <img src="/src/assets/images/gustavo.png"/>
-                            <p className="text-[20px]"  >Gustavo Floriano</p>
+                            <img className="md:w-[300px] md:max-h-[auto] max-w-[120px] max-h-[auto]" src="/src/assets/images/gustavo.png"/>
+                            <p className="text-[14px] md:text-[20px]">Gustavo Floriano</p>
                         </div>
                         <div className="flex flex-col justify-center items-center">
-                            <img src="/src/assets/images/johann.png"/>
-                            <p className="text-[20px]">Johann Ruth</p>
+                            <img className="md:w-[300px] md:max-h-[auto] max-w-[120px] max-h-[auto]" src="/src/assets/images/johann.png"/>
+                            <p className="text-[14px] md:text-[20px]">Johann Ruth</p>
                         </div>
                         <div className="flex flex-col justify-center items-center">
-                            <img src="/src/assets/images/joao.png"/>
-                            <p className="text-[20px]">João Constantino</p>
+                            <img className="max-w-[120px] max-h-[auto] md:w-[300px] md:max-h-[auto]" src="/src/assets/images/joao.png"/>
+                            <p className="text-[14px] md:text-[20px]">João Constantino</p>
                         </div>
-                        <div className="flex flex-col justify-center items-center">
-                            <img src="/src/assets/images/vitor.png"/>
-                            <p className="text-[20px]">Vitor Hugo da Cunha</p>
+                        <div className="md:flex flex-col justify-center items-center hidden">
+                            <img className="md:w-[300px] md:max-h-[auto] max-w-[120px] max-h-[auto]" src="/src/assets/images/vitor.png"/>
+                            <p className="text-[14px] md:text-[20px]">Vitor Hugo da Cunha</p>
+                        </div>
+                        <div className="md:flex flex-col justify-center items-center hidden">
+                            <img className="md:w-[300px] md:max-h-[auto] max-w-[120px] max-h-[auto] rounded-[50%]" src="/src/assets/images/gabriel.png"/>
+                            <p className="text-[14px] md:text-[20px]">Gabriel Bosco</p>
+                        </div>
+                    </div>
+                    <div className="flex justify-evenly mt-[10px]">
+                        <div className="flex flex-col justify-center items-center md:hidden">
+                            <img className="max-w-[120px] max-h-[auto]" src="/src/assets/images/vitor.png"/>
+                            <p className="text-[14px] md:text-[20px]">Vitor Hugo da Cunha</p>
+                        </div>
+
+                        <div className="flex flex-col justify-center items-center md:hidden">
+                            <img className="max-w-[120px] max-h-[auto] rounded-[50%]" src="/src/assets/images/gabriel.png"/>
+                            <p className="text-[14px] md:text-[20px]">Gabriel Bosco</p>
                         </div>
                     </div>
                 </div>
                 </div>
             </div>
+
     );
 }
 
