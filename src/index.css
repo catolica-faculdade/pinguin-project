@@ -2,7 +2,8 @@
 
 
 @theme{
-    --font-inter: 'Inter'; 
+    --font-inter: 'Inter';
+    --breakpoint-xmd: 50rem;
 }
 
 .bg-purple-pinguin{
