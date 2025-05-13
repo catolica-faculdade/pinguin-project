@@ -16,7 +16,7 @@ function Profile() {
             <NavBar />
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
             <LeftMenu/>
-            <div className='w-2/3 p-7'>
+            <div className='w-full md:w-2/3 p-7'>
                 <div className='user-header'>
                     <div className='flex justify-between'>
                         <div className='flex items-center gap-3'>
