@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import NavBarMobile from '../components/NavBarMobile';
+import TopNavMobile from '../components/TopNavMobile';
 
 function Home() {
     // conversa com a api aqui
@@ -9,6 +10,7 @@ function Home() {
         // retorna no 'html' pela main aqui
         <section>
             <NavBar />
+            <TopNavMobile />
             <section id="principal-general-container">
                 <div className="sidebar-features left-features">
                     <div className="first-sidebar-division">
@@ -104,6 +106,7 @@ function Home() {
                     <p>Esse é um pop-up com classNamees.</p>
                 </div>
             </div>
+            <NavBarMobile />
 
             <script src="../scripts/general.js"></script>
         </section>
