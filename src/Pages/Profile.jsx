@@ -21,7 +21,7 @@ function Profile() {
             <NavBar />
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
             <LeftMenu/>
-            <div className='w-full md:w-3/5 p-7 flex flex-col gap-6'>
+            <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
                 <div className='flex flex-col gap-3'>
                     <div className='flex justify-between'>
                         <div className='flex items-center gap-3'>
@@ -54,6 +54,9 @@ function Profile() {
                         <div className='flex gap-1'> <p className='font-bold'>{user.followers}</p> <p>Followers</p> </div>
                         <div className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </div>
                     </div>
+                </div>
+                <div className='posts flex justify-center'>
+                    <Post user={user}/>
                 </div>
                 <div className='posts flex justify-center'>
                     <Post user={user}/>
