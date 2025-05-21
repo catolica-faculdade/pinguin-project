@@ -17,8 +17,8 @@ function MyUser({username, userFullname}){
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col xmd:flex-row justify-center gap-3">
-                <div className="flex bg-purple-create-post pl-2 pr-2 rounded-2xl">
+            <div className="flex items-center flex-col xmd:flex-row justify-center gap-3">
+                <div className="flex bg-purple-create-post pl-2 pr-2 py-[3px] rounded-2xl">
                     <button>Criar publicação</button>
                 </div>
                 <div className="flex justify-center">
