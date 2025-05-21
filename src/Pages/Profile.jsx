@@ -2,16 +2,18 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import LeftMenu from '../components/LeftMenu';
 import RightMenu from '../components/RightMenu';
+import Post from '../components/Post';
 
 function Profile() {
 
-    const username = '@gfloriano';
-    const userFullname = 'Gustavo Floriano';
-    const streak = 0;
-    const postsNumber = 10;
-    const followers = 19;
-    const following = 23;
-
+    const user = {
+        username: '@gfloriano',
+        userFullname: 'Gustavo Floriano',
+        streak: 0,
+        postsNumber: 10,
+        followers: 19,
+        following: 23
+    }
 
     return (
         // retorna no 'html' pela main aqui
@@ -19,7 +21,7 @@ function Profile() {
             <NavBar />
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
             <LeftMenu/>
-            <div className='w-full md:w-2/3 p-7'>
+            <div className='w-full md:w-3/5 p-7 flex flex-col gap-6'>
                 <div className='flex flex-col gap-3'>
                     <div className='flex justify-between'>
                         <div className='flex items-center gap-3'>
@@ -28,11 +30,11 @@ function Profile() {
                             </div>
                             <div className='flex flex-col justify-start'>
                                 <div className='flex items-center pr-8'>
-                                    <p>{username}</p>
+                                    <p>{user.username}</p>
                                     <img className='w-8' src='/src/assets/images/streak-0-days.svg'></img>
-                                    <p className='font-bold'>{streak}</p>
+                                    <p className='font-bold'>{user.streak}</p>
                                 </div>
-                                <p>{userFullname}</p>
+                                <p>{user.userFullname}</p>
                             </div>
                         </div>
                         <div className='flex gap-x-4 items-start'>
@@ -48,13 +50,13 @@ function Profile() {
                         </div>
                     </div>
                     <div className='flex gap-3'>
-                        <div className='flex gap-1'> <p className='font-bold'>{postsNumber}</p> <p>Posts</p> </div>
-                        <div className='flex gap-1'> <p className='font-bold'>{followers}</p> <p>Followers</p> </div>
-                        <div className='flex gap-1'> <p className='font-bold'>{following}</p> <p>Following</p> </div>
+                        <div className='flex gap-1'> <p className='font-bold'>{user.postsNumber}</p> <p>Posts</p> </div>
+                        <div className='flex gap-1'> <p className='font-bold'>{user.followers}</p> <p>Followers</p> </div>
+                        <div className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </div>
                     </div>
                 </div>
-                <div className='posts'>
-
+                <div className='posts flex justify-center'>
+                    <Post user={user}/>
                 </div>
             </div>
             <RightMenu/>
