@@ -13,7 +13,7 @@ function Post({user}){
                         <p>{user.userFullname}</p>
                     </div>
                 </div>
-                <div>
+                <div className="cursor-pointer">
                     <img src="/src/assets/images/post-options-icon.svg"></img>
                 </div>
             </div>
