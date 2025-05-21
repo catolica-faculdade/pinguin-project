@@ -8,8 +8,8 @@ export default function NavBar() {
                     <img src='src/assets/images/logo-pinguIn-branca.png' />
                 </div>
             </div>
-            <div className="pl-[15vh]">
-                <input className="bg-input-navbar rounded-[4px] pl-[10px] w-[40vh] h-[28px] color-text-search-bar outline-0"
+            <div className="pl-[15vw] md:max-xl:pl-[3vw]">
+                <input className="bg-input-navbar rounded-[4px] pl-[10px] w-[40vh] md:max-xl:w-[39vw] h-[28px] color-text-search-bar outline-0"
                     placeholder="Pesquisar..." type="text" />
             </div>
             <div className="flex pr-[30px] items-center">
