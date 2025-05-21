@@ -22,6 +22,7 @@ function Home() {
         // retorna no 'html' pela main aqui
         <section>
             <NavBar />
+            <TopNavMobile />
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
                 <LeftMenu />
                 <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
@@ -34,6 +35,7 @@ function Home() {
                 </div>
                 <RightMenu />
             </section>
+            <NavBarMobile />
         </section>
     );
 };
