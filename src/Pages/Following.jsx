@@ -4,9 +4,9 @@ import RightMenu from "../components/RightMenu";
 function Following(){
 
     return (
-        <div>
+        <div className="flex">
             <LeftMenu/>
-            <div>
+            <div className="w-full">
                 <p>oi</p>
             </div>
             <RightMenu/>
