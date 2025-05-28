@@ -32,7 +32,7 @@ function Following(){
                 <LeftMenu/>
                 <div className="w-full md:w-3/5 flex flex-col overflow-y-scroll">
                     {following.map((user) => (
-                        <FollowTab user={user}/>
+                        <FollowTab user={user} text="Seguindo" color="bg-following-button"/>
                     ))}
                 </div>
                 <RightMenu/>

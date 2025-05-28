@@ -1,6 +1,6 @@
 import FollowActions from "./FollowActions";
 
-function FollowTab({user}){
+function FollowTab({user, text, color}){
     return(
         <div className="w-full bg-navbar flex justify-between p-4 border-b-gray-800 border">
             <div className="flex items-center gap-3">
@@ -12,8 +12,8 @@ function FollowTab({user}){
                     <a href={user.username}>{user.fullname}</a>
                 </div>
             </div>
-            <FollowActions color="bg-following-button"
-            text="Seguindo"/>
+            <FollowActions color={color}
+            text={text}/>
         </div>
     );
 }
