@@ -2,6 +2,7 @@ import { useState } from "react";
 import LeftMenu from "../components/LeftMenu";
 import RightMenu from "../components/RightMenu";
 import FollowTab from "../components/FollowTab";
+import NavBar from "../components/NavBar";
 
 function Following(){
 
@@ -25,17 +26,18 @@ function Following(){
     ];
 
     return (
-        <div className="flex">
-            <LeftMenu/>
-            <div className="w-full md:w-3/5 flex flex-col overflow-y-scroll">
-                {/* <p>oi</p> */}
-                {following.map((user) => (
-                    // <p>oi</p>
-                    <FollowTab user={user}/>
-                ))}
-            </div>
-            <RightMenu/>
-        </div>
+        <section>
+            <NavBar/>
+            <section className="flex bg-user-icon h-dvh pt-[8vh]">
+                <LeftMenu/>
+                <div className="w-full md:w-3/5 flex flex-col">
+                    {following.map((user) => (
+                        <FollowTab user={user}/>
+                    ))}
+                </div>
+                <RightMenu/>
+            </section>
+        </section>
     )
 }
 
