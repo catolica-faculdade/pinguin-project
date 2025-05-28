@@ -19,6 +19,46 @@ function Following(){
             username: 'vh',
             fullname: 'Vitor Hugo da Cunha',
         },
+                {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },
+                {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },
+                {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },
+                {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },        {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },        {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },        {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },        {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },        {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },        {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },        {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },        {
+            username: 'vh',
+            fullname: 'Vitor Hugo da Cunha',
+        },
         {
             username: 'gabbosco',
             fullname: 'Gabriel Bosco',
@@ -30,7 +70,7 @@ function Following(){
             <NavBar/>
             <section className="flex bg-user-icon h-dvh pt-[8vh]">
                 <LeftMenu/>
-                <div className="w-full md:w-3/5 flex flex-col">
+                <div className="w-full md:w-3/5 flex flex-col overflow-y-scroll">
                     {following.map((user) => (
                         <FollowTab user={user}/>
                     ))}
