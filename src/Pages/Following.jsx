@@ -19,46 +19,6 @@ function Following(){
             username: 'vh',
             fullname: 'Vitor Hugo da Cunha',
         },
-                {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },
-                {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },
-                {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },
-                {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },        {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },        {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },        {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },        {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },        {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },        {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },        {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },        {
-            username: 'vh',
-            fullname: 'Vitor Hugo da Cunha',
-        },
         {
             username: 'gabbosco',
             fullname: 'Gabriel Bosco',
