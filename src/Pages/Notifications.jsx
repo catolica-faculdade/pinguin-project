@@ -12,7 +12,7 @@ function Notifications(){
             <NavBar/>
             <section className="flex h-dvh pt-[8vh] shadow-">
                 <LeftMenu/>
-                <div className="w-2/3">
+                <div className="w-full md:w-3/5">
                     <TitleBar />
                     <Filters/>
                     {notifications.map((notification) =>(
