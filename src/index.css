@@ -79,4 +79,8 @@
     border-color: #9D9D9D9D;
 }
 
+.bg-modal-red{
+    background-color: #CB3234;
+}
+
 @import 'tailwindcss';
