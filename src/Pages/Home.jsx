@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+
+//components
 import NavBar from '../components/NavBar';
 import NavBarMobile from '../components/NavBarMobile';
 import TopNavMobile from '../components/TopNavMobile';
 import LeftMenu from '../components/LeftMenu';
 import RightMenu from '../components/RightMenu';
 import Post from '../components/Post';
+
+
+
+
+
 
 function Home() {
     // conversa com a api aqui
