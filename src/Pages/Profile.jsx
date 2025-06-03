@@ -40,10 +40,10 @@ function Profile() {
                         </div>
                         <div className='flex gap-x-4 items-start'>
                             <div>
-                                <a className='hidden md:flex bg-navbar w-36 justify-center p-1 border-2 border-gray-600 rounded-xl
+                                <button className='hidden md:flex bg-navbar w-36 justify-center p-1 border-2 border-gray-600 rounded-xl
                                 hover:cursor-pointer'>
                                     <p>Editar perfil</p>
-                                </a>
+                                </button>
                             </div>
                             <Link to="/settings" className='w-8 cursor-pointer'>
                                 <img src='src/assets/images/configs-icon.svg'></img>
