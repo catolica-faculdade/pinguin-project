@@ -45,9 +45,9 @@ function Profile() {
                                     <p>Editar perfil</p>
                                 </a>
                             </div>
-                            <div className='w-8'>
+                            <Link to="/settings" className='w-8 cursor-pointer'>
                                 <img src='src/assets/images/configs-icon.svg'></img>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                     <div className='flex gap-3'>
