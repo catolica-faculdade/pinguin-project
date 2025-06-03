@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import FollowActions from "./FollowActions";
 
-function FollowTab({user, text, color}){
+function FollowTab({user, text, color, onClick}){
     return(
         <div className="w-full bg-navbar flex justify-between p-4 border-b-gray-800 border">
             <div className="flex items-center gap-3">
@@ -14,7 +14,7 @@ function FollowTab({user, text, color}){
                 </div>
             </div>
             <FollowActions color={color}
-            text={text}/>
+            text={text} onClick={onClick}/>
         </div>
     );
 }
