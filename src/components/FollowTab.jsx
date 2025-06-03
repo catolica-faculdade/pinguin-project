@@ -5,7 +5,7 @@ function FollowTab({user, text, color}){
         <div className="w-full bg-navbar flex justify-between p-4 border-b-gray-800 border">
             <div className="flex items-center gap-3">
                 <div>
-                    <a href={user.username}><img className='w-full' src='/src/assets/images/profile-picture.svg'></img></a>
+                    <a href={user.username}><img className='md:w-full min-w-10' src='/src/assets/images/profile-picture.svg'></img></a>
                 </div>
                 <div className="flex flex-col">
                     <a href={user.username}>@{user.username}</a>
