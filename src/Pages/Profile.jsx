@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import LeftMenu from '../components/LeftMenu';
 import RightMenu from '../components/RightMenu';
 import Post from '../components/Post';
+import { Link } from 'react-router-dom';
 
 function Profile() {
 
@@ -51,8 +52,8 @@ function Profile() {
                     </div>
                     <div className='flex gap-3'>
                         <div className='flex gap-1'> <p className='font-bold'>{user.postsNumber}</p> <p>Posts</p> </div>
-                        <div className='flex gap-1'> <p className='font-bold'>{user.followers}</p> <p>Followers</p> </div>
-                        <div className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </div>
+                        <Link to="/followers" className='flex gap-1'> <p className='font-bold'>{user.followers}</p> <p>Followers</p> </Link>
+                        <Link to="/following" className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </Link>
                     </div>
                 </div>
                 <div className='posts flex justify-center'>
@@ -68,4 +69,4 @@ function Profile() {
     );
 };
 
-    export default Profile;
+export default Profile;
