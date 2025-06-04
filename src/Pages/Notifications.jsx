@@ -13,7 +13,7 @@ function Notifications(){
             <section className="flex h-dvh pt-[8vh] shadow-">
                 <LeftMenu/>
                 <div className="w-full md:w-3/5">
-                    <TitleBar />
+                    <TitleBar text={"Notificações"}/>
                     <Filters/>
                     {notifications.map((notification) =>(
                         <Notification key={notification.id}
