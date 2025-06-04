@@ -10,7 +10,7 @@ function Followers() {
 
     const data = [
         { id: 1, username: 'gaucho', fullname: 'João Constantino Caetano', follower: true, following: true },
-        { id: 2, username: 'johanngr14', fullname: 'Johann Gossen Ruth', follower: true, following: true },
+        { id: 2, username: 'johanngr14', fullname: 'Johann Gossen Ruth', follower: false, following: true },
         { id: 3, username: 'vh', fullname: 'Vitor Hugo da Cunha', follower: true, following: false },
         { id: 4, username: 'gabbosco', fullname: 'Gabriel Bosco', follower: true, following: true }
     ];
@@ -27,11 +27,26 @@ function Followers() {
             
             let user = prev[id] || followers.find((user) => user.id === id);
             let isFollowing = user.following;
+            let follower = user.follower;
+
+            if(user.follower === true){
+                return{
+                    ...prev,
+                    [id]: {
+                        color: isFollowing ? 'bg-following-button' : 'bg-follow-back-button',
+                        text: isFollowing ? 'Seguindo' : 'Seguir de Volta',
+                        follower: follower,
+                        following: !isFollowing
+                    }
+                }
+            }
+
             return{
                 ...prev,
                 [id]: {
-                    color: isFollowing ? 'bg-following-button' : 'bg-follow-back-button',
-                    text: isFollowing ? 'Seguindo' : 'Seguir de Volta',
+                    color: isFollowing ? 'bg-following-button' : 'bg-follow-button',
+                    text: isFollowing ? 'Seguindo' : 'Seguir',
+                    follower: follower,
                     following: !isFollowing
                 }
             }
@@ -51,8 +66,14 @@ function Followers() {
                 {followers.map((user) => {
                     const state = buttonState[user.id];
                     const isFollowing = state ? state.following : user.following; 
-                    const color = isFollowing ? 'bg-following-button' : 'bg-follow-back-button';
-                    const text = isFollowing ? 'Seguindo' : 'Seguir de Volta';
+                    const follower = state ? state.follower : user.follower;
+                    let color = isFollowing ? 'bg-following-button' : 'bg-follow-back-button';
+                    let text = isFollowing ? 'Seguindo' : 'Seguir de Volta';
+
+                    if(!follower){
+                        color = isFollowing ? 'bg-following-button' : 'bg-follow-button';
+                        text = isFollowing ? 'Seguindo' : 'Seguir';
+                    }
 
                     return (
                     <FollowTab
