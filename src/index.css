@@ -91,4 +91,8 @@
     background-color: #6F2E94;
 }
 
+.bg-modal-red{
+    background-color: #CB3234;
+}
+
 @import 'tailwindcss';
