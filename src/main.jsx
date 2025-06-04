@@ -12,7 +12,8 @@ import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import Menu from './pages/Menu.jsx'
 import Profile from './pages/Profile.jsx'
-import Notifications from './pages/Notifications.jsx';
+import Notifications from './pages/Notifications.jsx'
+import Settings from './pages/Settings.jsx'
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: '/notifications',
     element: <Notifications/>
+  },
+  {
+    path: '/settings',
+    element: <Settings/>
   },
 ])
 
