@@ -13,6 +13,8 @@ import Login from './pages/Login.jsx'
 import Menu from './pages/Menu.jsx'
 import Profile from './pages/Profile.jsx'
 import Notifications from './pages/Notifications.jsx';
+import Following from './Pages/Following.jsx';
+import Followers from './Pages/Followers.jsx';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
     path: '/notifications',
     element: <Notifications/>
   },
+  {
+    path: 'following',
+    element: <Following/>
+  },
+  {
+    path: 'followers',
+    element: <Followers/>
+  }
 ])
 
 createRoot(document.getElementById('root')).render(

@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 function Post({user}){
     return(
         <div className="bg-navbar max-w-xl w-3/3 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-2xl">
             <div className="flex justify-between">
                 <div className='flex items-center gap-3'>
-                    <div className='pointer-events-none select-none w-12'>
-                        <img className='w-full' src='/src/assets/images/profile-picture.svg'></img>
+                    <div className='select-none w-12'>
+                        <Link to={`/${user.username}`} className="cursor-pointer"><img className='w-full' src='/src/assets/images/profile-picture.svg'></img></Link>
                     </div>
                     <div className='flex flex-col justify-start'>
-                        <div className='flex items-center pr-8'>
+                        <Link to={`/${user.username}`} className='flex items-center pr-8'>
                             <p>{user.username}</p>
-                        </div>
-                        <p>{user.userFullname}</p>
+                        </Link>
+                        <Link to={`/${user.username}`}>{user.userFullname}</Link>
                     </div>
                 </div>
                 <div className="cursor-pointer">

@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import LeftMenu from '../components/LeftMenu';
 import RightMenu from '../components/RightMenu';
 import Post from '../components/Post';
+import { Link } from 'react-router-dom';
 
 function Profile() {
 
@@ -39,20 +40,20 @@ function Profile() {
                         </div>
                         <div className='flex gap-x-4 items-start'>
                             <div>
-                                <a className='hidden md:flex bg-navbar w-36 justify-center p-1 border-2 border-gray-600 rounded-xl
+                                <button className='hidden md:flex bg-navbar w-36 justify-center p-1 border-2 border-gray-600 rounded-xl
                                 hover:cursor-pointer'>
                                     <p>Editar perfil</p>
-                                </a>
+                                </button>
                             </div>
-                            <div className='w-8'>
+                            <Link to="/settings" className='w-8 cursor-pointer'>
                                 <img src='src/assets/images/configs-icon.svg'></img>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                     <div className='flex gap-3'>
                         <div className='flex gap-1'> <p className='font-bold'>{user.postsNumber}</p> <p>Posts</p> </div>
-                        <div className='flex gap-1'> <p className='font-bold'>{user.followers}</p> <p>Followers</p> </div>
-                        <div className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </div>
+                        <Link to="/followers" className='flex gap-1'> <p className='font-bold'>{user.followers}</p> <p>Followers</p> </Link>
+                        <Link to="/following" className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </Link>
                     </div>
                 </div>
                 <div className='posts flex justify-center'>
@@ -68,4 +69,4 @@ function Profile() {
     );
 };
 
-    export default Profile;
+export default Profile;
