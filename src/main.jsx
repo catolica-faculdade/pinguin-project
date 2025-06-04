@@ -1,19 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router';
 
 import './index.css';
 import './home.css';
 
 //pages
-import Register from './pages/Register.jsx'
-import CoverPage from './pages/CoverPage.jsx'
-import Home from './pages/Home.jsx'
-import Login from './pages/Login.jsx'
-import Menu from './pages/Menu.jsx'
-import Profile from './pages/Profile.jsx'
-import Notifications from './pages/Notifications.jsx'
-import Settings from './pages/Settings.jsx'
+import Register from './pages/Register.jsx';
+import CoverPage from './pages/CoverPage.jsx';
+import Home from './pages/Home.jsx';
+import Login from './pages/Login.jsx';
+import Menu from './pages/Menu.jsx';
+import Profile from './pages/Profile.jsx';
+import Notifications from './pages/Notifications.jsx';
+import Settings from './pages/Settings.jsx';
+import Following from './Pages/Following.jsx';
+import Followers from './Pages/Followers.jsx';
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
     path: '/settings',
     element: <Settings/>
   },
+  {
+    path: 'following',
+    element: <Following/>
+  },
+  {
+    path: 'followers',
+    element: <Followers/>
+  }
 ])
 
 createRoot(document.getElementById('root')).render(
