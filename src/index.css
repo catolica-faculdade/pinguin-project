@@ -95,4 +95,39 @@
     background-color: #CB3234;
 }
 
+
+#chk {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  background-color: #777;
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: all .3s ease-in-out;
+}
+
+#chk:checked ~ .switch {
+  background-color: #A162C5;
+}
+
+#chk:checked ~ .switch .slider {
+  transform: translateX(50px);
+}
+
 @import 'tailwindcss';
