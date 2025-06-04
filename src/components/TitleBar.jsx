@@ -1,10 +1,10 @@
 
 
-function TitleBar(){
+function TitleBar({text}){
     return(
         <div className="flex h-21 p-1 bg-navbar justify-between items-center pl-4 pr-4 border-b">
             <img src="src\assets\images\seta-para-baixo.svg" className="rotate-90 h-1/3" />
-            <h1 className="text-2xl">Notificações</h1>
+            <h1 className="text-2xl">{text}</h1>
             <p></p>
         </div>
     )
