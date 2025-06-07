@@ -12,7 +12,7 @@ function Modal({isFromNavbar, isOpen}){
                             <p>Meu perfil</p>
                         </div>
                     </Link>
-                    <Link to="/configurations">
+                    <Link to="/settings">
                         <div className="flex w-full border-black p-2 items-center gap-3 border-l border-r">
                             <img src="src\assets\images\config-icon.png" className={`h-6`}/>
                             <p>Configurações</p>

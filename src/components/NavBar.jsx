@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
     const [openModal, setOpenModal] = useState(false);
-    const [openSearch, setOpenSearch] = useState(false); // abrir menu de pesquisa
+    const [openSearch, setOpenSearch] = useState(false);
 
     function changeModal() {
         setOpenModal(!openModal);
