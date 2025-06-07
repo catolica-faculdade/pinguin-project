@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
+import Interactions from "./Interactions";
 
 function Post({user}){
+
+    const post = {
+        interactions: {like: '10k', comment: '1.3k'}
+    };
+
+    console.log(post);
     return(
         <div className="bg-navbar max-w-xl w-3/3 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-2xl">
             <div className="flex justify-between">
@@ -25,9 +32,7 @@ function Post({user}){
             <div className="content bg-tab w-full h-75 flex justify-center items-center pointer-events-none select-none">
                 <img className="h-fit" src="/src/assets/images/placeholder-image.png"></img>
             </div>
-            <div className="interactions">
-
-            </div>
+            <Interactions interactions={post.interactions}/>
         </div>
     )
 }
