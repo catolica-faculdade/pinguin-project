@@ -16,6 +16,17 @@ function Profile() {
         following: 23
     }
 
+    const posts = [
+        {
+            title: 'fui na casa do meu amigo...',
+            image: null
+        },
+        {
+            title: 'gente, olha meu código novo...',
+            image: '/public/posts/novo-codigo.png'
+        }
+    ];
+
     return (
         // retorna no 'html' pela main aqui
         <section>
@@ -56,12 +67,11 @@ function Profile() {
                         <Link to="/following" className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </Link>
                     </div>
                 </div>
+                {posts.map((post) => (
                 <div className='posts flex justify-center'>
-                    <Post user={user}/>
+                    <Post user={user} content={post}/>
                 </div>
-                <div className='posts flex justify-center'>
-                    <Post user={user}/>
-                </div>
+                ))}
             </div>
             <RightMenu/>
             </section>

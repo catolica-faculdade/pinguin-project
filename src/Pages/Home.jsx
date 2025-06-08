@@ -50,12 +50,6 @@ function Home() {
                             <Post user={user} content={post}/>
                         </div>
                     ))}
-                    {/* <div className='posts flex justify-center'>
-                        <Post user={user} />
-                    </div>
-                    <div className='posts flex justify-center'>
-                        <Post user={user} />
-                    </div> */}
                 </div>
                 <RightMenu />
             </section>

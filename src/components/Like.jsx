@@ -9,10 +9,12 @@ function Like({likeNumber}){
             {like
             ?
             <img onClick={() => setLike(false)}
-            src="src/assets/images/like-heart-red.svg"></img>
+            src="src/assets/images/like-heart-red.svg"
+            className="cursor-pointer"></img>
             :
             <img onClick={() => setLike(true)}
-            src="src/assets/images/like-heart-white.svg"></img>
+            src="src/assets/images/like-heart-white.svg"
+            className="cursor-pointer"></img>
             }
             <p>{likeNumber}</p>
         </div>
