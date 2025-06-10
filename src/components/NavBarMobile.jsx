@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function NavBarMobile() {
     return (
-        <nav className="nav-bar-mobile flex justify-around bg-navbar p-1 items-center fixed bottom-0 w-full h-[60px] border-t top-shadow-nav-bar-mobile">
+        <nav className="nav-bar-mobile flex justify-around bg-navbar p-1 md:hidden items-center fixed bottom-0 w-full h-[60px] border-t top-shadow-nav-bar-mobile">
             <button>
                 <img src='src/assets/images/home-icon-mobile.svg' className="w-[28px]" />
             </button>
