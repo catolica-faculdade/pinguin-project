@@ -1,5 +1,5 @@
-import Button from "../components/Button.jsx"
-import Input from "../components/Input.jsx"
+import Button from "../components/General/Button.jsx"
+import Input from "../components/General/Input.jsx"
 import { Link } from "react-router-dom";
 
 

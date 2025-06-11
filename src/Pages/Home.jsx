@@ -2,16 +2,12 @@ import React, { useState } from 'react';
 
 
 //components
-import NavBar from '../components/NavBar';
-import NavBarMobile from '../components/NavBarMobile';
-import TopNavMobile from '../components/TopNavMobile';
-import LeftMenu from '../components/LeftMenu';
-import RightMenu from '../components/RightMenu';
-import Post from '../components/Post';
-
-
-
-
+import NavBar from '../components/General/NavBar';
+import NavBarMobile from '../components/Mobile/NavBarMobile';
+import TopNavMobile from '../components/Mobile/TopNavMobile';
+import LeftMenu from '../components/General/LeftMenu';
+import RightMenu from '../components/General/RightMenu';
+import Post from '../components/Posts/Post';
 
 
 function Home() {
@@ -38,7 +34,6 @@ function Home() {
     ];
 
     return (
-        // retorna no 'html' pela main aqui
         <section>
             <NavBar />
             <TopNavMobile />

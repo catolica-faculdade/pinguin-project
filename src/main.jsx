@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router';
 import './index.css';
 import './home.css';
 
+import "./index.css"
 //pages
 import Register from './pages/Register.jsx';
 import CoverPage from './pages/CoverPage.jsx';

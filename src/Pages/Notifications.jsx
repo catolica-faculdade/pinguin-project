@@ -1,9 +1,9 @@
-import LeftMenu from "../components/LeftMenu";
-import RightMenu from "../components/RightMenu";
-import NavBar from "../components/NavBar";
-import TitleBar from "../components/TitleBar";
-import Filters from "../components/Filters";
-import Notification from "../components/Notification";
+import LeftMenu from "../components/General/LeftMenu";
+import RightMenu from "../components/General/RightMenu";
+import NavBar from "../components/General/NavBar";
+import TitleBar from "../components/General/TitleBar";
+import Filters from "../components/General/Filters";
+import Notification from "../components/General/Notification";
 
 function Notifications(){
     const notifications = [{id: 1, userImage: "/src/assets/images/profile-picture.svg", nome: "Vitor Hugo da Cunha", tipo: "curtiu", post: null, data: "28/02/25", hora: "16:26"},{id: 1,  userImage: "/src/assets/images/profile-picture.svg", nome: "Gabriel Grabowski Bosco", tipo: "comentou", post: "/src/assets/images/purple-dog-image.png", data: "25/03/25", hora: "21:41"},{id: 1, userImage: "/src/assets/images/profile-picture.svg",  nome: "João Constantino Caetano", tipo: "mencionou", post: "/src/assets/images/beach-image.png", data: "25/03/25", hora: "21:41"}]
