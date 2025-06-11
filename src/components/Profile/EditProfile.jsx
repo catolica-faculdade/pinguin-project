@@ -1,11 +1,7 @@
 import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-import ProfileButton from '../../components/ProfileButton';
 import Input from './Input';
-=======
 import ProfileButton from './ProfileButton';
->>>>>>> 351c8ef5dfa55ea500bea694cd249ad1c9d407be
 
 function EditProfile({user, posts, onClick}){
     return(
