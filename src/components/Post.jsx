@@ -25,8 +25,6 @@ function Post({user, content}){
                 </div>
                 <div className="cursor-pointer">
                     <img src="/src/assets/images/post-options-icon.svg"></img>
-                    <PostOptionsPopUp />
-                    <OthersPostOptionsPopUp />
                 </div>
             </div>
             <div className="text">
