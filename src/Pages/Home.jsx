@@ -10,10 +10,6 @@ import RightMenu from '../components/General/RightMenu';
 import Post from '../components/Posts/Post';
 
 
-
-
-
-
 function Home() {
     // conversa com a api aqui
 
@@ -38,7 +34,6 @@ function Home() {
     ];
 
     return (
-        // retorna no 'html' pela main aqui
         <section>
             <NavBar />
             <TopNavMobile />

@@ -45,6 +45,11 @@
 .bg-input-navbar{
     background-color: #BFBFBF;
 }
+
+.bg-cube-gray-navbar{
+    background-color: #5F5F5F;
+}
+
  
 .bg-cube-gray-navbar{
     background-color: #5F5F5F;
@@ -93,6 +98,10 @@
 
 .bg-modal-red{
     background-color: #CB3234;
+}
+
+.bg-sensitive-content {
+    background-color: #FFACA1;
 }
 
 
