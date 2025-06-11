@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import LeftMenu from "../components/General/LeftMenu";
 import RightMenu from "../components/General/RightMenu";
 import NavBar from "../components/General/NavBar";
@@ -10,14 +9,6 @@ function SettingsPage() {
         { id: 1, checked: false },
         { id: 3, checked: false }
     ]);
-=======
-import LeftMenu from "../components/LeftMenu";
-import RightMenu from "../components/RightMenu";
-import NavBar from "../components/NavBar";
-import TitleBar from "../components/TitleBar";
-import Setting from "../components/Setting";
-import ExitPopUp from "../components/ExitPopUp";
->>>>>>> Stashed changes
 
     const handleToggle = (id) => {
         setToggles((prev) =>
@@ -31,7 +22,6 @@ import ExitPopUp from "../components/ExitPopUp";
 
     return (
         <section>
-<<<<<<< Updated upstream
         <NavBar />
         <section className="flex h-dvh pt-[8vh]">
             <LeftMenu />
@@ -45,20 +35,6 @@ import ExitPopUp from "../components/ExitPopUp";
             </div>
             <RightMenu />
         </section>
-=======
-            <NavBar/>
-            <section className="flex h-dvh pt-[8vh] shadow-">
-                <LeftMenu/>
-                <div className="w-full md:w-3/5">
-                    <TitleBar text={"Configurações"}/>
-                    <Setting text={"Idioma"} toggle={true}/>
-                    <Setting text={"Idioma"} toggle={false}/>
-                    <Setting text={"Idioma"} toggle={true}/>
-                    </div>
-                <RightMenu/>
-            </section>
-            <ExitPopUp />
->>>>>>> Stashed changes
         </section>
     );
 }
