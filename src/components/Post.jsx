@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Interactions from "./Interactions";
+import PostOptionsPopUp from "./PostOptionsPopUp";
 
 function Post({user, content}){
 

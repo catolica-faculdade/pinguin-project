@@ -10,10 +10,6 @@ import RightMenu from '../components/RightMenu';
 import Post from '../components/Post';
 
 
-
-
-
-
 function Home() {
     // conversa com a api aqui
 
