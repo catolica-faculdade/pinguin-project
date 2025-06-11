@@ -17,6 +17,9 @@ import NavBar from "../components/NavBar";
 import TitleBar from "../components/TitleBar";
 import Setting from "../components/Setting";
 import ExitPopUp from "../components/ExitPopUp";
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     const handleToggle = (id) => {
@@ -58,6 +61,9 @@ import ExitPopUp from "../components/ExitPopUp";
                 <RightMenu/>
             </section>
             <ExitPopUp />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         </section>
     );
