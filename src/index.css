@@ -104,6 +104,9 @@
     background-color: #FFACA1;
 }
 
+.bg-exit-pop-up {
+    background-color: #00000066;
+}
 
 #chk {
   display: none;
