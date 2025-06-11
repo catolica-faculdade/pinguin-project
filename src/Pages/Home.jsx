@@ -38,7 +38,6 @@ function Home() {
     ];
 
     return (
-        // retorna no 'html' pela main aqui
         <section>
             <NavBar />
             <TopNavMobile />
