@@ -3,7 +3,7 @@ import RightMenu from "../components/General/RightMenu";
 import NavBar from "../components/General/NavBar";
 import TitleBar from "../components/General/TitleBar";
 import Setting from "../components/General/Setting";
-
+import { useState } from "react";
 function SettingsPage() {
     const [toggles, setToggles] = useState([
         { id: 1, checked: false },

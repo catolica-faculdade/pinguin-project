@@ -1,4 +1,4 @@
-import NavBarMobile from '../components/NavBarMobile';
+import NavBarMobile from '../components/Mobile/NavBarMobile';
 
 function CoverPage(){
     // conversa com a api aqui

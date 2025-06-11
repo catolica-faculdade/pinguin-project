@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ToggleSwitch from "./ToggleSwitch";
+import ToggleSwitch from "../ToggleSwitch";
 
 function Setting({ text, link, toggle, id, checked, onToggle }) {
     return (
