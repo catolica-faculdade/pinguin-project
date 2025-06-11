@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Modal from '../components/Modal';
+import Modal from './Modal';
 import { Link } from "react-router-dom";
 
 export default function NavBar() {

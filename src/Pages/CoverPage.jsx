@@ -1,6 +1,6 @@
-import NavBarMobile from '../components/NavBarMobile';
 import NavBar from '../components/NavBar';
 import Search from '../components/Search';
+import NavBarMobile from '../components/Mobile/NavBarMobile';
 
 function CoverPage(){
     

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import LeftMenu from "../components/LeftMenu";
-import RightMenu from "../components/RightMenu";
-import FollowTab from "../components/FollowTab";
-import NavBar from "../components/NavBar";
+import LeftMenu from "../components/General/LeftMenu";
+import RightMenu from "../components/General/RightMenu";
+import FollowTab from "../components/Follows/FollowTab";
+import NavBar from "../components/General/NavBar";
 
 function Followers() {
     const [followers, setFollowers] = useState([]);
