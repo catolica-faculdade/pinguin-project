@@ -1,5 +1,3 @@
-
-
 function TitleBar({text}){
     return(
         <div className="flex h-21 p-1 bg-navbar justify-between items-center pl-4 pr-4 border-b">

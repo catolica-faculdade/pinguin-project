@@ -1,6 +1,6 @@
-import Post from '../../components/Post';
+import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
-import ProfileButton from '../../components/ProfileButton';
+import ProfileButton from './ProfileButton';
 
 function ShowProfile({user, posts, onClick}){
     return (

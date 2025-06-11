@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import NavBar from '../components/NavBar';
-import LeftMenu from '../components/LeftMenu';
-import RightMenu from '../components/RightMenu';
+import NavBar from '../components/General/NavBar';
+import LeftMenu from '../components/General/LeftMenu';
+import RightMenu from '../components/General/RightMenu';
 import ShowProfile from '../components/Profile/ShowProfile';
 import EditProfile from '../components/Profile/EditProfile';
 

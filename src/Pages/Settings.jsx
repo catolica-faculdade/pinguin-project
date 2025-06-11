@@ -1,8 +1,8 @@
-import LeftMenu from "../components/LeftMenu";
-import RightMenu from "../components/RightMenu";
-import NavBar from "../components/NavBar";
-import TitleBar from "../components/TitleBar";
-import Setting from "../components/Setting";
+import LeftMenu from "../components/General/LeftMenu";
+import RightMenu from "../components/General/RightMenu";
+import NavBar from "../components/General/NavBar";
+import TitleBar from "../components/General/TitleBar";
+import Setting from "../components/General/Setting";
 
 function Settings(){
     return(
