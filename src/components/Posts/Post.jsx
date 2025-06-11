@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import Interactions from "./Interactions";
-import PostOptionsPopUp from "../Posts/PostOptionsPopUp";
-import OthersPostOptionsPopUp from "../Posts/OthersPostOptionsPopUp";
 
 function Post({user, content}){
 
@@ -18,7 +16,7 @@ function Post({user, content}){
                     </div>
                     <div className='flex flex-col justify-start'>
                         <Link to={`/${user.username}`} className='flex items-center pr-8'>
-                            <p>{user.username}</p>
+                            <p>@{user.username}</p>
                         </Link>
                         <Link to={`/${user.username}`}>{user.userFullname}</Link>
                     </div>

@@ -14,7 +14,7 @@ function Home() {
     // conversa com a api aqui
 
     const user = {
-        username: '@gfloriano',
+        username: 'gfloriano',
         userFullname: 'Gustavo Floriano',
         streak: 0,
         postsNumber: 10,
