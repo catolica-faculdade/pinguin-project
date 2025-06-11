@@ -29,7 +29,7 @@ function Home() {
         },
         {
             title: 'gente, olha meu código novo...',
-            image: '/public/posts/novo-codigo.png'
+            image: '/posts/novo-codigo.png'
         }
     ];
 
