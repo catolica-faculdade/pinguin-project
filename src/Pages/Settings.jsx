@@ -10,6 +10,7 @@ function SettingsPage() {
         { id: 3, checked: false }
     ]);
 
+
     const handleToggle = (id) => {
         setToggles((prev) =>
         prev.map((item) =>
@@ -35,6 +36,19 @@ function SettingsPage() {
             </div>
             <RightMenu />
         </section>
+
+            <NavBar/>
+            <section className="flex h-dvh pt-[8vh] shadow-">
+                <LeftMenu/>
+                <div className="w-full md:w-3/5">
+                    <TitleBar text={"Configurações"}/>
+                    <Setting text={"Idioma"} toggle={true}/>
+                    <Setting text={"Idioma"} toggle={false}/>
+                    <Setting text={"Idioma"} toggle={true}/>
+                    </div>
+                <RightMenu/>
+            </section>
+            <ExitPopUp />
         </section>
     );
 }
