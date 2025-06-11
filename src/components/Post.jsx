@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Interactions from "./Interactions";
 import PostOptionsPopUp from "./PostOptionsPopUp";
+import OthersPostOptionsPopUp from "./OthersPostOptionsPopUp";
 
 function Post({user, content}){
 
@@ -24,6 +25,8 @@ function Post({user, content}){
                 </div>
                 <div className="cursor-pointer">
                     <img src="/src/assets/images/post-options-icon.svg"></img>
+                    <PostOptionsPopUp />
+                    <OthersPostOptionsPopUp />
                 </div>
             </div>
             <div className="text">
