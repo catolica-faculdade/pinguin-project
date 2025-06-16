@@ -1,28 +1,41 @@
 import { Link } from "react-router-dom";
 import Interactions from "./Interactions";
+import { useState } from "react";
+import OtherPostOptionsPopUp from "./OthersPostOptionsPopUp";
+import PostOptionsPopUp from "./PostOptionsPopUp"
 
-function Post({user, content}){
+function Post({content}){
+    const [openOptionsOther, setOpenOptionsOther] = useState(false);
+    const [openOptions, setOpenOptions] = useState(false);
+    
+    function openPopUp(){
+        if (content.user.username == "gfloriano"){
+            setOpenOptions(!openOptions);
+        } else {
+            setOpenOptionsOther(!openOptionsOther);
+        }
+    }
 
     const post = {
         interactions: {like: '10k', comment: '1.3k'}
     };
 
     return(
-        <div className="bg-navbar max-w-xl w-3/3 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-2xl">
+        <div className="bg-navbar max-w-xl w-3/3 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-2xl relative">
             <div className="flex justify-between">
                 <div className='flex items-center gap-3'>
                     <div className='select-none w-12'>
-                        <Link to={`/${user.username}`} className="cursor-pointer"><img className='w-full' src='/src/assets/images/profile-picture.svg'></img></Link>
+                        <Link to={`/${content.user.username}`} className="cursor-pointer"><img className='w-full' src='/src/assets/images/profile-picture.svg'></img></Link>
                     </div>
                     <div className='flex flex-col justify-start'>
-                        <Link to={`/${user.username}`} className='flex items-center pr-8'>
-                            <p>@{user.username}</p>
+                        <Link to={`/${content.user.username}`} className='flex items-center pr-8'>
+                            <p>@{content.user.username}</p>
                         </Link>
-                        <Link to={`/${user.username}`}>{user.userFullname}</Link>
+                        <Link to={`/${content.user.username}`}>{content.user.userFullname}</Link>
                     </div>
                 </div>
                 <div className="cursor-pointer">
-                    <img src="/src/assets/images/post-options-icon.svg"></img>
+                    <img src="/src/assets/images/post-options-icon.svg" onClick={openPopUp}></img>
                 </div>
             </div>
             <div className="text">
@@ -37,6 +50,8 @@ function Post({user, content}){
                 }
             </div>
             <Interactions interactions={post.interactions}/>
+            <OtherPostOptionsPopUp openOptionsOther={openOptionsOther} setOpenOptionsOther={setOpenOptionsOther}/>
+            <PostOptionsPopUp setOpenOptions={setOpenOptions} openOptions={openOptions}/>
         </div>
     )
 }
