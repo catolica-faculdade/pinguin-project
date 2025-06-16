@@ -30,8 +30,8 @@ function SettingsPage() {
             <LeftMenu />
             <div className="w-full md:w-3/5">
             <TitleBar text={"Configurações"} />
-            <Setting text={"Idioma"} toggle={true} id={1} checked={getChecked(1)} onToggle={handleToggle} />
-            <Setting text={"Notificações"} toggle={false} id={2} link="/notificacoes" />
+            <Setting text={"Notificações"} toggle={true} id={1} link="/notificacoes" checked={getChecked(1)} onToggle={handleToggle}/>
+            <Setting text={"Idioma"} toggle={false} id={2} link="/idiomas"/>
             <Setting text={"Modo escuro"} toggle={true} id={3} checked={getChecked(3)} onToggle={handleToggle} />
             <Setting text={"Conta"} toggle={false} id={4} link="/conta" />
             <Setting text={"Ajuda"} toggle={false} id={5} link="/ajuda" />
