@@ -1,5 +1,6 @@
 import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
+import Input from './Input';
 import ProfileButton from './ProfileButton';
 
 function EditProfile({user, posts, onClick}){
@@ -11,13 +12,15 @@ function EditProfile({user, posts, onClick}){
                         <div className='pointer-events-none select-none w-18'>
                             <img className='w-full' src='/src/assets/images/profile-picture.svg'></img>
                         </div>
-                        <div className='flex flex-col justify-start'>
-                            <div className='flex items-center pr-8'>
-                                <p>{user.username}</p>
-                                <img className='w-8' src='/src/assets/images/streak-0-days.svg'></img>
-                                <p className='font-bold'>{user.streak}</p>
+                        <div className='flex flex-col gap-1 justify-start'>
+                            <div className='max-w-32'>
+                                <Input value={user.username}
+                                type='text'/>
                             </div>
-                            <p>{user.userFullname}</p>
+                            <div className='max-w-50'>
+                                <Input value={user.userFullname}
+                                type='text'/>
+                            </div>
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
