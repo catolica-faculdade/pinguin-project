@@ -25,9 +25,9 @@ function EditProfile({posts, onClick}){
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
-                        <div>
+                        <div className='hidden md:block'>
                             <ProfileButton onClick={onClick}
-                                text='Editar Perfil'
+                                text='Salvar'
                                 color='bg-gray-600' />
                         </div>
                         <Link to="/settings" className='w-8 cursor-pointer'>
@@ -42,6 +42,11 @@ function EditProfile({posts, onClick}){
                 </div>
                 <div>
                     <p>{user.about}</p>
+                </div>
+                <div className='flex justify-center md:hidden'>
+                    <ProfileButton onClick={onClick}
+                        text='Salvar'
+                        color='bg-gray-600' />
                 </div>
             </div>
             {posts.map((post) => (

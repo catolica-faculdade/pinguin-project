@@ -22,7 +22,7 @@ function ShowProfile({posts, onClick}){
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
-                        <div>
+                        <div className='hidden md:block'>
                             <ProfileButton onClick={onClick}
                                 text='Editar Perfil'
                                 color='bg-gray-600' />
@@ -39,6 +39,11 @@ function ShowProfile({posts, onClick}){
                 </div>
                 <div>
                     <p>{user.about}</p>
+                </div>
+                <div className='flex justify-center md:hidden'>
+                    <ProfileButton onClick={onClick}
+                        text='Editar Perfil'
+                        color='bg-gray-600' />
                 </div>
             </div>
             {posts.map((post) => (
