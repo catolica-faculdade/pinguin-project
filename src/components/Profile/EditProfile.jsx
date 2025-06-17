@@ -2,9 +2,17 @@ import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
 import Input from './Input';
 import ProfileButton from './ProfileButton';
+import { useState } from 'react';
 
 function EditProfile({posts, onClick, setUsername, setFullName}){
     const user = posts[0].user;
+    const [inputUsername, setInputUsername] = useState(user.username);
+    const [inputFullName, setInputFullName] = useState(user.userFullname);
+
+    function saveData(){
+        setUsername(inputUsername);
+        setFullName(inputFullName);
+    }
     return(
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
             <div className='flex flex-col gap-3'>
@@ -15,20 +23,23 @@ function EditProfile({posts, onClick, setUsername, setFullName}){
                         </div>
                         <div className='flex flex-col gap-1 justify-start'>
                             <div className='max-w-40'>
-                                <Input value={user.username || ''}
-                                onChange={(event) => setUsername(event.target.value)}
+                                <Input value={inputUsername || ''}
+                                onChange={(event) => setInputUsername(event.target.value)}
                                 type='text'/>
                             </div>
                             <div className='max-w-40'>
-                                <Input value={user.userFullname || ''}
-                                onChange={(event) => setFullName(event.target.value)}
+                                <Input value={inputFullName || ''}
+                                onChange={(event) => setInputFullName(event.target.value)}
                                 type='text'/>
                             </div>
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
                         <div className='hidden md:block'>
-                            <ProfileButton onClick={onClick}
+                            <ProfileButton onClick={() => {
+                                saveData();
+                                onClick();
+                            }}
                                 text='Salvar'
                                 color='bg-gray-600' />
                         </div>
@@ -46,9 +57,14 @@ function EditProfile({posts, onClick, setUsername, setFullName}){
                     <p>{user.about}</p>
                 </div>
                 <div className='flex justify-center md:hidden'>
-                    <ProfileButton onClick={onClick}
-                        text='Salvar'
-                        color='bg-gray-600' />
+                    <ProfileButton
+                    onClick={() => {
+                        saveData();
+                        onClick();
+                    }}
+                    text="Salvar"
+                    color="bg-gray-600"
+                    />
                 </div>
             </div>
             {posts.map((post) => (
