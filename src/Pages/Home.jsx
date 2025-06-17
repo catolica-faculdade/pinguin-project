@@ -11,33 +11,35 @@ import Post from '../components/Posts/Post';
 
 
 function Home() {
-    const user = {
-        username: 'gfloriano',
-        userFullname: 'Gustavo Floriano',
-        streak: 0,
-        postsNumber: 10,
-        followers: 19,
-        following: 23
-    }
-    const other = {
-        username: 'vh',
-        userFullname: 'Vitor Hugo da Cunha',
-        streak: 3,
-        postsNumber: 30,
-        followers: 1,
-        following: 1000
-    }
+    const user = [
+        {
+            username: 'gfloriano',
+            userFullname: 'Gustavo Floriano',
+            streak: 0,
+            postsNumber: 10,
+            followers: 19,
+            following: 23
+        },
+        {
+            username: 'vh',
+            userFullname: 'Vitor Hugo da Cunha',
+            streak: 3,
+            postsNumber: 30,
+            followers: 1,
+            following: 1000
+        }
+    ]
 
     const posts = [
         {
             id: 1,
-            user: other,
+            user: user[1],
             title: 'fui na casa do meu amigo...',
             image: null
         },
         {
             id: 2,
-            user: user,
+            user: user[0],
             title: 'gente, olha meu código novo...',
             image: '/posts/novo-codigo.png'
         }
