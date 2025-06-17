@@ -17,7 +17,9 @@ export default function NavBar() {
         <nav className="top-nav-bar-mobile flex justify-between bg-navbar p-1 items-center fixed w-full h-[8vh] border-b" >
             <div className="pl-[10px]">
                 <div className="w-[42px] h-[42px] bg-cube-gray-navbar rounded-[100px] p-[4px]">
-                    <img src='src/assets/images/logo-pinguIn-branca.png' />
+                    <Link to="/home">
+                        <img src='src/assets/images/logo-pinguIn-branca.png' />
+                    </Link>
                 </div>
             </div>
             <div className="pl-[15vw] md:max-xl:pl-[3vw]">
