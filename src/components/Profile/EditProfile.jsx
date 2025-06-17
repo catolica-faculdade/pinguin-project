@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Input from './Input';
 import ProfileButton from './ProfileButton';
 
-function EditProfile({posts, onClick}){
+function EditProfile({posts, onClick, setUsername, setFullName}){
     const user = posts[0].user;
     return(
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
@@ -15,11 +15,13 @@ function EditProfile({posts, onClick}){
                         </div>
                         <div className='flex flex-col gap-1 justify-start'>
                             <div className='max-w-40'>
-                                <Input value={user.username}
+                                <Input value={user.username || ''}
+                                onChange={(event) => setUsername(event.target.value)}
                                 type='text'/>
                             </div>
                             <div className='max-w-40'>
-                                <Input value={user.userFullname}
+                                <Input value={user.userFullname || ''}
+                                onChange={(event) => setFullName(event.target.value)}
                                 type='text'/>
                             </div>
                         </div>
