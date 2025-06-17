@@ -47,7 +47,7 @@ export default function NavBar() {
                     </Link>
                     <div>
                         <img className="pl-[10px] min-w-7 cursor-pointer" onClick={changeModal} src='src/assets/images/down-arrow-icon.png'/>
-                        <Mo dal isFromNavbar={true} isOpen={openModal} />
+                        <Modal isFromNavbar={true} isOpen={openModal} />
                     </div>
                 </div>
             </div>
