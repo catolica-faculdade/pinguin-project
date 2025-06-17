@@ -36,7 +36,7 @@ export default function NavBar() {
                 <Link to="/notifications">
                     <div className="flex flex-col items-center pl-[30px]">
                         <img className="w-[25px]" src='src/assets/images/notifications-icon.png' />
-                        <p className="text-[15px]">Notificação</p>
+                        <p className="text-[15px]">Notificações</p>
                     </div>
                 </Link>
                 <div className="flex items-center pl-[20px]">
