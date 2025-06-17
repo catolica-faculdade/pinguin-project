@@ -6,7 +6,7 @@ function ExitPopUp({exitPopUp, setExitPopUp}) {
     }
 
     return (
-        <div>
+        <div className="z-10">
             {exitPopUp && (
                 <section className="w-screen h-screen bg-exit-pop-up fixed top-0 left-0 flex justify-center items-center">
                     <div className="w-[50%] xl:w-[30%] 2xl:w-[25%] max-sm:w-[80%] xl:text-lg bg-[white] flex flex-col rounded-md">
