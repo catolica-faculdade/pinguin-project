@@ -7,6 +7,8 @@ import PostOptionsPopUp from "./PostOptionsPopUp"
 function Post({content}){
     const [openOptionsOther, setOpenOptionsOther] = useState(false);
     const [openOptions, setOpenOptions] = useState(false);
+
+    const user = content.user;
     
     function openPopUp(){
         if (content.user.username == "gfloriano"){
@@ -25,13 +27,13 @@ function Post({content}){
             <div className="flex justify-between">
                 <div className='flex items-center gap-3'>
                     <div className='select-none w-12'>
-                        <Link to={`/${content.user.username}`} className="cursor-pointer"><img className='w-full' src='/src/assets/images/profile-picture.svg'></img></Link>
+                        <Link to={`/${user.username}`} className="cursor-pointer"><img className='w-full' src='/src/assets/images/profile-picture.svg'></img></Link>
                     </div>
                     <div className='flex flex-col justify-start'>
-                        <Link to={`/${content.user.username}`} className='flex items-center pr-8'>
-                            <p>@{content.user.username}</p>
+                        <Link to={`/${user.username}`} className='flex items-center pr-8'>
+                            <p>@{user.username}</p>
                         </Link>
-                        <Link to={`/${content.user.username}`}>{content.user.userFullname}</Link>
+                        <Link to={`/${user.username}`}>{user.userFullname}</Link>
                     </div>
                 </div>
                 <div className="cursor-pointer">
