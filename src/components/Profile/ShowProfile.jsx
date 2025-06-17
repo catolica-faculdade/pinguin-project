@@ -42,8 +42,9 @@ function ShowProfile({posts, onClick}){
                 </div>
             </div>
             {posts.map((post) => (
-                <div className='posts flex justify-center'>
-                    <Post key={post.id} content={post} />
+                <div className='flex justify-center'
+                key={post.id}>
+                    <Post content={post} />
                 </div>
             ))}
         </div>

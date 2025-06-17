@@ -45,8 +45,9 @@ function EditProfile({posts, onClick}){
                 </div>
             </div>
             {posts.map((post) => (
-                <div className='posts flex justify-center'>
-                    <Post user={user} content={post} />
+                <div className='flex justify-center'
+                key={post.id}>
+                    <Post content={post} />
                 </div>
             ))}
         </div>
