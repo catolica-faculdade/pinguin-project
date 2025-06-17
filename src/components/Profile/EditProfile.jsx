@@ -4,7 +4,7 @@ import Input from './Input';
 import ProfileButton from './ProfileButton';
 
 function EditProfile({posts, onClick}){
-    const user = posts.user;
+    const user = posts[0].user;
     return(
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
             <div className='flex flex-col gap-3'>
@@ -14,11 +14,11 @@ function EditProfile({posts, onClick}){
                             <img className='w-full' src='/src/assets/images/profile-picture.svg'></img>
                         </div>
                         <div className='flex flex-col gap-1 justify-start'>
-                            <div className='max-w-32'>
+                            <div className='max-w-40'>
                                 <Input value={user.username}
                                 type='text'/>
                             </div>
-                            <div className='max-w-50'>
+                            <div className='max-w-40'>
                                 <Input value={user.userFullname}
                                 type='text'/>
                             </div>
