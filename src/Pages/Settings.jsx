@@ -44,8 +44,8 @@ function SettingsPage() {
                     <ExitPopUp exitPopUp={exitPopUp} setExitPopUp={setExitPopUp}/>
                     <div>
                         <div className="flex justify-center items-center cursor-pointer" onClick={changeExitPopUp}>
-                            <div className="flex bg-red-400 text-center border-b border-t border-black w-full h-18 items-center justify-center p-2 pl-5 pr-5">
-                                <p>Desconectar</p>
+                            <div className="flex bg-modal-red text-center border-b border-t border-black w-full h-18 items-center justify-center p-2 pl-5 pr-5">
+                                <p className="text-white">Desconectar</p>
                             </div>
                         </div>   
                     </div>

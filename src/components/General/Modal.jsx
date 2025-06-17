@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
+import ExitPopUp from "../ExitPopUp";
+import React, {useState} from 'react';
 
 function Modal({isOpen}){
+    const [exitPopUp, setExitPopUp] = useState(false);
+
+    function changeExitPopUp(){
+        setExitPopUp(!exitPopUp);
+    };
+
+
     if (isOpen){
         return(
             <div className="bg-navbar absolute right-9 top-7 rounded-md">
@@ -10,18 +19,19 @@ function Modal({isOpen}){
                         <p>Meu perfil</p>
                     </div>
                 </Link>
+                <ExitPopUp exitPopUp={exitPopUp} setExitPopUp={setExitPopUp}/>
                 <Link to="/settings">
                     <div className="flex w-full border-black p-2 items-center gap-3 border-l border-r">
                         <img src="src\assets\images\config-icon.png" className={`h-6`}/>
                         <p>Configurações</p>
                     </div>
                 </Link>
-                <Link to="/leave">
+                <button className="w-full" onClick={changeExitPopUp}>
                     <div className="flex w-full bg-modal-red border-b-black border p-2 items-center gap-3 rounded-b-md">
                         <img src="src\assets\images\leave-icon.png" className={`h-6`}/>
-                        <p>Sair</p>
+                        <p className="text-white">Sair</p>
                     </div>
-                </Link>
+                </button>
             </div>
         );
     }
