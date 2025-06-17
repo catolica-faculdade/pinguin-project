@@ -41,6 +41,7 @@ function SettingsPage() {
                         <Setting text={"Conta"} toggle={false} id={4} link="/conta" />
                         <Setting text={"Ajuda"} toggle={false} id={5} link="/ajuda" />
                     </div>
+                    <ExitPopUp exitPopUp={exitPopUp} setExitPopUp={setExitPopUp}/>
                     <div>
                         <div className="flex justify-center items-center cursor-pointer" onClick={changeExitPopUp}>
                             <div className="flex bg-red-400 text-center border-b border-t border-black w-full h-18 items-center justify-center p-2 pl-5 pr-5">
@@ -51,7 +52,6 @@ function SettingsPage() {
                 </div>
                 <RightMenu />
             </section>
-            <ExitPopUp exitPopUp={exitPopUp} setExitPopUp={setExitPopUp}/>
         </section>
     );
 }

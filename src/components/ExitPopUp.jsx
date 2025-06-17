@@ -21,7 +21,7 @@ function ExitPopUp({exitPopUp, setExitPopUp}) {
                         </div>
                     </div>
                 </section>
-            )};
+            )}
         </div>
     );
 }

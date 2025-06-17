@@ -51,9 +51,9 @@ function Post({content}){
                 <img className="h-fit" src="/src/assets/images/placeholder-image.png"></img>
                 }
             </div>
+            <PostOptionsPopUp setOpenOptions={setOpenOptions} openOptions={openOptions}/>
             <Interactions interactions={post.interactions}/>
             <OtherPostOptionsPopUp openOptionsOther={openOptionsOther} setOpenOptionsOther={setOpenOptionsOther}/>
-            <PostOptionsPopUp setOpenOptions={setOpenOptions} openOptions={openOptions}/>
         </div>
     )
 }
