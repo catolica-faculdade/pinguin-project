@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import Input from './Input';
 import ProfileButton from './ProfileButton';
 
-function EditProfile({user, posts, onClick}){
+function EditProfile({posts, onClick}){
+    const user = posts.user;
     return(
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
             <div className='flex flex-col gap-3'>
