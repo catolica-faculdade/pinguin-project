@@ -1,6 +1,9 @@
-function Tab({text, number}){
+import { Link } from "react-router-dom";
+
+function Tab({text, number, path}){
     return(
-        <div className="relative flex items-center pl-2 h-14 gap-2 bg-tab rounded-[18px] w-full max-w-60">
+        <Link to={path} 
+        className="relative flex items-center pl-2 h-14 gap-2 bg-tab rounded-[18px] w-full max-w-60 -z-10">
             <div>
                 <img
                 className="min-w-6 xmd:w-15"
@@ -17,7 +20,7 @@ function Tab({text, number}){
                     <p>{number}</p>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
 

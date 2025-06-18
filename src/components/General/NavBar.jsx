@@ -17,7 +17,9 @@ export default function NavBar() {
         <nav className="top-nav-bar-mobile flex justify-between bg-navbar p-1 items-center fixed w-full h-[8vh] border-b" >
             <div className="pl-[10px]">
                 <div className="w-[42px] h-[42px] bg-cube-gray-navbar rounded-[100px] p-[4px]">
-                    <img src='src/assets/images/logo-pinguIn-branca.png' />
+                    <Link to="/home">
+                        <img src='src/assets/images/logo-pinguIn-branca.png' />
+                    </Link>
                 </div>
             </div>
             <div className="pl-[15vw] md:max-xl:pl-[3vw]">
@@ -34,7 +36,7 @@ export default function NavBar() {
                 <Link to="/notifications">
                     <div className="flex flex-col items-center pl-[30px]">
                         <img className="w-[25px]" src='src/assets/images/notifications-icon.png' />
-                        <p className="text-[15px]">Notificação</p>
+                        <p className="text-[15px]">Notificações</p>
                     </div>
                 </Link>
                 <div className="flex items-center pl-[20px]">
@@ -45,7 +47,7 @@ export default function NavBar() {
                     </Link>
                     <div>
                         <img className="pl-[10px] min-w-7 cursor-pointer" onClick={changeModal} src='src/assets/images/down-arrow-icon.png'/>
-                        <Modal isFromNavbar={true} isOpen={openModal} />
+                        <Modal isOpen={openModal} />
                     </div>
                 </div>
             </div>

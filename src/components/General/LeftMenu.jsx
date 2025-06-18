@@ -14,10 +14,12 @@ function LeftMenu(){
             <div className='flex flex-col items-center gap-3 w-full'>
                 <Tab 
                 text="Following"
-                number={following}/>
+                number={following}
+                path="/following"/>
                 <Tab 
                 text="Followers"
-                number={followers}/>
+                number={followers}
+                path="/followers"/>
             </div>
             <MyUser
             username={username}

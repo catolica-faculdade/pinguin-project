@@ -1,8 +1,20 @@
 import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
+import Input from './Input';
 import ProfileButton from './ProfileButton';
+import { useState } from 'react';
 
-function EditProfile({user, posts, onClick}){
+function EditProfile({posts, onClick, setUsername, setFullName, setAbout}){
+    const user = posts[0].user;
+    const [inputUsername, setInputUsername] = useState(user.username);
+    const [inputFullName, setInputFullName] = useState(user.userFullname);
+    const [inputAbout, setInputAbout] = useState(user.about);
+
+    function saveData(){
+        setUsername(inputUsername);
+        setFullName(inputFullName);
+        setAbout(inputAbout);
+    }
     return(
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
             <div className='flex flex-col gap-3'>
@@ -11,19 +23,26 @@ function EditProfile({user, posts, onClick}){
                         <div className='pointer-events-none select-none w-18'>
                             <img className='w-full' src='/src/assets/images/profile-picture.svg'></img>
                         </div>
-                        <div className='flex flex-col justify-start'>
-                            <div className='flex items-center pr-8'>
-                                <p>{user.username}</p>
-                                <img className='w-8' src='/src/assets/images/streak-0-days.svg'></img>
-                                <p className='font-bold'>{user.streak}</p>
+                        <div className='flex flex-col gap-1 justify-start'>
+                            <div className='max-w-40'>
+                                <Input value={inputUsername || ''}
+                                onChange={(event) => setInputUsername(event.target.value)}
+                                type='text'/>
                             </div>
-                            <p>{user.userFullname}</p>
+                            <div className='max-w-40'>
+                                <Input value={inputFullName || ''}
+                                onChange={(event) => setInputFullName(event.target.value)}
+                                type='text'/>
+                            </div>
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
-                        <div>
-                            <ProfileButton onClick={onClick}
-                                text='Editar Perfil'
+                        <div className='hidden md:block'>
+                            <ProfileButton onClick={() => {
+                                saveData();
+                                onClick();
+                            }}
+                                text='Salvar'
                                 color='bg-gray-600' />
                         </div>
                         <Link to="/settings" className='w-8 cursor-pointer'>
@@ -37,12 +56,25 @@ function EditProfile({user, posts, onClick}){
                     <Link to="/following" className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </Link>
                 </div>
                 <div>
-                    <p>{user.about}</p>
+                    <Input type="textarea"
+                    value={inputAbout || 'oii'}
+                    onChange={(event) => setInputAbout(event.target.value)}/>
+                </div>
+                <div className='flex justify-center md:hidden'>
+                    <ProfileButton
+                    onClick={() => {
+                        saveData();
+                        onClick();
+                    }}
+                    text="Salvar"
+                    color="bg-gray-600"
+                    />
                 </div>
             </div>
             {posts.map((post) => (
-                <div className='posts flex justify-center'>
-                    <Post user={user} content={post} />
+                <div className='flex justify-center'
+                key={post.id}>
+                    <Post content={post} />
                 </div>
             ))}
         </div>

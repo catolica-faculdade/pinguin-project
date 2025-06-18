@@ -2,7 +2,8 @@ import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
 import ProfileButton from './ProfileButton';
 
-function ShowProfile({user, posts, onClick}){
+function ShowProfile({posts, onClick}){
+    const user = posts[0].user;
     return (
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
             <div className='flex flex-col gap-3'>
@@ -21,7 +22,7 @@ function ShowProfile({user, posts, onClick}){
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
-                        <div>
+                        <div className='hidden md:block'>
                             <ProfileButton onClick={onClick}
                                 text='Editar Perfil'
                                 color='bg-gray-600' />
@@ -39,10 +40,16 @@ function ShowProfile({user, posts, onClick}){
                 <div>
                     <p>{user.about}</p>
                 </div>
+                <div className='flex justify-center md:hidden'>
+                    <ProfileButton onClick={onClick}
+                        text='Editar Perfil'
+                        color='bg-gray-600' />
+                </div>
             </div>
             {posts.map((post) => (
-                <div className='posts flex justify-center'>
-                    <Post user={user} content={post} />
+                <div className='flex justify-center'
+                key={post.id}>
+                    <Post content={post} />
                 </div>
             ))}
         </div>

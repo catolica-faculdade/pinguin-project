@@ -1,16 +1,29 @@
 import { Link } from "react-router-dom";
 import Interactions from "./Interactions";
-import PostOptionsPopUp from "./PostOptionsPopUp";
-import OthersPostOptionsPopUp from "./OthersPostOptionsPopUp";
+import { useState } from "react";
+import OtherPostOptionsPopUp from "./OthersPostOptionsPopUp";
+import PostOptionsPopUp from "./PostOptionsPopUp"
 
-function Post({user, content}){
+function Post({content}){
+    const [openOptionsOther, setOpenOptionsOther] = useState(false);
+    const [openOptions, setOpenOptions] = useState(false);
+
+    const user = content.user;
+    
+    function openPopUp(){
+        if (content.user.username == "gfloriano"){
+            setOpenOptions(!openOptions);
+        } else {
+            setOpenOptionsOther(!openOptionsOther);
+        }
+    }
 
     const post = {
         interactions: {like: '10k', comment: '1.3k'}
     };
 
     return(
-        <div className="bg-navbar max-w-xl w-3/3 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-2xl">
+        <div className="bg-navbar max-w-xl w-3/3 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-2xl relative -z-10">
             <div className="flex justify-between">
                 <div className='flex items-center gap-3'>
                     <div className='select-none w-12'>
@@ -18,13 +31,13 @@ function Post({user, content}){
                     </div>
                     <div className='flex flex-col justify-start'>
                         <Link to={`/${user.username}`} className='flex items-center pr-8'>
-                            <p>{user.username}</p>
+                            <p>@{user.username}</p>
                         </Link>
                         <Link to={`/${user.username}`}>{user.userFullname}</Link>
                     </div>
                 </div>
                 <div className="cursor-pointer">
-                    <img src="/src/assets/images/post-options-icon.svg"></img>
+                    <img src="/src/assets/images/post-options-icon.svg" onClick={openPopUp}></img>
                 </div>
             </div>
             <div className="text">
@@ -38,7 +51,9 @@ function Post({user, content}){
                 <img className="h-fit" src="/src/assets/images/placeholder-image.png"></img>
                 }
             </div>
+            <PostOptionsPopUp setOpenOptions={setOpenOptions} openOptions={openOptions}/>
             <Interactions interactions={post.interactions}/>
+            <OtherPostOptionsPopUp openOptionsOther={openOptionsOther} setOpenOptionsOther={setOpenOptionsOther}/>
         </div>
     )
 }

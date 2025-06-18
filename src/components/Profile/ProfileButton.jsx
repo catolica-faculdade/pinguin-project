@@ -1,7 +1,7 @@
 function ProfileButton({onClick, text, color}){
 
     return(
-        <button className={`hidden md:flex bg-navbar w-36 justify-center p-1 
+        <button className={`bg-navbar min-w-36 max-w-[575px] w-full justify-center p-1 
         border-2 ${color} rounded-xl hover:cursor-pointer`}
         onClick={onClick}>
             <p>{text}</p>

@@ -11,25 +11,37 @@ import Post from '../components/Posts/Post';
 
 
 function Home() {
-    // conversa com a api aqui
-
-    const user = {
-        username: '@gfloriano',
-        userFullname: 'Gustavo Floriano',
-        streak: 0,
-        postsNumber: 10,
-        followers: 19,
-        following: 23
-    }
+    const user = [
+        {
+            username: 'gfloriano',
+            userFullname: 'Gustavo Floriano',
+            streak: 0,
+            postsNumber: 10,
+            followers: 19,
+            following: 23
+        },
+        {
+            username: 'vh',
+            userFullname: 'Vitor Hugo da Cunha',
+            streak: 3,
+            postsNumber: 30,
+            followers: 1,
+            following: 1000
+        }
+    ]
 
     const posts = [
         {
+            id: 1,
+            user: user[1],
             title: 'fui na casa do meu amigo...',
             image: null
         },
         {
+            id: 2,
+            user: user[0],
             title: 'gente, olha meu código novo...',
-            image: '/public/posts/novo-codigo.png'
+            image: '/posts/novo-codigo.png'
         }
     ];
 
@@ -41,8 +53,8 @@ function Home() {
                 <LeftMenu />
                 <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
                     {posts.map((post) => (
-                        <div className='posts flex justify-center'>
-                            <Post user={user} content={post}/>
+                        <div className='flex justify-center'>
+                            <Post key={post.id} content={post}/>
                         </div>
                     ))}
                 </div>
