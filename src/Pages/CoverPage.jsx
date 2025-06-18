@@ -1,4 +1,4 @@
-import NavBar from '../components/NavBar';
+import NavBar from '../components/General/NavBar';
 import Search from '../components/Search';
 import NavBarMobile from '../components/Mobile/NavBarMobile';
 

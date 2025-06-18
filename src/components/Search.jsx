@@ -11,7 +11,7 @@ export default function Search({ onClose }) {
         </button>
       </div>
       <div className="w-full max-w-xl mt-10 pl-[100px]">
-        <input type="text" placeholder="Pesquisar..." className="w-full p-4 text-lg border border-gray-400 bg-white rounded-[50px] shadow-sm focus:outline-none"/>
+        <input type="text" placeholder="Pesquisar..." className="w-full p-2 text-md border border-gray-400 bg-white rounded-[50px] shadow-sm focus:outline-none"/>
       </div>
     </div>
     </div>
