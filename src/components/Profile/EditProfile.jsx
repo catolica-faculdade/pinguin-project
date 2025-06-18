@@ -4,14 +4,16 @@ import Input from './Input';
 import ProfileButton from './ProfileButton';
 import { useState } from 'react';
 
-function EditProfile({posts, onClick, setUsername, setFullName}){
+function EditProfile({posts, onClick, setUsername, setFullName, setAbout}){
     const user = posts[0].user;
     const [inputUsername, setInputUsername] = useState(user.username);
     const [inputFullName, setInputFullName] = useState(user.userFullname);
+    const [inputAbout, setInputAbout] = useState(user.about);
 
     function saveData(){
         setUsername(inputUsername);
         setFullName(inputFullName);
+        setAbout(inputAbout);
     }
     return(
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
@@ -54,7 +56,9 @@ function EditProfile({posts, onClick, setUsername, setFullName}){
                     <Link to="/following" className='flex gap-1'> <p className='font-bold'>{user.following}</p> <p>Following</p> </Link>
                 </div>
                 <div>
-                    <p>{user.about}</p>
+                    <Input type="textarea"
+                    value={inputAbout || 'oii'}
+                    onChange={(event) => setInputAbout(event.target.value)}/>
                 </div>
                 <div className='flex justify-center md:hidden'>
                     <ProfileButton
