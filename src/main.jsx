@@ -17,6 +17,7 @@ import Notifications from './pages/Notifications.jsx';
 import Settings from './pages/Settings.jsx';
 import Following from './Pages/Following.jsx';
 import Followers from './Pages/Followers.jsx';
+import PostPage from './Pages/PostPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
   {
     path: 'followers',
     element: <Followers/>
+  },
+  {
+    path: 'post/:id',
+    element: <PostPage/>
   }
 ])
 
