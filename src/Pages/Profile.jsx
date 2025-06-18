@@ -10,12 +10,13 @@ function Profile() {
     const [editMode, setEditMode] = useState(false);
     const [username, setUsername] = useState('gfloriano');
     const [fullName, setFullName] = useState('Gustavo Floriano');
+    const [about, setAbout] = useState('"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."');
 
     const user = [
         {
             username: username,
             userFullname: fullName,
-            about: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+            about: about,
             streak: 0,
             postsNumber: 10,
             followers: 19,
@@ -46,7 +47,7 @@ function Profile() {
             <LeftMenu/>
             {editMode
             ?
-                <EditProfile posts={posts} onClick={() => setEditMode(false)} setUsername={setUsername} setFullName={setFullName}/>
+                <EditProfile posts={posts} onClick={() => setEditMode(false)} setUsername={setUsername} setFullName={setFullName} setAbout={setAbout}/>
             :
                 <ShowProfile posts={posts} onClick={() => setEditMode(true)}/>
             }
