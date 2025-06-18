@@ -11,7 +11,11 @@ function Input({type, value, width, onChange}){
 
     if(type === 'textarea'){
         return(
-            <textarea className="resize-none" onChange={onChange}></textarea>
+            <textarea 
+            className={`${inputClass} resize-none`} 
+            value={value}
+            onChange={onChange}
+            ></textarea>
         )
     }
 }
