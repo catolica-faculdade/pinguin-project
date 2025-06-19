@@ -2,8 +2,7 @@ import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
 import ProfileButton from './ProfileButton';
 
-function ShowProfile({posts, onClick}){
-    const user = posts[0].user;
+function ShowProfile({user, posts, onClick}){
     return (
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
             <div className='flex flex-col gap-3'>
