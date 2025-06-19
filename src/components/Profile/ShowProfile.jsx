@@ -2,7 +2,7 @@ import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
 import ProfileButton from './ProfileButton';
 
-function ShowProfile({user, posts, onClick}){
+function ShowProfile({user, posts, onClick, otherUser}){
     return (
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
             <div className='flex flex-col gap-3'>
@@ -21,11 +21,20 @@ function ShowProfile({user, posts, onClick}){
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
-                        <div className='hidden md:block'>
-                            <ProfileButton onClick={onClick}
-                                text='Editar Perfil'
-                                color='bg-gray-600' />
-                        </div>
+                        {otherUser
+                        ?
+                            <div className='hidden md:block'>
+                                <ProfileButton onClick={onClick}
+                                    text='Seguir'
+                                    color='bg-gray-600' />
+                            </div> 
+                        :
+                            <div className='hidden md:block'>
+                                <ProfileButton onClick={onClick}
+                                    text='Editar Perfil'
+                                    color='bg-gray-600' />
+                            </div>
+                        }
                         <Link to="/settings" className='w-8 cursor-pointer'>
                             <img src='src/assets/images/configs-icon.svg'></img>
                         </Link>
@@ -39,11 +48,22 @@ function ShowProfile({user, posts, onClick}){
                 <div>
                     <p>{user.about}</p>
                 </div>
+                {otherUser
+                ?
+                <div className='flex justify-center md:hidden'>
+                    <ProfileButton onClick={onClick}
+                        text='Seguir'
+                        color='bg-gray-600'
+                    />
+                </div>
+                :
                 <div className='flex justify-center md:hidden'>
                     <ProfileButton onClick={onClick}
                         text='Editar Perfil'
-                        color='bg-gray-600' />
+                        color='bg-gray-600'
+                    />
                 </div>
+                }
             </div>
             {posts.map((post) => (
                 <div className='flex justify-center'

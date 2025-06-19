@@ -60,7 +60,7 @@ function User(){
             <LeftMenu/>
             {selectedUser 
             ?
-                <ShowProfile user={selectedUser} posts={userPosts}/>
+                <ShowProfile user={selectedUser} posts={userPosts} otherUser/>
             :
                 <div className="text-center w-full md:w-3/5 p-8">Usuário não encontrado.</div>
             }
