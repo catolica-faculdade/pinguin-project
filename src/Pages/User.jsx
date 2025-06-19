@@ -12,9 +12,8 @@ function User(){
     const [about, setAbout] = useState('');
     const { pathname } = useLocation();
     const userPath = pathname.slice(1);
-    console.log(userPath);
 
-    const user = [
+    const users = [
         {
             id: 1,
             username: 'gfloriano',
@@ -42,25 +41,29 @@ function User(){
             id: 1,
             title: 'fui na casa do meu amigo...',
             image: null,
-            user: user[0]
+            user: users[0]
         },
         {
             id: 2,
             title: 'gente, olha meu código novo...',
             image: '/public/posts/novo-codigo.png',
-            user: user[0]
+            user: users[1]
         }
     ];
+
+    const selectedUser = users.find(user => user.username === userPath);
+    const userPosts = posts.filter(post => post.user.username === userPath);
     return(
         <section>
             <NavBar />
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
             <LeftMenu/>
-            {user.map((user) => {
-                if(user.username === userPath){
-                    <ShowProfile posts={posts} onClick={() => setEditMode(true)}/>
-                }
-            })}
+            {selectedUser 
+            ?
+                <ShowProfile user={selectedUser} posts={userPosts}/>
+            :
+                <div className="text-center w-full md:w-3/5 p-8">Usuário não encontrado.</div>
+            }
             <RightMenu/>
             </section>
         </section>
