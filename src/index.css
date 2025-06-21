@@ -6,6 +6,10 @@
     --breakpoint-xmd: 50rem;
 }
 
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
 .bg-purple-pinguin{
     background-color: #854DA6;
 }
