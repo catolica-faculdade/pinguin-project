@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 
 function User(){
 
-    const [editMode, setEditMode] = useState(false);
+    const [follow, setFollow] = useState(false);
     const [username, setUsername] = useState('');
     const [fullName, setFullName] = useState('');
     const [about, setAbout] = useState('');
@@ -39,7 +39,7 @@ function User(){
             id: 3,
             username: 'gaucho',
             userFullname: 'João Constantino Caetano',
-            about: 'Baaah gurizada, vamo grêmioo',
+            about: 'Baaah gurizada, vamo grêmioo. tomar meu chimas aqui meu',
             streak: 0,
             postsNumber: 0,
             followers: 0,
@@ -55,6 +55,16 @@ function User(){
             followers: 0,
             following: 0
         },
+        {
+            id: 5,
+            username: 'johanngr14',
+            userFullname: 'Johann Gossen Ruth',
+            about: 'Sou legal as vezes (nao gosto do @gfloriano >:D )',
+            streak: 0,
+            postsNumber: 0,
+            followers: 0,
+            following: 0 
+        }
     ]
 
     const posts = [
@@ -81,7 +91,7 @@ function User(){
             <LeftMenu/>
             {selectedUser 
             ?
-                <ShowProfile user={selectedUser} posts={userPosts} otherUser/>
+                <ShowProfile user={selectedUser} posts={userPosts} follow={follow} setFollow={setFollow} otherUser/>
             :
                 <div className="text-center w-full md:w-3/5 p-8">Usuário não encontrado.</div>
             }
