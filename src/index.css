@@ -146,4 +146,20 @@ body {
   transform: translateX(50px);
 }
 
+@media (max-width: 768px) {
+    .hidden-navbar {
+       display: none;
+    }
+
+    .increase-width-md {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .increase-width-sm {
+        width: 90vw;
+    }
+}
+
 @import 'tailwindcss';
