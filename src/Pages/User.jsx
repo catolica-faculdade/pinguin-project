@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 
 function User(){
 
+    const [editMode, setEditMode] = useState(false);
     const [username, setUsername] = useState('');
     const [fullName, setFullName] = useState('');
     const [about, setAbout] = useState('');
@@ -33,6 +34,26 @@ function User(){
             postsNumber: 10,
             followers: 19,
             following: 23
+        },
+        {
+            id: 3,
+            username: 'gaucho',
+            userFullname: 'João Constantino Caetano',
+            about: 'Baaah gurizada, vamo grêmioo',
+            streak: 0,
+            postsNumber: 0,
+            followers: 0,
+            following: 0
+        },
+        {
+            id: 4,
+            username: 'gabbosco',
+            userFullname: 'Gabriel Grabowski Bosco',
+            about: 'opa meus quiridoxx',
+            streak: 0,
+            postsNumber: 0,
+            followers: 0,
+            following: 0
         },
     ]
 
