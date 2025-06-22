@@ -51,9 +51,11 @@ function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
                             />
                             </div>
                         )}
-                        <Link to="/settings" className='w-8 cursor-pointer'>
-                            <img src='src/assets/images/configs-icon.svg'></img>
-                        </Link>
+                        {!otherUser && (
+                            <Link to="/settings" className='w-8 cursor-pointer'>
+                                <img src='src/assets/images/configs-icon.svg'></img>
+                            </Link>
+                        )}
                     </div>
                 </div>
                 <div className='flex gap-3'>
