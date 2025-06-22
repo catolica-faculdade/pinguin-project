@@ -29,7 +29,7 @@ function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
                                         onClick;
                                     }}
                                         text='Seguindo'
-                                        color='bg-follow-back-button text-white border-black            '
+                                        color='bg-follow-back-button text-white border-black'
                                     />
                                 </div>
                             ) : (
@@ -70,23 +70,21 @@ function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
                     follow ? (
                         <div className='flex justify-center md:hidden'>
                             <ProfileButton onClick={() => {
-                                {console.log('clicou em seguir')}
-                                onClick();
-                                setFollow(true);
+                                setFollow(false);
+                                onClick;
                             }}
-                            text='Seguir'
-                            color='bg-gray-600'
+                                text='Seguindo'
+                                color='bg-follow-back-button text-white border-black'
                             />
                         </div>
                     ) : (
                         <div className='flex justify-center md:hidden'>
                             <ProfileButton onClick={() => {
-                                {console.log('clicou em parar de seguir')}
-                                onClick();
-                                setFollow(false);
+                                setFollow(true);
+                                onClick;
                             }}
-                                text='Seguindo'
-                                color='bg-gray-600'
+                            text='Seguir'
+                            color='bg-follow-button text-white border-black'
                             />
                         </div>
                     )
