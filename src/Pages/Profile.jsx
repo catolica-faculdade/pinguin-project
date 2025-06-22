@@ -10,32 +10,31 @@ function Profile() {
     const [editMode, setEditMode] = useState(false);
     const [username, setUsername] = useState('gfloriano');
     const [fullName, setFullName] = useState('Gustavo Floriano');
-    const [about, setAbout] = useState('"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."');
+    const [about, setAbout] = useState('Cristiano Lionel Ronaldo Neymar da Silva Messi Jr.');
 
-    const user = [
-        {
-            username: username,
-            userFullname: fullName,
-            about: about,
-            streak: 0,
-            postsNumber: 10,
-            followers: 19,
-            following: 23
-        }
-    ]
+    const user = {
+        id: 1,
+        username: username,
+        userFullname: fullName,
+        about: about,
+        streak: 0,
+        postsNumber: 10,
+        followers: 19,
+        following: 23
+    }
 
     const posts = [
         {
             id: 1,
             title: 'fui na casa do meu amigo...',
             image: null,
-            user: user[0]
+            user: user
         },
         {
             id: 2,
             title: 'gente, olha meu código novo...',
             image: '/public/posts/novo-codigo.png',
-            user: user[0]
+            user: user
         }
     ];
 
@@ -47,9 +46,9 @@ function Profile() {
             <LeftMenu/>
             {editMode
             ?
-                <EditProfile posts={posts} onClick={() => setEditMode(false)} setUsername={setUsername} setFullName={setFullName} setAbout={setAbout}/>
+            <EditProfile user={user} posts={posts} onClick={() => setEditMode(false)} setUsername={setUsername} setFullName={setFullName} setAbout={setAbout}/>
             :
-                <ShowProfile posts={posts} onClick={() => setEditMode(true)}/>
+                <ShowProfile user={user} posts={posts} onClick={() => setEditMode(true)}/>
             }
             <RightMenu/>
             </section>

@@ -16,6 +16,7 @@ import Notifications from './pages/Notifications.jsx';
 import Settings from './pages/Settings.jsx';
 import Following from './Pages/Following.jsx';
 import Followers from './Pages/Followers.jsx';
+import User from './Pages/User.jsx';
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
   {
     path: 'followers',
     element: <Followers/>
+  },
+  {
+    path: '/:user',
+    element: <User/>
   }
 ])
 

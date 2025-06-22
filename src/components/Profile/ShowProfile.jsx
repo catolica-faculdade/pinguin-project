@@ -2,8 +2,7 @@ import Post from '../../components/Posts/Post';
 import { Link } from 'react-router-dom';
 import ProfileButton from './ProfileButton';
 
-function ShowProfile({posts, onClick}){
-    const user = posts[0].user;
+function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
     return (
         <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
             <div className='flex flex-col gap-3'>
@@ -22,11 +21,36 @@ function ShowProfile({posts, onClick}){
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
-                        <div className='hidden md:block'>
+                        {otherUser ? (
+                            follow ? (
+                                <div className='hidden md:block'>
+                                    <ProfileButton onClick={() => {
+                                        setFollow(false);
+                                        onClick;
+                                    }}
+                                        text='Seguindo'
+                                        color='bg-follow-back-button text-white border-black            '
+                                    />
+                                </div>
+                            ) : (
+                                <div className='hidden md:block'>
+                                    <ProfileButton onClick={() => {
+                                        setFollow(true);
+                                        onClick;
+                                    }}
+                                    text='Seguir'
+                                    color='bg-follow-button text-white border-black'
+                                    />
+                                </div>
+                            )
+                        ) : (
+                            <div className='hidden md:block'>
                             <ProfileButton onClick={onClick}
                                 text='Editar Perfil'
-                                color='bg-gray-600' />
-                        </div>
+                                color='bg-gray-600'
+                            />
+                            </div>
+                        )}
                         <Link to="/settings" className='w-8 cursor-pointer'>
                             <img src='src/assets/images/configs-icon.svg'></img>
                         </Link>
@@ -40,11 +64,38 @@ function ShowProfile({posts, onClick}){
                 <div>
                     <p>{user.about}</p>
                 </div>
-                <div className='flex justify-center md:hidden'>
+                {otherUser ? (
+                    follow ? (
+                        <div className='flex justify-center md:hidden'>
+                            <ProfileButton onClick={() => {
+                                {console.log('clicou em seguir')}
+                                onClick();
+                                setFollow(true);
+                            }}
+                            text='Seguir'
+                            color='bg-gray-600'
+                            />
+                        </div>
+                    ) : (
+                        <div className='flex justify-center md:hidden'>
+                            <ProfileButton onClick={() => {
+                                {console.log('clicou em parar de seguir')}
+                                onClick();
+                                setFollow(false);
+                            }}
+                                text='Seguindo'
+                                color='bg-gray-600'
+                            />
+                        </div>
+                    )
+                ) : (
+                    <div className='flex justify-center md:hidden'>
                     <ProfileButton onClick={onClick}
                         text='Editar Perfil'
-                        color='bg-gray-600' />
-                </div>
+                        color='bg-gray-600'
+                    />
+                    </div>
+                )}
             </div>
             {posts.map((post) => (
                 <div className='flex justify-center'
