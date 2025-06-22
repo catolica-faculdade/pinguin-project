@@ -57,14 +57,14 @@ function EditProfile({posts, onClick, setUsername, setFullName, setAbout}){
                 </div>
                 <div>
                     <Input type="textarea"
-                    value={inputAbout || 'oii'}
+                    value={inputAbout || 'Não há dados.'}
                     onChange={(event) => setInputAbout(event.target.value)}/>
                 </div>
                 <div className='flex justify-center md:hidden'>
                     <ProfileButton
                     onClick={() => {
                         saveData();
-                        onClick();
+                        onClick;
                     }}
                     text="Salvar"
                     color="bg-gray-600"
