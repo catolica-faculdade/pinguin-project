@@ -21,20 +21,36 @@ function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
                         </div>
                     </div>
                     <div className='flex gap-x-4 items-start'>
-                        {otherUser
-                        ?
-                            <div className='hidden md:block'>
-                                <ProfileButton onClick={onClick}
+                        {otherUser ? (
+                            follow ? (
+                                <div className='hidden md:block'>
+                                    <ProfileButton onClick={() => {
+                                        setFollow(false);
+                                        onClick;
+                                    }}
+                                        text='Seguindo'
+                                        color='bg-follow-back-button text-white border-black            '
+                                    />
+                                </div>
+                            ) : (
+                                <div className='hidden md:block'>
+                                    <ProfileButton onClick={() => {
+                                        setFollow(true);
+                                        onClick;
+                                    }}
                                     text='Seguir'
-                                    color='bg-gray-600' />
-                            </div> 
-                        :
+                                    color='bg-follow-button text-white border-black'
+                                    />
+                                </div>
+                            )
+                        ) : (
                             <div className='hidden md:block'>
-                                <ProfileButton onClick={onClick}
-                                    text='Editar Perfil'
-                                    color='bg-gray-600' />
+                            <ProfileButton onClick={onClick}
+                                text='Editar Perfil'
+                                color='bg-gray-600'
+                            />
                             </div>
-                        }
+                        )}
                         <Link to="/settings" className='w-8 cursor-pointer'>
                             <img src='src/assets/images/configs-icon.svg'></img>
                         </Link>
@@ -52,6 +68,7 @@ function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
                     follow ? (
                         <div className='flex justify-center md:hidden'>
                             <ProfileButton onClick={() => {
+                                {console.log('clicou em seguir')}
                                 onClick();
                                 setFollow(true);
                             }}
@@ -62,10 +79,11 @@ function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
                     ) : (
                         <div className='flex justify-center md:hidden'>
                             <ProfileButton onClick={() => {
+                                {console.log('clicou em parar de seguir')}
                                 onClick();
                                 setFollow(false);
                             }}
-                                text='Parar de Seguir'
+                                text='Seguindo'
                                 color='bg-gray-600'
                             />
                         </div>
