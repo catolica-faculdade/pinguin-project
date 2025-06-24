@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Tab({text, number, path}){
     return(
         <Link to={path} 
-        className="relative flex items-center pl-2 h-14 gap-2 bg-tab rounded-[18px] w-full max-w-60 -z-10">
+        className="relative flex items-center pl-2 h-14 gap-2 bg-tab rounded-[18px] w-full max-w-60">
             <div>
                 <img
                 className="min-w-6 xmd:w-15"
