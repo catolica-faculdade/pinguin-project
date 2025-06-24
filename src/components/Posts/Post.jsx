@@ -4,7 +4,7 @@ import { useState } from "react";
 import OtherPostOptionsPopUp from "./OthersPostOptionsPopUp";
 import PostOptionsPopUp from "./PostOptionsPopUp"
 
-function Post({content}){
+function Post({id, content}){
     const [openOptionsOther, setOpenOptionsOther] = useState(false);
     const [openOptions, setOpenOptions] = useState(false);
 
@@ -23,7 +23,7 @@ function Post({content}){
     };
 
     return(
-        <div className="bg-navbar max-w-xl w-3/3 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-2xl relative -z-10">
+        <div className="bg-navbar max-w-xl w-3/3 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-2xl relative">
             <div className="flex justify-between">
                 <div className='flex items-center gap-3'>
                     <div className='select-none w-12'>
@@ -40,17 +40,19 @@ function Post({content}){
                     <img src="/src/assets/images/post-options-icon.svg" onClick={openPopUp}></img>
                 </div>
             </div>
-            <div className="text">
-                <p>{content.title}</p>
-            </div>
-            <div className="content bg-tab w-full h-75 flex justify-center items-center pointer-events-none select-none">
-                {content.image
-                ?
-                <img className="h-fit" src={content.image}></img>
-                :
-                <img className="h-fit" src="/src/assets/images/placeholder-image.png"></img>
-                }
-            </div>
+            <Link to={`/post/${id}`}>
+                <div className="text pb-3">
+                    <p>{content.title}</p>
+                </div>
+                <div className="content bg-tab w-full h-75 flex justify-center items-center pointer-events-none select-none">
+                    {content.image
+                    ?
+                    <img className="h-fit" src={content.image}></img>
+                    :
+                    <img className="h-fit" src="/src/assets/images/placeholder-image.png"></img>
+                    }
+                </div>
+            </Link>
             <PostOptionsPopUp setOpenOptions={setOpenOptions} openOptions={openOptions}/>
             <Interactions interactions={post.interactions}/>
             <OtherPostOptionsPopUp openOptionsOther={openOptionsOther} setOpenOptionsOther={setOpenOptionsOther}/>
