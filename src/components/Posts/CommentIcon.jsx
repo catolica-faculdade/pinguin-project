@@ -1,9 +1,12 @@
-function CommentIcon({comment}){
+import { Link } from "react-router-dom";
+
+function CommentIcon({postId, comment}){
     return(
-        <div className="flex items-center gap-1">
+        <Link to={`/post/${postId}`} 
+        className="flex items-center gap-1">
             <img src="/src/assets/images/comment.svg"></img>
             <p>{comment}</p>
-        </div>
+        </Link>
     );
 }
 

@@ -54,7 +54,7 @@ function Post({id, content}){
                 </div>
             </Link>
             <PostOptionsPopUp setOpenOptions={setOpenOptions} openOptions={openOptions}/>
-            <Interactions interactions={post.interactions}/>
+            <Interactions postId={id} interactions={post.interactions}/>
             <OtherPostOptionsPopUp openOptionsOther={openOptionsOther} setOpenOptionsOther={setOpenOptionsOther}/>
         </div>
     )
