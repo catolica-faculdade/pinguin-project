@@ -54,7 +54,7 @@ function Home() {
                 <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
                     {posts.map((post) => (
                         <div className='flex justify-center'>
-                            <Post key={post.id} content={post}/>
+                            <Post key={post.id} id={post.id} content={post}/>
                         </div>
                     ))}
                 </div>
