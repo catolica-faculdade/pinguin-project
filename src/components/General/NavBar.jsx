@@ -14,11 +14,11 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="top-nav-bar-mobile flex justify-between bg-navbar p-1 items-center fixed w-full h-[8vh] border-b hidden-navbar" >
+        <nav className="top-nav-bar-mobile flex justify-between bg-navbar p-1 items-center fixed w-full h-[8vh] border-b hidden-navbar z-10" >
             <div className="pl-[10px]">
                 <div className="w-[42px] h-[42px] bg-cube-gray-navbar rounded-[100px] p-[4px]">
                     <Link to="/home">
-                        <img src='src/assets/images/logo-pinguIn-branca.png' />
+                        <img src='/src/assets/images/logo-pinguIn-branca.png' />
                     </Link>
                 </div>
             </div>
@@ -29,24 +29,24 @@ export default function NavBar() {
             <div className="flex pr-50 items-center">
                 <Link to="/home">
                     <div className="flex flex-col items-center">
-                        <img className="w-[25px] pt-[4px]" src='src/assets/images/house-icon.png' />
+                        <img className="w-[25px] pt-[4px]" src='/src/assets/images/house-icon.png' />
                         <p className="text-[15px]">Início</p>
                     </div>
                 </Link>
                 <Link to="/notifications">
                     <div className="flex flex-col items-center pl-[30px]">
-                        <img className="w-[25px]" src='src/assets/images/notifications-icon.png' />
+                        <img className="w-[25px]" src='/src/assets/images/notifications-icon.png' />
                         <p className="text-[15px]">Notificações</p>
                     </div>
                 </Link>
                 <div className="flex items-center pl-[20px]">
                     <Link to="/profile">
                         <div className="rounded-[50%] p-[0px] items-center">
-                            <img className="w-[45px] min-w-[45px]" src='src/assets/images/profile-picture.svg' />
+                            <img className="w-[45px] min-w-[45px]" src='/src/assets/images/profile-picture.svg' />
                         </div>
                     </Link>
                     <div>
-                        <img className="pl-[10px] min-w-7 cursor-pointer" onClick={changeModal} src='src/assets/images/down-arrow-icon.png'/>
+                        <img className="pl-[10px] min-w-7 cursor-pointer" onClick={changeModal} src='/src/assets/images/down-arrow-icon.png'/>
                         <Modal isOpen={openModal} />
                     </div>
                 </div>

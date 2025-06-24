@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Like({likeNumber}){
+function LikeIcon({likeNumber}){
     
     const [like, setLike] = useState(false);
 
@@ -9,11 +9,11 @@ function Like({likeNumber}){
             {like
             ?
             <img onClick={() => setLike(false)}
-            src="src/assets/images/like-heart-red.svg"
+            src="/src/assets/images/like-heart-red.svg"
             className="cursor-pointer"></img>
             :
             <img onClick={() => setLike(true)}
-            src="src/assets/images/like-heart-white.svg"
+            src="/src/assets/images/like-heart-white.svg"
             className="cursor-pointer"></img>
             }
             <p>{likeNumber}</p>
@@ -21,4 +21,4 @@ function Like({likeNumber}){
     );
 }
 
-export default Like;
+export default LikeIcon;

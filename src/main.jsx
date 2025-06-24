@@ -17,6 +17,7 @@ import Settings from './pages/Settings.jsx';
 import Following from './Pages/Following.jsx';
 import Followers from './Pages/Followers.jsx';
 import User from './Pages/User.jsx';
+import PostPage from './Pages/PostPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
   {
     path: '/:user',
     element: <User/>
+  },
+  {
+    path: 'post/:id',
+    element: <PostPage/>
   }
 ])
 
