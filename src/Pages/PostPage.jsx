@@ -77,7 +77,7 @@ function PostPage() {
             <NavBar />
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
                 <LeftMenu />
-                <div className='w-full md:w-3/5 flex flex-col items-center pt-3'>
+                <div className='w-full md:w-3/5 flex flex-col items-center pt-3 pb-3 overflow-y-scroll'>
                     <div className="bg-navbar max-w-xl w-11/12 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-t-2xl relative border-b-0">
                         <div className="flex items-center gap-3">
                             <Link to={"/home"}>
