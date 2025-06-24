@@ -1,5 +1,7 @@
+import Interactions from "./Interactions";
+
 function Comment({content}){
-        return(
+    return(
         <div className="flex items-center gap-1 justify-between w-full">
             <div className="flex gap-3 items-center">
                 <div>
@@ -9,12 +11,11 @@ function Comment({content}){
                     <div>
                         <p>@{content.user.username}</p>
                         <p>{content.comment}</p>
-
                     </div>
                 </div>
             </div>
             <div>
-                <p>S2</p>
+                <Interactions comment={true}/>
             </div>
         </div>
     );
