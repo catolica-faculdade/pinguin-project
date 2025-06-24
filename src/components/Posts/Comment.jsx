@@ -4,11 +4,11 @@ function Comment({content}){
     return(
         <div className="flex items-center gap-1 justify-between w-full">
             <div className="flex gap-3 items-center">
-                <div>
+                <div className="max-w-10">
                     <img src="/src/assets/images/profile-picture.svg"/>
                 </div>
                 <div>
-                    <div>
+                    <div className="text-sm">
                         <p>@{content.user.username}</p>
                         <p>{content.comment}</p>
                     </div>
