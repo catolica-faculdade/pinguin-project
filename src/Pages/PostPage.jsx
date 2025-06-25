@@ -16,16 +16,40 @@ function PostPage() {
     const [openOptionsOther, setOpenOptionsOther] = useState(false);
     const [openOptions, setOpenOptions] = useState(false);
     const [comments, setComments] = useState([])
-    const user = {
-        username,
-        userFullname: fullName,
-        about: 'Lorem ipsum...',
-        streak: 0,
-        postsNumber: 10,
-        followers: 19,
-        following: 23
-    };
+    const user = [
+            {
+            username: "gfloriano",
+            userFullname: fullName,
+            about: 'Lorem ipsum...',
+            streak: 0,
+            postsNumber: 10,
+            followers: 19,
+            following: 23
+        },
+        {
+            username: 'vh',
+            userFullname: 'Vitor Hugo da Cunha',
+            streak: 3,
+            postsNumber: 30,
+            followers: 1,
+            following: 1000
+        }
+    ]
 
+    const posts = [
+        {
+            id: 1,
+            user: user[1],
+            title: 'fui na casa do meu amigo...',
+            image: null
+        },
+        {
+            id: 2,
+            user: user[0],
+            title: 'gente, olha meu código novo...',
+            image: '/posts/novo-codigo.png'
+        }
+    ];
     function openPopUp() {
         if (user.username === "gfloriano") {
             setOpenOptions(!openOptions);
@@ -35,15 +59,10 @@ function PostPage() {
     }
     useEffect(() => {
     setComments([
-        { id: 1, user, comment: "kkkkkkkkkkkkk" },
-        { id: 2, user, comment: "LÁ ELE AAAAAAAHAHAHAHAHAHHAAHHAAAAA" }
+        { id: 1, user: user[1], comment: "kkkkkkkkkkkkk" },
+        { id: 2, user: user[0], comment: "LÁ ELE AAAAAAAHAHAHAHAHAHHAAHHAAAAA" }
     ]);
     }, []);
-
-    const posts = [
-        { id: 1, title: 'fui na casa do meu amigo...', image: null, user, comments },
-        { id: 2, title: 'gente, olha meu código novo...', image: '/public/posts/novo-codigo.png', user }
-    ];
 
     const { id } = useParams();
     const postId = parseInt(id);
@@ -62,7 +81,7 @@ function PostPage() {
 
         const newComment = {
             id: nextId,
-            user,
+            user: user[1],
             comment: message,
         };
 
@@ -70,7 +89,7 @@ function PostPage() {
         setInputValue(""); 
 
     }
-
+    console.log(posts[postId-1].user.username);
 
     return (
         <section>
@@ -88,11 +107,11 @@ function PostPage() {
                         <div className="flex justify-between">
                             <div className='flex items-center gap-3'>
                                 <div className='select-none w-12'>
-                                    <Link to={`/${user.username}`}><img className='w-full' src='/src/assets/images/profile-picture.svg' /></Link>
+                                    <Link to={`/${posts[postId-1].user.username}`}><img className='w-full' src='/src/assets/images/profile-picture.svg' /></Link>
                                 </div>
                                 <div className='flex flex-col'>
-                                    <Link to={`/${user.username}`}><p>@{user.username}</p></Link>
-                                    <Link to={`/${user.username}`}>{user.userFullname}</Link>
+                                    <Link to={`/${posts[postId-1].user.username}`}><p>@{posts[postId-1].user.username}</p></Link>
+                                    <Link to={`/${posts[postId-1].user.username}`}>{posts[postId-1].user.userFullname}</Link>
                                 </div>
                             </div>
                             <div className="cursor-pointer">
@@ -118,7 +137,7 @@ function PostPage() {
                         ))}
                     </div>
                     <div className='flex justify-center max-w-xl w-11/12 '>
-                        <NewComment comments={comments} user={user} setComments={setComments} handleKeyDown={handleKeyDown} inputValue={inputValue} setInputValue={setInputValue}/>
+                        <NewComment comments={comments} user={posts[postId-1].user} setComments={setComments} handleKeyDown={handleKeyDown} inputValue={inputValue} setInputValue={setInputValue}/>
                     </div>
                 </div>
                 <RightMenu />
