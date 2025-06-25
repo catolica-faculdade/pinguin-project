@@ -3,6 +3,8 @@ import LeftMenu from "../components/General/LeftMenu";
 import RightMenu from "../components/General/RightMenu";
 import FollowTab from "../components/Follows/FollowTab";
 import NavBar from "../components/General/NavBar";
+import TopNavMobile from "../components/Mobile/TopNavMobile";
+import NavBarMobile from "../components/Mobile/NavBarMobile";
 
 function Followers() {
     const [followers, setFollowers] = useState([]);
@@ -60,7 +62,8 @@ function Followers() {
     return (
         <section>
             <NavBar />
-            <section className="flex bg-user-icon h-dvh pt-[8vh]">
+            <TopNavMobile />
+            <section className="flex bg-user-icon h-dvh pt-[47px] pb-[55px] md:pt-[8vh]">
                 <LeftMenu />
                 <div className="w-full md:w-3/5 flex flex-col overflow-y-scroll">
                 {followers.map((user) => {
@@ -88,6 +91,7 @@ function Followers() {
                 </div>
                 <RightMenu />
             </section>
+            <NavBarMobile />
         </section>
     );
 }
