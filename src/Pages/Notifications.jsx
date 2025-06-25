@@ -4,15 +4,20 @@ import NavBar from "../components/General/NavBar";
 import TitleBar from "../components/General/TitleBar";
 import Filters from "../components/General/Filters";
 import Notification from "../components/General/Notification";
+import TopNavMobile from "../components/Mobile/TopNavMobile";
+import NavBarMobile from "../components/Mobile/NavBarMobile";
+
+
 
 function Notifications(){
     const notifications = [{id: 1, userImage: "/src/assets/images/profile-picture.svg", nome: "Vitor Hugo da Cunha", tipo: "curtiu", post: null, data: "28/02/25", hora: "16:26"},{id: 1,  userImage: "/src/assets/images/profile-picture.svg", nome: "Gabriel Grabowski Bosco", tipo: "comentou", post: "/src/assets/images/purple-dog-image.png", data: "25/03/25", hora: "21:41"},{id: 1, userImage: "/src/assets/images/profile-picture.svg",  nome: "João Constantino Caetano", tipo: "mencionou", post: "/src/assets/images/beach-image.png", data: "25/03/25", hora: "21:41"}]
     return(
         <section>
             <NavBar/>
-            <section className="flex h-dvh pt-[8vh] shadow-">
+            <TopNavMobile />
+            <section className="flex bg-user-icon pt-12 md:pt-[8vh] h-dvh">
                 <LeftMenu/>
-                <div className="w-full md:w-3/5">
+                <div className="w-full md:w-3/5 flex flex-col gap-6">
                     <TitleBar text={"Notificações"}/>
                     <Filters/>
                     {notifications.map((notification) =>(
@@ -28,6 +33,7 @@ function Notifications(){
                 </div>
                 <RightMenu/>
             </section>
+            <NavBarMobile />
         </section>
     );
 }
