@@ -4,6 +4,8 @@ import NavBar from "../components/General/NavBar";
 import RightMenu from "../components/General/RightMenu";
 import ShowProfile from "../components/Profile/ShowProfile";
 import { useLocation } from "react-router-dom";
+import TopNavMobile from "../components/Mobile/TopNavMobile";
+import NavBarMobile from "../components/Mobile/NavBarMobile";
 
 function User(){
 
@@ -87,7 +89,8 @@ function User(){
     return(
         <section>
             <NavBar />
-            <section className='flex bg-user-icon pt-[8vh] h-dvh'>
+            <TopNavMobile />
+            <section className='flex bg-user-icon pt-[50px] pb-[55px] md:pt-[8vh] h-dvh'>
             <LeftMenu/>
             {selectedUser 
             ?
@@ -97,6 +100,7 @@ function User(){
             }
             <RightMenu/>
             </section>
+            <NavBarMobile />
         </section>
     );
 }
