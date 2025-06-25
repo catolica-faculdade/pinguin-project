@@ -4,6 +4,8 @@ import LeftMenu from '../components/General/LeftMenu';
 import RightMenu from '../components/General/RightMenu';
 import ShowProfile from '../components/Profile/ShowProfile';
 import EditProfile from '../components/Profile/EditProfile';
+import TopNavMobile from "../components/Mobile/TopNavMobile";
+import NavBarMobile from "../components/Mobile/NavBarMobile";
 
 function Profile() {
 
@@ -42,7 +44,8 @@ function Profile() {
         // retorna no 'html' pela main aqui
         <section>
             <NavBar />
-            <section className='flex bg-user-icon pt-[8vh] h-dvh'>
+            <TopNavMobile />
+            <section className='flex bg-user-icon pt-[50px] pb-[55px] md:pt-[8vh] h-dvh'>
             <LeftMenu/>
             {editMode
             ?
@@ -52,6 +55,7 @@ function Profile() {
             }
             <RightMenu/>
             </section>
+            <NavBarMobile />
         </section>
     );
 };
