@@ -8,9 +8,11 @@ import TopNavMobile from '../components/Mobile/TopNavMobile';
 import LeftMenu from '../components/General/LeftMenu';
 import RightMenu from '../components/General/RightMenu';
 import Post from '../components/Posts/Post';
+import CreatePost from '../components/Posts/CreatePost';
 
 
 function Home() {
+    const [newPost, setNewPost] = useState(false);
     const user = [
         {
             username: 'gfloriano',
@@ -48,9 +50,9 @@ function Home() {
     return (
         <section>
             <NavBar />
-            <TopNavMobile />
+            <TopNavMobile/>
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
-                <LeftMenu />
+                <LeftMenu onClick={() => setNewPost(true)}/>
                 <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
                     {posts.map((post) => (
                         <div className='flex justify-center'>
@@ -58,9 +60,12 @@ function Home() {
                         </div>
                     ))}
                 </div>
-                <RightMenu />
+                <RightMenu onClick={() => setNewPost(true)}/>
             </section>
             <NavBarMobile />
+            {newPost && (
+            <CreatePost onClick={() => setNewPost(false)}/>
+            )}
         </section>
     );
 };
