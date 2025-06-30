@@ -90,7 +90,7 @@ function User(){
         <section>
             <NavBar />
             <TopNavMobile />
-            <section className='flex bg-user-icon pt-[50px] pb-[55px] md:pt-[8vh] h-dvh'>
+            <section className='flex bg-user-icon pt-[50px] md:pt-[8vh] h-dvh'>
             <LeftMenu/>
             {selectedUser 
             ?

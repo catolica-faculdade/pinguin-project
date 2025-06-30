@@ -64,7 +64,7 @@ function Following(){
         <section>
             <NavBar />
             <TopNavMobile />
-            <section className="flex bg-user-icon h-dvh pt-[50px] pb-[55px] md:pt-[8vh]">
+            <section className="flex bg-user-icon h-dvh pt-[50px] md:pt-[8vh]">
                 <LeftMenu />
                 <div className="w-full md:w-3/5 flex flex-col overflow-y-scroll">
                 {following.map((user) => {
