@@ -1,7 +1,7 @@
 import Tab from './Tab';
 import MyUser from './MyUser';
 
-function LeftMenu(){
+function LeftMenu({onClick}){
 
     const following = 20;
     const followers = 15;
@@ -21,7 +21,8 @@ function LeftMenu(){
                 number={followers}
                 path="/followers"/>
             </div>
-            <MyUser
+            <MyUser 
+            onClick={onClick}
             username={username}
             userFullname={userFullname}/>
         </div>
