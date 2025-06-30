@@ -10,7 +10,7 @@ import NavBarMobile from "../components/Mobile/NavBarMobile";
 
 
 function Notifications(){
-    const notifications = [{id: 1, userImage: "public/assets/images/profile-picture.svg", nome: "Vitor Hugo da Cunha", tipo: "curtiu", post: null, data: "28/02/25", hora: "16:26"},{id: 1,  userImage: "public/assets/images/profile-picture.svg", nome: "Gabriel Grabowski Bosco", tipo: "comentou", post: "public/assets/images/purple-dog-image.png", data: "25/03/25", hora: "21:41"},{id: 1, userImage: "public/assets/images/profile-picture.svg",  nome: "João Constantino Caetano", tipo: "mencionou", post: "public/assets/images/beach-image.png", data: "25/03/25", hora: "21:41"}]
+    const notifications = [{id: 1, userImage: "assets/images/profile-picture.svg", nome: "Vitor Hugo da Cunha", tipo: "curtiu", post: null, data: "28/02/25", hora: "16:26"},{id: 1,  userImage: "assets/images/profile-picture.svg", nome: "Gabriel Grabowski Bosco", tipo: "comentou", post: "assets/images/purple-dog-image.png", data: "25/03/25", hora: "21:41"},{id: 1, userImage: "assets/images/profile-picture.svg",  nome: "João Constantino Caetano", tipo: "mencionou", post: "assets/images/beach-image.png", data: "25/03/25", hora: "21:41"}]
     return(
         <section>
             <NavBar/>

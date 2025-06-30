@@ -5,7 +5,7 @@ function Comment({content}){
         <div className="flex items-center gap-1 justify-between w-full">
             <div className="flex gap-3 items-center">
                 <div className="max-w-10">
-                    <img src="/pinguin-project/public/assets/images/profile-picture.svg"/>
+                    <img src="../assets/images/profile-picture.svg"/>
                 </div>
                 <div>
                     <div className="text-sm">
@@ -15,7 +15,7 @@ function Comment({content}){
                 </div>
             </div>
             <div>
-                <Interactions comment={true}/>
+                <Interactions comment={true} postPage={true}/>
             </div>
         </div>
     );

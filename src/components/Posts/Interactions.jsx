@@ -1,19 +1,19 @@
 import LikeIcon from "./LikeIcon";
 import CommentIcon from "./CommentIcon";
 
-function Interactions({postId, interactions, comment}){
+function Interactions({postId, interactions, comment, postPage}){
 
     if (!comment){
         return(
             <div className="flex gap-3">
-                <LikeIcon likeNumber={interactions.like}/>
-                <CommentIcon postId={postId} comment={interactions.comment}/>
+                <LikeIcon likeNumber={interactions.like} postPage={postPage}/>
+                <CommentIcon postId={postId} comment={interactions.comment} postPage={postPage}/>
             </div>
         );
     } else {
         return(
             <div>
-                <LikeIcon/>
+                <LikeIcon postPage={postPage}/>
             </div>
         );
     }

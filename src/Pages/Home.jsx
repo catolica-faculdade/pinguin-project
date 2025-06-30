@@ -43,7 +43,7 @@ function Home() {
             id: 2,
             user: user[0],
             title: 'gente, olha meu código novo...',
-            image: '/pinguin-project/public/posts/novo-codigo.png'
+            image: 'posts/novo-codigo.png'
         }
     ];
 
@@ -55,7 +55,7 @@ function Home() {
             <NavBar />
             <TopNavMobile/>
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>
-                <LeftMenu onClick={() => setNewPost(true)}/>
+                <LeftMenu onClick={() => setNewPost(true)} postPage={false}/>
                 <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
                     {posts.map((post) => (
                         <div className='flex justify-center'>

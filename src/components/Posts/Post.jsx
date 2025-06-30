@@ -27,7 +27,7 @@ function Post({id, content}){
             <div className="flex justify-between">
                 <div className='flex items-center gap-3'>
                     <div className='select-none w-12'>
-                        <Link to={`/${user.username}`} className="cursor-pointer"><img className='w-full' src='public/assets/images/profile-picture.svg'></img></Link>
+                        <Link to={`/${user.username}`} className="cursor-pointer"><img className='w-full' src='assets/images/profile-picture.svg'></img></Link>
                     </div>
                     <div className='flex flex-col justify-start'>
                         <Link to={`/${user.username}`} className='flex items-center pr-8'>
@@ -37,7 +37,7 @@ function Post({id, content}){
                     </div>
                 </div>
                 <div className="cursor-pointer">
-                    <img src="public/assets/images/post-options-icon.svg" onClick={openPopUp}></img>
+                    <img src="assets/images/post-options-icon.svg" onClick={openPopUp}></img>
                 </div>
             </div>
             <Link to={`/post/${id}`}>
@@ -49,7 +49,7 @@ function Post({id, content}){
                     ?
                     <img className="h-fit" src={content.image}></img>
                     :
-                    <img className="h-fit" src="public/assets/images/placeholder-image.png"></img>
+                    <img className="h-fit" src="assets/images/placeholder-image.png"></img>
                     }
                 </div>
             </Link>
