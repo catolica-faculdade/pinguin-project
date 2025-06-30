@@ -43,7 +43,7 @@ function Home() {
             id: 2,
             user: user[0],
             title: 'gente, olha meu código novo...',
-            image: '/posts/novo-codigo.png'
+            image: '/pinguin-project/public/posts/novo-codigo.png'
         }
     ];
 

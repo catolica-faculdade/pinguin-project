@@ -31,11 +31,11 @@ function Login(){
                     </div>
                     <div className="md:flex flex-col gap-10 hidden">
                         <div className="flex justify-center">
-                            <Button text='Entre agora mesmo!' bgColor='bg-purple-pinguin' color='text-white'/>
+                            <Button text='Entre agora mesmo!' bgColor='bg-purple-pinguin' color='text-white' path='/home'/>
                         </div>
                         <div>
                             <p className="font-bold">Ainda não tem conta?</p>
-                            <a href="/login" className="purple-pinguin underline">Registre-se aqui!</a>
+                            <a href="/pinguin-project/register" className="purple-pinguin underline">Registre-se aqui!</a>
                         </div>
                     </div>
                     <div className="h-15 md:hidden gap-3 block w-[70%]">
@@ -51,8 +51,8 @@ function Login(){
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center h-40 md:hidden">
-                    <p className="block md:hidden">Já tem conta?</p>
-                    <Link to="/login" className="link-purple-pinguin underline font-bold mblock md:hidden">Entre aqui!</Link>
+                    <p className="block md:hidden">Não tem conta?</p>
+                    <Link to="/pinguin-project/register" className="link-purple-pinguin underline font-bold mblock md:hidden">Crie aqui!</Link>
                 </div>
             </div>
         </section>

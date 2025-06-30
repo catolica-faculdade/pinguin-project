@@ -9,7 +9,7 @@ function Menu(){
                     <div className='flex flex-col sm:flex-row md:gap-25 sm:gap-10 justify-center items-center'>
                         <div className='select-none pointer-events-none'>
                             <img className='w-40 sm:w-50 sm:min-w-40'
-                            src='public/assets/images/logo-pinguIn-roxo.png'></img>
+                            src='/pinguin-project/public/assets/images/logo-pinguIn-roxo.png'></img>
                         </div>
                         <div className='flex flex-col justify-center items-center gap-2'>
                             <div className='flex font-inter text-3xl sm:text-4xl'>

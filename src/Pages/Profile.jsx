@@ -35,7 +35,7 @@ function Profile() {
         {
             id: 2,
             title: 'gente, olha meu código novo...',
-            image: '/public/posts/novo-codigo.png',
+            image: '/pinguin-project/public/posts/novo-codigo.png',
             user: user
         }
     ];
