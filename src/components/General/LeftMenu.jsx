@@ -21,7 +21,7 @@ function LeftMenu({onClick, postPage}){
                 number={followers}
                 path="/followers"/>
             </div>
-            <MyUser 
+            <MyUser postPage={postPage} 
             onClick={onClick}
             username={username}
             userFullname={userFullname}/>
