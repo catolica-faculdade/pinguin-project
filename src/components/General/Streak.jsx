@@ -1,4 +1,4 @@
-function Streak(){
+function Streak({onClick}){
 
     const streak = 0;
 
@@ -13,7 +13,7 @@ function Streak(){
                 <p>Seu streak é de {streak} dias.</p>
                 <div className="flex-1">
                     <p>Crie seu três posts e inicie o streak!
-                        <button className="pl-1 underline text-purple-800 font-bold">Criar publicação</button>
+                        <button onClick={onClick} className="pl-1 underline text-purple-800 font-bold cursor-pointer">Criar publicação</button>
                     </p>
                 </div>
             </div>
