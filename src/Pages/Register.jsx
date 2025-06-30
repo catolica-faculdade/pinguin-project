@@ -10,7 +10,7 @@ function Register(){
                 <title>Registrar</title>
             </head>
             <div className="md:overflow-hidden md:hidden flex justify-center pt-5 h-60 w-full bg-purple-pinguin">
-                <img src="src\assets\images\logo-pinguIn-branca.png" className="h-30"/>
+                <img src="public/assets\images\logo-pinguIn-branca.png" className="h-30"/>
             </div>
             <div className="bg-form-login md:flex md:relative fixed md:h-160 h-153 md:w-182 max-w-[60vw] md:max-w-[80vw] min-w-[320px] top-1/6 md:top-0 md:rounded-md rounded-xl border-1 stroke-color-pinguin shadow-2xl">
                 <div className="md:p-10 p-5 flex flex-col items-center text-center md:w-3/5 gap-6">
@@ -26,11 +26,11 @@ function Register(){
                         </div>
                     </div>
                     <div className="h-100 w-4/5 flex flex-col justify-between items-center">
-                        <Input image="src\assets\images\mail-icon.png" placeholder='E-mail' type='text' Imgsize={50}/>
-                        <Input image="src\assets\images\arroba-icon.png" placeholder='Usuário' type='text' Imgsize={70}/>
-                        <Input image="src\assets\images\person-white-icon.png" placeholder='Nome completo' type='text' Imgsize={80}/>
-                        <Input image="src\assets\images\lock-icon.png" placeholder='Senha' type='password' Imgsize={60}/>
-                        <Input image="src\assets\images\lock-icon.png" placeholder='Confirme sua senha' type='password' Imgsize={60}/>
+                        <Input image="public/assets\images\mail-icon.png" placeholder='E-mail' type='text' Imgsize={50}/>
+                        <Input image="public/assets\images\arroba-icon.png" placeholder='Usuário' type='text' Imgsize={70}/>
+                        <Input image="public/assets\images\person-white-icon.png" placeholder='Nome completo' type='text' Imgsize={80}/>
+                        <Input image="public/assets\images\lock-icon.png" placeholder='Senha' type='password' Imgsize={60}/>
+                        <Input image="public/assets\images\lock-icon.png" placeholder='Confirme sua senha' type='password' Imgsize={60}/>
                     </div>
                     <div className="h-20 md:flex flex-col gap-3 hidden">
                         <div className="flex justify-center">
@@ -47,7 +47,7 @@ function Register(){
                         <h1>Cadastre-se e junte-se a nós hoje mesmo!</h1>
                     </div>
                     <div className="w-4/5">
-                        <img src="src\assets\images\logo-pinguIn-branca.png" alt="logo da empresa"/>
+                        <img src="public/assets\images\logo-pinguIn-branca.png" alt="logo da empresa"/>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center h-5 md:hidden">

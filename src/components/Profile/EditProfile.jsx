@@ -21,7 +21,7 @@ function EditProfile({posts, onClick, setUsername, setFullName, setAbout}){
                 <div className='flex justify-between'>
                     <div className='flex items-center gap-3'>
                         <div className='pointer-events-none select-none w-18'>
-                            <img className='w-full' src='/src/assets/images/profile-picture.svg'></img>
+                            <img className='w-full' src='public/assets/images/profile-picture.svg'></img>
                         </div>
                         <div className='flex flex-col gap-1 justify-start'>
                             <div className='max-w-40'>

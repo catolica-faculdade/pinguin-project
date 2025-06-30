@@ -10,7 +10,7 @@ function Login(){
                 <title>Login</title>
             </head>
             <div className="md:hidden flex justify-center pt-5 h-60 w-full bg-purple-pinguin">
-                <img src="src\assets\images\logo-pinguIn-branca.png" className="h-30"/>
+                <img src="public/assets\images\logo-pinguIn-branca.png" className="h-30"/>
             </div>
             <div className="bg-form-login md:flex md:relative fixed md:h-160 h-[50vh] md:w-182 w-90 md:max-w-[80vw] top-1/6 md:top-0 md:rounded-md rounded-xl border-1 stroke-color-pinguin shadow-2xl">
                 <div className="md:p-10 p-5 flex flex-col items-center text-center md:w-3/5 gap-6">
@@ -26,8 +26,8 @@ function Login(){
                         </div>
                     </div>
                     <div className="h-50 w-4/5 flex flex-col justify-evenly items-center">
-                        <Input image="src\assets\images\person-white-icon.png" placeholder='Email ou nome de usuário' type='text' DivSize={60} Imgsize={30}/>
-                        <Input image="src\assets\images\lock-icon.png" placeholder='Senha' type='password'  DivSize={60} Imgsize={400}/>
+                        <Input image="public/assets\images\person-white-icon.png" placeholder='Email ou nome de usuário' type='text' DivSize={60} Imgsize={30}/>
+                        <Input image="public/assets\images\lock-icon.png" placeholder='Senha' type='password'  DivSize={60} Imgsize={400}/>
                     </div>
                     <div className="md:flex flex-col gap-10 hidden">
                         <div className="flex justify-center">
@@ -47,7 +47,7 @@ function Login(){
                         <h1>Bem-vindo de volta!</h1>
                     </div>
                     <div className="w-4/5">
-                        <img src="src\assets\images\logo-pinguIn-branca.png" alt="logo da empresa"/>
+                        <img src="public/assets\images\logo-pinguIn-branca.png" alt="logo da empresa"/>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center h-40 md:hidden">

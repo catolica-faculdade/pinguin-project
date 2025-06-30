@@ -10,9 +10,9 @@ function CoverPage(){
             <div>
                 <NavBar/>
                 <Search/>
-                    <div className="bg-[url('/src/assets/images/background.png')] bg-cover h-[150px] w-[auto] md:bg-cover md:h-[380px] md:w-[auto] bg-center h-64 w-full w "></div>
+                    <div className="bg-[url('/public/assets/images/background.png')] bg-cover h-[150px] w-[auto] md:bg-cover md:h-[380px] md:w-[auto] bg-center h-64 w-full w "></div>
                     <div className="md:m-[40px] mt-[20px] flex items-center">
-                        <img className="pl-[40px] pt-[10px] w-auto h-[70px] md:w-auto md:h-[150px]" src="/src/assets/images/logo-pinguIn-roxo.png"/>
+                        <img className="pl-[40px] pt-[10px] w-auto h-[70px] md:w-auto md:h-[150px]" src="/public/assets/images/logo-pinguIn-roxo.png"/>
                         <p className="pl-5 text-[17px] md:text-[40px]">Saiba mais sobre o</p>
                         <div className="flex text-[17px] md:text-[40px]">
                             <p className="pl-[7px]">Pingu</p>
@@ -51,25 +51,25 @@ function CoverPage(){
                     <div className="flex flex-col lg:flex-row items-center gap-y-8 lg:justify-center">  
                         <div className="grid grid-cols-3 md:grid-cols-3 gap-y-6 md:gap-x-8 lg:pr-[20px]">
                             <div className="flex flex-col items-center">
-                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px] rounded-full object-cover" src="/src/assets/images/gabriel.png" />
+                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px] rounded-full object-cover" src="/public/assets/images/gabriel.png" />
                             <p className="text-[14px] md:text-[16px] mt-2 text-center">Gabriel Bosco</p>
                             </div>
                             <div className="flex flex-col items-center">
-                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px]  rounded-full object-cover" src="/src/assets/images/gustavo.png" />
+                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px]  rounded-full object-cover" src="/public/assets/images/gustavo.png" />
                             <p className="text-[14px] md:text-[16px] mt-2 text-center">Gustavo Floriano</p>
                             </div>
                             <div className="flex flex-col items-center">
-                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px] rounded-full object-cover" src="/src/assets/images/johann.png" />
+                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px] rounded-full object-cover" src="/public/assets/images/johann.png" />
                             <p className="text-[14px] md:text-[16px] mt-2 text-center">Johann Ruth</p>
                             </div>
                         </div>
                         <div className="flex flex-col-2 md:flex-row justify-center gap-8 lg:pl-[20px]">
                             <div className="flex flex-col items-center">
-                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px] rounded-full object-cover" src="/src/assets/images/joao.png" />
+                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px] rounded-full object-cover" src="/public/assets/images/joao.png" />
                             <p className="text-[14px] md:text-[16px] mt-2 text-center">João Constantino</p>
                             </div>
                             <div className="flex flex-col items-center">
-                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px] rounded-full object-cover" src="/src/assets/images/vitor.png" />
+                            <img className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] m-[40px] rounded-full object-cover" src="/public/assets/images/vitor.png" />
                             <p className="text-[14px] md:text-[16px] mt-2 text-center">Vitor Hugo da Cunha</p>
                             </div>
                         </div>

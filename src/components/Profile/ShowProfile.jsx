@@ -9,12 +9,12 @@ function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
                 <div className='flex justify-between'>
                     <div className='flex items-center gap-3'>
                         <div className='pointer-events-none select-none w-18'>
-                            <img className='w-full' src='/src/assets/images/profile-picture.svg'></img>
+                            <img className='w-full' src='public/assets/images/profile-picture.svg'></img>
                         </div>
                         <div className='flex flex-col justify-start'>
                             <div className='flex items-center pr-8'>
                                 <p>{user.username}</p>
-                                <img className='w-8' src='/src/assets/images/streak-0-days.svg'></img>
+                                <img className='w-8' src='public/assets/images/streak-0-days.svg'></img>
                                 <p className='font-bold'>{user.streak}</p>
                             </div>
                             <p>{user.userFullname}</p>
@@ -53,7 +53,7 @@ function ShowProfile({user, posts, onClick, follow, setFollow, otherUser}){
                         )}
                         {!otherUser && (
                             <Link to="/settings" className='w-8 cursor-pointer'>
-                                <img src='src/assets/images/configs-icon.svg'></img>
+                                <img src='public/assets/images/configs-icon.svg'></img>
                             </Link>
                         )}
                     </div>

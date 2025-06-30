@@ -8,7 +8,7 @@ function MyUser({username, userFullname, onClick}){
                 <div className="flex justify-center">
                     <img
                     className="w-full max-w-15" 
-                    src="/src/assets/images/profile-picture.svg"></img>
+                    src="/pinguin-project/public/assets/images/profile-picture.svg"></img>
                 </div>
                 <div className="flex flex-col justify-center items-center text-center xmd:items-baseline xmd:text-start">
                     <div>

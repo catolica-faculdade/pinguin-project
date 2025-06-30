@@ -9,7 +9,7 @@ function Menu(){
                     <div className='flex flex-col sm:flex-row md:gap-25 sm:gap-10 justify-center items-center'>
                         <div className='select-none pointer-events-none'>
                             <img className='w-40 sm:w-50 sm:min-w-40'
-                            src='src/assets/images/logo-pinguIn-roxo.png'></img>
+                            src='public/assets/images/logo-pinguIn-roxo.png'></img>
                         </div>
                         <div className='flex flex-col justify-center items-center gap-2'>
                             <div className='flex font-inter text-3xl sm:text-4xl'>
@@ -48,8 +48,8 @@ function Menu(){
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-32 bg-[url('/src/assets/images/mountains.png')] bg-no-repeat bg-top bg-cover lg:hidden"></div>
-                <div className="w-full h-32 bg-[url('/src/assets/images/mountains.png')] bg-no-repeat bg-top bg-[length:100%_260px] hidden lg:block"></div>
+                <div className="w-full h-32 bg-[url('/public/assets/images/mountains.png')] bg-no-repeat bg-top bg-cover lg:hidden"></div>
+                <div className="w-full h-32 bg-[url('/public/assets/images/mountains.png')] bg-no-repeat bg-top bg-[length:100%_260px] hidden lg:block"></div>
             </div>
         </div>
     );

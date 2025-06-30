@@ -11,7 +11,7 @@ function Setting({ text, link, toggle, id, checked, onToggle }) {
             ) : (
             <Link to={link}>
                 <img
-                src="src/assets/images/right-arrow.png"
+                src="public/assets/images/right-arrow.png"
                 alt={`Enter ${text}`}
                 className="w-4 h-6"
                 />

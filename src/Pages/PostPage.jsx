@@ -100,14 +100,14 @@ function PostPage() {
                     <div className="bg-navbar max-w-xl w-11/12 flex flex-col gap-3 p-3 pl-6 pr-6 border-1 rounded-t-2xl relative border-b-0">
                         <div className="flex items-center gap-3">
                             <Link to={"/home"}>
-                                <img src="/src/assets/images/left-arrow.png" alt="Voltar" className="h-5" />
+                                <img src="../public/assets/images/left-arrow.png" alt="Voltar" className="h-5" />
                             </Link>
                             <h1 className="font-semibold">Home</h1>
                         </div>
                         <div className="flex justify-between">
                             <div className='flex items-center gap-3'>
                                 <div className='select-none w-12'>
-                                    <Link to={`/${posts[postId-1].user.username}`}><img className='w-full' src='/src/assets/images/profile-picture.svg' /></Link>
+                                    <Link to={`/${posts[postId-1].user.username}`}><img className='w-full' src='../public/assets/images/profile-picture.svg' /></Link>
                                 </div>
                                 <div className='flex flex-col'>
                                     <Link to={`/${posts[postId-1].user.username}`}><p>@{posts[postId-1].user.username}</p></Link>
@@ -115,7 +115,7 @@ function PostPage() {
                                 </div>
                             </div>
                             <div className="cursor-pointer">
-                                <img src="/src/assets/images/post-options-icon.svg" onClick={openPopUp} />
+                                <img src="../public/assets/images/post-options-icon.svg" onClick={openPopUp} />
                             </div>
                         </div>
                         <div className="text">
@@ -124,7 +124,7 @@ function PostPage() {
                         <div className="content bg-tab w-full h-75 flex justify-center items-center pointer-events-none select-none">
                             {selectedPost?.image
                                 ? <img className="h-fit" src={selectedPost.image} />
-                                : <img className="h-fit" src="/src/assets/images/placeholder-image.png" />
+                                : <img className="h-fit" src="../public/assets/images/placeholder-image.png" />
                             }
                         </div>
                         <PostOptionsPopUp setOpenOptions={setOpenOptions} openOptions={openOptions} />

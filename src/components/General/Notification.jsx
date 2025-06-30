@@ -1,13 +1,13 @@
 function Notification({userImage, nome, tipo, post, data, hora}){
     let src;
     if(tipo == "curtiu"){
-        src = "/src/assets/images/like-heart-red.svg"
+        src = "public/assets/images/like-heart-red.svg"
     } 
     if (tipo == "comentou"){
-        src = "src/assets/images/message-notification-icon.png";
+        src = "public/assets/images/message-notification-icon.png";
     } 
     if (tipo == "mencionou"){
-        src = "src/assets/images/mention-notification-icon.png"
+        src = "public/assets/images/mention-notification-icon.png"
     }
     return(
         <div className="flex justify-center items-center pt-2">

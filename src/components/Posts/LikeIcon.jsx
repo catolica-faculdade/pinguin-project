@@ -9,11 +9,11 @@ function LikeIcon({likeNumber}){
             {like
             ?
             <img onClick={() => setLike(false)}
-            src="/src/assets/images/like-heart-red.svg"
+            src="/pinguin-project/public/assets/images/like-heart-red.svg"
             className="cursor-pointer"></img>
             :
             <img onClick={() => setLike(true)}
-            src="/src/assets/images/like-heart-white.svg"
+            src="/pinguin-project/public/assets/images/like-heart-white.svg"
             className="cursor-pointer"></img>
             }
             <p>{likeNumber}</p>
