@@ -19,60 +19,65 @@ import Followers from './Pages/Followers.jsx';
 import User from './Pages/User.jsx';
 import PostPage from './Pages/PostPage.jsx';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Menu/>
+    },
+    {
+      path: '/menu',
+      element: <Menu/>
+    },
+    {
+      path: '/register',
+      element: <Register />
+    },
+    {
+      path: '/login',
+      element: <Login />
+    },
+    {
+      path: '/cover-page',
+      element: <CoverPage/>
+    },
+    {
+      path: '/home',
+      element: <Home/>
+    },
+    {
+      path: '/profile',
+      element: <Profile/>
+    },
+    {
+      path: '/notifications',
+      element: <Notifications/>
+    },
+    {
+      path: '/settings',
+      element: <Settings/>
+    },
+    {
+      path: 'following',
+      element: <Following/>
+    },
+    {
+      path: 'followers',
+      element: <Followers/>
+    },
+    {
+      path: '/:user',
+      element: <User/>
+    },
+    {
+      path: 'post/:id',
+      element: <PostPage/>
+    }
+  ],
   {
-    path: '/',
-    element: <Menu/>
-  },
-  {
-    path: '/menu',
-    element: <Menu/>
-  },
-  {
-    path: '/register',
-    element: <Register />
-  },
-  {
-    path: '/login',
-    element: <Login />
-  },
-  {
-    path: '/cover-page',
-    element: <CoverPage/>
-  },
-  {
-    path: '/home',
-    element: <Home/>
-  },
-  {
-    path: '/profile',
-    element: <Profile/>
-  },
-  {
-    path: '/notifications',
-    element: <Notifications/>
-  },
-  {
-    path: '/settings',
-    element: <Settings/>
-  },
-  {
-    path: 'following',
-    element: <Following/>
-  },
-  {
-    path: 'followers',
-    element: <Followers/>
-  },
-  {
-    path: '/:user',
-    element: <User/>
-  },
-  {
-    path: 'post/:id',
-    element: <PostPage/>
+    basename: '/pinguin-project'
   }
-])
+)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
