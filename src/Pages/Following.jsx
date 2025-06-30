@@ -62,6 +62,9 @@ function Following(){
 
     return (
         <section>
+            <head>
+                <title>Seguindo | Pinguin</title>
+            </head>
             <NavBar />
             <TopNavMobile />
             <section className="flex bg-user-icon h-dvh pt-[50px] md:pt-[8vh]">

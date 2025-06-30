@@ -61,6 +61,9 @@ function Followers() {
 
     return (
         <section>
+            <head>
+                <title>Seguidores | Pinguin</title>
+            </head>
             <NavBar />
             <TopNavMobile />
             <section className="flex bg-user-icon h-dvh pt-[47px] md:pt-[8vh]">

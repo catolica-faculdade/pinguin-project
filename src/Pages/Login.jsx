@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 function Login(){
     return (
         <section className="bg-login-pinguin flex flex-col md:flex-row gap-5 h-dvh w-screen md:justify-center items-center font-inter">
+            <head>
+                <title>Login</title>
+            </head>
             <div className="md:hidden flex justify-center pt-5 h-60 w-full bg-purple-pinguin">
                 <img src="src\assets\images\logo-pinguIn-branca.png" className="h-30"/>
             </div>

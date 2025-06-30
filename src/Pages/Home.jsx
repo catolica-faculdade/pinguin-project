@@ -49,6 +49,9 @@ function Home() {
 
     return (
         <section>
+            <head>
+                <title>Home | Pinguin</title>
+            </head>
             <NavBar />
             <TopNavMobile/>
             <section className='flex bg-user-icon pt-[8vh] h-dvh'>

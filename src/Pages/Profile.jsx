@@ -43,6 +43,9 @@ function Profile() {
     return (
         // retorna no 'html' pela main aqui
         <section>
+            <head>
+                <title>Meu Perfil | Pinguin</title>
+            </head>
             <NavBar />
             <TopNavMobile />
             <section className='flex bg-user-icon pt-[50px] md:pt-[8vh] h-dvh'>
