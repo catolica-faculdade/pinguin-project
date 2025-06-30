@@ -52,7 +52,7 @@ function Login(){
                 </div>
                 <div className="flex flex-col items-center justify-center h-40 md:hidden">
                     <p className="block md:hidden">Não tem conta?</p>
-                    <Link to="/pinguin-project/register" className="link-purple-pinguin underline font-bold mblock md:hidden">Crie aqui!</Link>
+                    <Link to="/register" className="link-purple-pinguin underline font-bold mblock md:hidden">Crie aqui!</Link>
                 </div>
             </div>
         </section>
