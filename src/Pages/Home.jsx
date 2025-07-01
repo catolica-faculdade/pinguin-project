@@ -54,7 +54,7 @@ function Home() {
             </head>
             <NavBar />
             <TopNavMobile/>
-            <section className='flex bg-user-icon pt-[8vh] h-dvh'>
+            <section className='flex bg-user-icon pt-[50px] md:pb-0 pb-[55px] h-dvh md:pt-[8vh]'>
                 <LeftMenu onClick={() => setNewPost(true)} postPage={false}/>
                 <div className='w-full md:w-3/5 p-7 flex flex-col gap-6 overflow-y-scroll'>
                     {posts.map((post) => (
